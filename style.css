@@ -1,5 +1,5 @@
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Ruluko', serif;
 }
 
 a {
@@ -25,7 +25,7 @@ h2 {
     border-left: 2px solid #75B982;
     line-height:115%;
     font-weight:400;
-    font-size:35px;
+    font-size:38px;
     text-align:center;
 }
 
@@ -75,7 +75,7 @@ h2 {
     width:45%;
     height:inherit;
     color:#fff;
-    font-size:13.5px;
+    font-size:14px;
     font-weight:100;
     line-height:175%;
     text-align:justify;
@@ -87,7 +87,7 @@ h2 {
     width:45%;
     height:inherit;
     color:#fff;
-    font-size:13.5px;
+    font-size:14px;
     font-weight:100;
     line-height:160%;
     text-align:justify;
