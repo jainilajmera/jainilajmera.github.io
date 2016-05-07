@@ -1,5 +1,5 @@
 body {
-    font-family: 'Ruluko', serif;
+    font-family: 'Lato', sans-serif;
 }
 
 a {
@@ -7,17 +7,30 @@ a {
     color:#fff;
 }
 
+a:hover {
+    color:#DDD;
+}
+
 h1 {
     font-size:60px;
+    color:#fff;
+    text-align:center;
 }
 
 h2 {
-    text-shadow:4px 8px 16px #000;
     font-size:42px;
 }
 
-h3 {
-    font-size:22px;
+.quote {
+    border-left: 2px solid #75B982;
+    line-height:115%;
+    font-weight:400;
+    font-size:35px;
+    text-align:center;
+}
+
+.emphasis {
+    text-shadow:4px 8px 16px #000;
 }
 
 #header {
@@ -35,6 +48,8 @@ h3 {
     border-color:none;
     color:#fff;
     font-size:15px;
+    font-weight:700;
+    text-shadow:4px 8px 16px #000;
 }
 
 #home {
@@ -53,6 +68,30 @@ h3 {
     margin-left:-8px;
     margin-right:-8px;
     background-color:#1D5E93;
+}
+
+#about-left {
+    padding-left:10px;
+    width:45%;
+    height:inherit;
+    color:#fff;
+    font-size:13.5px;
+    font-weight:100;
+    line-height:175%;
+    text-align:justify;
+    float:left;
+}
+
+#about-right {
+    padding-left:6em;
+    width:45%;
+    height:inherit;
+    color:#fff;
+    font-size:13.5px;
+    font-weight:100;
+    line-height:160%;
+    text-align:justify;
+    float:left;
 }
 
 #projects {
