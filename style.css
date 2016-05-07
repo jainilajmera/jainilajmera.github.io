@@ -1,0 +1,80 @@
+body {
+    font-family: 'Ruluko', serif;
+}
+
+a {
+    text-decoration:none;
+    color:#fff;
+}
+
+h1 {
+    font-size:60px;
+}
+
+h2 {
+    text-shadow:4px 8px 12px #000;
+    font-size:42px;
+}
+
+h3 {
+    font-size:22px;
+}
+
+#header {
+    position:fixed;
+    width:100%;
+    height:7%;
+    margin-top:-8px;
+    margin-left:-8px;
+    background-color:#1565C0;
+}
+
+.header-content {
+    margin:16px;
+    float:right;
+    border-color:none;
+    color:#fff;
+    font-size:15px;
+}
+
+#home {
+    width:inherit;
+    height:95%;
+    margin-left:-8px;
+    margin-right:-8px;
+    background-color:#1793D0;
+    color:#fff;
+    text-align:center;
+}
+
+#about {
+    width:inherit;
+    height:100%;
+    margin-left:-8px;
+    margin-right:-8px;
+    background-color:#1D5E93;
+}
+
+#projects {
+    width:inherit;
+    height:100%;
+    margin-left:-8px;
+    margin-right:-8px;
+    background-color:08A48C;
+}
+
+#contact {
+    width:inherit;
+    height:90%;
+    margin-left:-8px;
+    margin-right:-8px;
+    background-color:#E46854;
+}
+
+#bottom-bar {
+    width:inherit;
+    height:8%;
+    margin-left:-8px;
+    margin-right:-8px;
+    background-color:#000;
+}
