@@ -112,8 +112,17 @@ h2 {
 
 #bottom-bar {
     width:inherit;
-    height:8%;
+    height:6%;
     margin-left:-8px;
     margin-right:-8px;
     background-color:#000;
+}
+
+#bottom-content {
+    width:inherit;
+    height:inherit;
+    padding:0.5em;
+    float:right;
+    font-size:18px;
+    color:#fff;
 }
