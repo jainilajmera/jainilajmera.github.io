@@ -19,7 +19,8 @@ h1 {
 }
 
 h2 {
-    font-size:24px;
+    font-size:28px;
+    line-height:120%;
 }
 
 h3 {
@@ -48,27 +49,17 @@ img:hover {
 }
 
 .about-title {
+    text-align:center;
     color:#1D5E93;
 }
 
 .small-icon {
     width:3%;
     padding-left:1em;
+    margin-top:6em;
 }
 
-#MIT {
-    width:18%;
-    border-radius: 50%;
-    -webkit-transition: -webkit-transform .8s ease-in-out;
-    transition: transform 1.1s ease-in-out;
-}
-
-#MIT:hover {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-}
-
-#quote {
+.quote {
     border-left: 8px solid #75B982;
     border-right: 8px solid #75B982;
     text-align:center;
@@ -95,12 +86,26 @@ img:hover {
 
 #home {
     width:inherit;
-    height:90%;
+    height:100%;
     margin-left:-8px;
     margin-right:-8px;
     background-color:#1793D0;
     color:#fff;
     text-align:center;
+}
+
+#MIT {
+    height:14em;
+    border-radius:50%;
+    vertical-align:middle;
+    float:left;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+}
+
+#MIT:hover {
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
 }
 
 #about {
@@ -114,7 +119,19 @@ img:hover {
 
 #about-left {
     padding-left:10px;
-    width:45%;
+    width:18%;
+    height:inherit;
+    color:#1D5E93;
+    font-size:14px;
+    font-weight:100;
+    line-height:175%;
+    text-align:justify;
+    float:left;
+}
+
+#about-middle {
+    padding-left:2em;
+    width:35%;
     height:inherit;
     color:#1D5E93;
     font-size:14px;
@@ -125,13 +142,13 @@ img:hover {
 }
 
 #about-right {
-    padding-left:6em;
-    width:45%;
+    padding-left:2em;
+    width:35%;
     height:inherit;
     color:#1D5E93;
     font-size:14px;
     font-weight:100;
-    line-height:160%;
+    line-height:175%;
     text-align:justify;
     float:left;
 }
@@ -142,11 +159,49 @@ img:hover {
     margin-left:-8px;
     margin-right:-8px;
     background-color:#339FDE;
+    color:#fff;
+}
+
+#projects-left {
+    padding-left:10px;
+    width:30%;
+    height:inherit;
+    color:#fff;
+    font-size:14px;
+    font-weight:100;
+    line-height:175%;
+    text-align:justify;
+    float:left;
+}
+
+#projects-middle {
+    padding-left:2em;
+    width:30%;
+    height:inherit;
+    color:#fff;
+    font-size:14px;
+    font-weight:100;
+    line-height:175%;
+    text-align:justify;
+    float:left;
+}
+
+#projects-right {
+    padding-left:2em;
+    width:30%;
+    height:inherit;
+    color:#fff;
+    font-size:14px;
+    font-weight:100;
+    line-height:175%;
+    text-align:justify;
+    float:left;
 }
 
 #contact {
     width:inherit;
     height:90%;
+    margin-top:-40px;
     margin-left:-8px;
     margin-right:-8px;
     background-color:#08A48C;
