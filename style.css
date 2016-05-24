@@ -1,5 +1,6 @@
 body {
     font-family: 'Ruluko', serif;
+    margin-bottom:-8px;
 }
 
 a {
@@ -18,19 +19,59 @@ h1 {
 }
 
 h2 {
-    font-size:42px;
+    font-size:24px;
 }
 
-.quote {
-    border-left: 2px solid #75B982;
-    line-height:115%;
-    font-weight:400;
-    font-size:38px;
-    text-align:center;
+h3 {
+    font-size:16px;
+    font-weight:300;
+}
+
+p {
+    text-shadow:none;
+    font-size:15px;
+    font-weight:100;
+}
+
+img {
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+}
+img:hover {
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
 }
 
 .emphasis {
+    font-size:42px;
     text-shadow:4px 8px 16px #000;
+}
+
+.about-title {
+    color:#1D5E93;
+}
+
+.small-icon {
+    width:3%;
+    padding-left:1em;
+}
+
+#MIT {
+    width:18%;
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform 1.1s ease-in-out;
+}
+
+#MIT:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+#quote {
+    border-left: 8px solid #75B982;
+    border-right: 8px solid #75B982;
+    text-align:center;
 }
 
 #header {
@@ -54,7 +95,7 @@ h2 {
 
 #home {
     width:inherit;
-    height:95%;
+    height:90%;
     margin-left:-8px;
     margin-right:-8px;
     background-color:#1793D0;
@@ -67,14 +108,15 @@ h2 {
     height:100%;
     margin-left:-8px;
     margin-right:-8px;
-    background-color:#1D5E93;
+    background-color:#fff;
+    color:#1D5E93;
 }
 
 #about-left {
     padding-left:10px;
     width:45%;
     height:inherit;
-    color:#fff;
+    color:#1D5E93;
     font-size:14px;
     font-weight:100;
     line-height:175%;
@@ -86,7 +128,7 @@ h2 {
     padding-left:6em;
     width:45%;
     height:inherit;
-    color:#fff;
+    color:#1D5E93;
     font-size:14px;
     font-weight:100;
     line-height:160%;
@@ -99,7 +141,7 @@ h2 {
     height:100%;
     margin-left:-8px;
     margin-right:-8px;
-    background-color:08A48C;
+    background-color:#339FDE;
 }
 
 #contact {
@@ -107,7 +149,7 @@ h2 {
     height:90%;
     margin-left:-8px;
     margin-right:-8px;
-    background-color:#E46854;
+    background-color:#08A48C;
 }
 
 #bottom-bar {
