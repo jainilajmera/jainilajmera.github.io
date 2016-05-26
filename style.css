@@ -59,6 +59,7 @@ img:hover {
 }
 
 .quote {
+    margin-top:15%;
     border-left: 8px solid #75B982;
     border-right: 8px solid #75B982;
     text-align:center;
@@ -100,7 +101,7 @@ img:hover {
     min-height:60%;
     margin-left:-8px;
     margin-right:-8px;
-    background-color:#1793D0;
+    background-image:url(Gradient.jpg);
     color:#fff;
     text-align:center;
 }
@@ -134,13 +135,14 @@ img:hover {
     height:15em;
     border-radius:50%;
     vertical-align:middle;
-    -webkit-transition: -webkit-transform .7s ease-in-out;
-    transition: transform .55s ease-in-out
+   -webkit-transition: -webkit-transform .6s ease-in-out;
+    transition: transform .5s ease-in-out
 }
 
 .MIT:hover {
-    -webkit-transform: rotate(35deg);
-    transform: rotate(35deg);
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+    box-shadow: 4px 3px 5px #75B982;
 }
 
 #projects {
