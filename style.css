@@ -59,10 +59,11 @@ img:hover {
 }
 
 .quote {
-    margin-top:6em;
+    margin-top:15%;
     border-left: 8px solid #75B982;
     border-right: 8px solid #75B982;
     text-align:center;
+    overflow:hidden;
 }
 
 .image-div {
