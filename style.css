@@ -59,6 +59,7 @@ img:hover {
 }
 
 .quote {
+    margin-top:6em;
     border-left: 8px solid #75B982;
     border-right: 8px solid #75B982;
     text-align:center;
