@@ -172,7 +172,7 @@ img:hover {
     width:100%;
 }
 
-@media only screen and (min-width:1500px) {
+/*@media only screen and (min-width:1500px) {
     .MIT {
     width:5%;
     display: block;
@@ -182,7 +182,7 @@ img:hover {
    -webkit-transition: -webkit-transform .6s ease-in-out;
     transition: transform .5s ease-in-out
     }
-}
+}*/
 
 .MIT {
     width:40%;
