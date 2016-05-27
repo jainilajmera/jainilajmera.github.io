@@ -35,26 +35,6 @@ p {
     font-weight:100;
 }
 
-@media only screen and (max-width:990px) {
-    img {
-        
-    }
-
-img:hover {
-    
-    }
-}
-
-img {
-    -webkit-transition: -webkit-transform .8s ease-in-out;
-    transition: transform .6s ease-in-out;
-}
-
-img:hover {
-    -webkit-transform: rotate(-15deg);
-    transform: rotate(-15deg);
-}
-
 .emphasis {
     padding-top:5%;
     font-size:42px;
@@ -71,34 +51,42 @@ img:hover {
 
 @media only screen and (min-width:451px) and (max-width:650px) {
     .small-icon {
-    padding-top:8%;
-    width:8%;
-    padding-left:2.25em;
+        padding-top:8%;
+        width:8%;
+        padding-left:2.25em;
     }
 }
 
 @media only screen and (min-width:651px) and (max-width:850px) {
     .small-icon {
-    padding-top:8%;
-    width:6%;
-    padding-left:2.25em;
+        padding-top:8%;
+        width:6%;
+        padding-left:2.25em;
     }
 }
 
 @media only screen and (min-width:851px) and (max-width:990px) {
     .small-icon {
-    padding-top:8%;
-    width:5%;
-    padding-left:2.25em;
+        padding-top:8%;
+        width:5%;
+        padding-left:2.25em;
     }
 }
     
 @media only screen and (min-width:991px) {
     .small-icon {
-    padding-top:8%;
-    width:4%;
-    padding-left:2.25em;
+        padding-top:8%;
+        width:4%;
+        padding-left:2.25em;
+        -webkit-transition: -webkit-transform .6s ease-in-out;
+        transition: transform .5s ease-in-out
     }
+    
+    .small-icon:hover {
+        -webkit-transform: rotate(-15deg);
+        transform: rotate(-15deg);
+        box-shadow: 4px 3px 5px #75B982;
+    } 
 }
 
 .quote {
@@ -204,34 +192,22 @@ img:hover {
     width:100%;
 }
 
-@media only screen and (max-width:990px) {
-    MIT {
-    width:40%;
-    display: block;
-    margin: 0 auto;
-    border-radius:50%;
-    vertical-align:middle; 
-    }
-
-MIT:hover {
-    
-    }
-}
-
 .MIT {
-    width:40%;
-    display: block;
-    margin: 0 auto;
-    border-radius:50%;
-    vertical-align:middle;
-   -webkit-transition: -webkit-transform .6s ease-in-out;
-    transition: transform .5s ease-in-out
+        width:40%;
+        display: block;
+        margin: 0 auto;
+        border-radius:50%;
+        vertical-align:middle;
+        -webkit-transition: -webkit-transform .6s ease-in-out;
+        transition: transform .5s ease-in-out
 }
 
-.MIT:hover {
-    -webkit-transform: rotate(15deg);
-    transform: rotate(15deg);
-    box-shadow: 4px 3px 5px #75B982;
+@media only screen and (min-width:990px) {
+    .MIT:hover {
+        -webkit-transform: rotate(15deg);
+        transform: rotate(15deg);
+        box-shadow: 4px 3px 5px #75B982;
+    }  
 }
 
 #projects {
