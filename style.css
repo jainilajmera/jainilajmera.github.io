@@ -51,14 +51,39 @@ img:hover {
     text-shadow:4px 8px 16px #000;
 }
 
-.small-icon {
+@media only screen and (max-width:650px) {
+    .small-icon {
+    padding-top:8%;
+    width:8%;
+    padding-left:2.25em;
+    }
+}
+
+@media only screen and (min-width:651px) and (max-width:850px) {
+    .small-icon {
+    padding-top:8%;
+    width:6%;
+    padding-left:2.25em;
+    }
+}
+
+@media only screen and (min-width:851px) and (max-width:990px) {
+    .small-icon {
+    padding-top:8%;
+    width:5%;
+    padding-left:2.25em;
+    }
+}
+    
+@media only screen and (min-width:991px) {
+    .small-icon {
     padding-top:8%;
     width:4%;
     padding-left:2.25em;
+    }
 }
 
 .quote {
-    width:100%;
     display:inline-block;
     border-left: 8px solid #75B982;
     border-right: 8px solid #75B982;
@@ -100,16 +125,32 @@ img:hover {
     text-align:center;
 }
 
-#about {
+@media only screen and (max-width: 990px) {
+    #about {
     width:inherit;
     min-height:100%;
     margin-left:-8px;
     margin-right:-8px;
-    padding:4% 24%;
+    padding:5%;
     background-color:#fff;
     color:#1D5E93;
     z-index: 1;
     box-shadow: 0 -12px 0 -6px rgba(255,255,255,.6),0 -24px 0 -12px rgba(255,255,255,.4),0 -38px 0 -20px rgba(255,255,255,.2);
+    }
+}
+
+@media only screen and (min-width:991px) {
+    #about {
+    width:inherit;
+    min-height:100%;
+    margin-left:-8px;
+    margin-right:-8px;
+    padding:5% 24%;
+    background-color:#fff;
+    color:#1D5E93;
+    z-index: 1;
+    box-shadow: 0 -12px 0 -6px rgba(255,255,255,.6),0 -24px 0 -12px rgba(255,255,255,.4),0 -38px 0 -20px rgba(255,255,255,.2);
+    }
 }
 
 #about-title {
@@ -122,7 +163,7 @@ img:hover {
 }
 
 .MIT {
-    height:35%;
+    height:30%;
     display: block;
     margin: 0 auto;
     border-radius:50%;
