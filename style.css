@@ -35,6 +35,16 @@ p {
     font-weight:100;
 }
 
+@media only screen and (max-width:990px) {
+    img {
+        
+    }
+
+img:hover {
+    
+    }
+}
+
 img {
     -webkit-transition: -webkit-transform .8s ease-in-out;
     transition: transform .6s ease-in-out;
@@ -105,6 +115,17 @@ img:hover {
     display:inline-block;
 }
 
+@media only screen and (max-width:321px) {
+    #header {
+        position:fixed;
+        width:100%;
+        height:10%;
+        margin-top:-8px;
+        margin-left:-8px;
+        background-color:#1565C0;
+    } 
+}
+
 #header {
     position:fixed;
     width:100%;
@@ -112,6 +133,17 @@ img:hover {
     margin-top:-8px;
     margin-left:-8px;
     background-color:#1565C0;
+}
+
+@media only screen and (max-width:321px) {
+    .header-content {
+        margin:16px;
+        border-color:none;
+        color:#fff;
+        font-size:12px;
+        font-weight:700;
+        text-shadow:4px 8px 16px #000;
+    }
 }
 
 .header-content {
@@ -172,17 +204,19 @@ img:hover {
     width:100%;
 }
 
-/*@media only screen and (min-width:1500px) {
-    .MIT {
-    width:5%;
+@media only screen and (max-width:990px) {
+    MIT {
+    width:40%;
     display: block;
     margin: 0 auto;
     border-radius:50%;
-    vertical-align:middle;
-   -webkit-transition: -webkit-transform .6s ease-in-out;
-    transition: transform .5s ease-in-out
+    vertical-align:middle; 
     }
-}*/
+
+MIT:hover {
+    
+    }
+}
 
 .MIT {
     width:40%;
