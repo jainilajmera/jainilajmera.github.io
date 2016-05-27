@@ -172,6 +172,18 @@ img:hover {
     width:100%;
 }
 
+@media only screen and (min-width:1500px) {
+    .MIT {
+    width:5%;
+    display: block;
+    margin: 0 auto;
+    border-radius:50%;
+    vertical-align:middle;
+   -webkit-transition: -webkit-transform .6s ease-in-out;
+    transition: transform .5s ease-in-out
+    }
+}
+
 .MIT {
     width:40%;
     display: block;
