@@ -53,6 +53,7 @@ img:hover {
 
 .small-icon {
     padding-top:8%;
+    padding-bottom:7%;
     width:3.5%;
     padding-left:2.25em;
 }
@@ -70,6 +71,11 @@ img:hover {
     padding-left:33%;
     padding-right:33%;
     display:inline-block;
+}
+
+.empty-div {
+    width:inherit;
+    height:10%;
 }
 
 #header {
@@ -96,18 +102,25 @@ img:hover {
     min-height:70%;
     margin-left:-8px;
     margin-right:-8px;
-    padding:12% 4%;
     background-image:url(Gradient.jpg);
     color:#fff;
     text-align:center;
 }
 
+#home-title {
+    padding-top:18%;
+    text-align:center;
+    color:#fff;
+}
+
 #about {
     width:inherit;
-    min-height:100%;
+    min-height:80%;
     margin-left:-8px;
     margin-right:-8px;
-    padding:4% 24%;
+    padding-left:24%;
+    padding-right:24%;
+    padding-bottom:10%;
     background-color:#fff;
     color:#1D5E93;
     z-index: 1;
