@@ -66,9 +66,7 @@ img:hover {
 }
 
 .image-div {
-    width:34%;
-    padding-left:33%;
-    padding-right:33%;
+    width:100%;
     display:inline-block;
 }
 
@@ -125,6 +123,8 @@ img:hover {
 
 .MIT {
     height:35%;
+    display: block;
+    margin: 0 auto;
     border-radius:50%;
     vertical-align:middle;
    -webkit-transition: -webkit-transform .6s ease-in-out;
