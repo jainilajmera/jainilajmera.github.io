@@ -1,5 +1,5 @@
 body {
-    font-family: 'Ruluko', serif;
+    font-family:'Ruluko', serif;
     margin-bottom:-8px;
 }
 
@@ -13,8 +13,8 @@ a:hover {
 }
 
 h1 {
-    font-size:60px;
-    color:#fff;
+    font-family:'Raleway', sans-serif;
+    font-size:45px;
     text-align:center;
 }
 
@@ -35,30 +35,33 @@ p {
     font-weight:100;
 }
 
-@media only screen and (max-width:370px) {
+@media only screen and (max-width:410px) {
     .emphasis {
+        font-family:'Raleway', sans-serif;
         padding-top:5%;
         font-size:28px;
         text-shadow:4px 8px 16px #000;
     }
 }
-@media only screen and (min-width:371px) {
+
+@media only screen and (min-width:411px) {
     .emphasis {
+            font-family:'Raleway', sans-serif;
             padding-top:5%;
             font-size:42px;
             text-shadow:4px 8px 16px #000;
     }
 }
 
-@media only screen and (max-width:450px) {
-    .small-icon {
-    padding-top:8%;
-    width:10%;
-    padding-left:2.25em;
+@media only screen and (max-width:410px) {
+    .small-icon { 
+        padding-top:8%;
+        width:10%;
+        padding-left:2.25em;
     }
 }
 
-@media only screen and (min-width:451px) and (max-width:650px) {
+@media only screen and (min-width:411px) and (max-width:650px) {
     .small-icon {
         padding-top:8%;
         width:8%;
@@ -99,6 +102,7 @@ p {
 
 
 .quote {
+    font-family:'Raleway', sans-serif;
     width:90%;
     padding:2% 4%;
     display:inline-block;
@@ -112,15 +116,26 @@ p {
     display:inline-block;
 }
 
-    #header {
-        position:fixed;
-        width:100%;
-        height:7%;
-        margin-top:-8px;
-        margin-left:-8px;
-        background-color:#1565C0;
-    } 
+.projects-box {
+    width:inherit;
+    height:33%;
+}
 
+#header {
+    z-index:1;
+    position:fixed;
+    width:100%;      
+    height:7%;
+    margin-top:-8px;
+    margin-left:-8px;   
+    background-color:#242C4C;
+} 
+
+.title {
+    font-family:'Raleway', sans-serif;
+    font-size:60px;
+    text-align:center;
+}
 
 @media only screen and (max-width:354px) {
     .header-content {
@@ -130,7 +145,6 @@ p {
         color:#fff;
         font-size:13px;
         font-weight:700;
-        text-shadow:4px 8px 16px #000;
     }
 }
 
@@ -142,7 +156,6 @@ p {
         color:#fff;
         font-size:15px;
         font-weight:700;
-        text-shadow:4px 8px 16px #000;
     }  
 }
 
@@ -177,17 +190,12 @@ p {
         min-height:100%;
         margin-left:-8px;
         margin-right:-8px;
-        padding:5% 24%;
+        padding:4% 24%;
         background-color:#fff;
         color:#1D5E93;
         z-index: 1;
         box-shadow: 0 -12px 0 -6px rgba(255,255,255,.6),0 -24px 0 -12px rgba(255,255,255,.4),0 -38px 0 -20px rgba(255,255,255,.2);
     }
-}
-
-#about-title {
-    text-align:center;
-    color:#1D5E93;
 }
 
 #separator {
@@ -204,7 +212,17 @@ p {
     }
 }
 
-@media only screen and (min-width:355px) and (max-width:700px){
+@media only screen and (min-width:355px) and (max-width:450px){
+    .MIT {
+        width:50%;
+        display: block;
+        margin: 0 auto;
+        border-radius:50%;
+        vertical-align:middle;
+    }
+}
+
+@media only screen and (min-width:451px) and (max-width:700px){
     .MIT {
         width:40%;
         display: block;
@@ -224,7 +242,7 @@ p {
     }
     
     .MIT:hover {
-        box-shadow: 4px 3px 5px #75B982;
+        box-shadow: 4px 3px 5px #1D5E93;
     }
 }
 
@@ -242,23 +260,37 @@ p {
     .MIT:hover {
         -webkit-transform: rotate(15deg);
         transform: rotate(15deg);
-        box-shadow: 4px 3px 5px #75B982;
+        box-shadow: 4px 3px 5px #1D5E93;
     }     
 }
 
-
-#projects {
-    width:inherit;
-    min-height:80%;
-    margin-left:-8px;
-    margin-right:-8px;
-    padding:4% 15%;
-    background-color:#339FDE;
-    color:#fff;
-    z-index: 1;
-    box-shadow: 0 -12px 0 -6px rgba(51,159,222,.6),0 -24px 0 -12px rgba(51,159,222,.4),0 -38px 0 -20px rgba(51,159,222,.2);
+@media only screen and (max-width:990px) {
+    #projects {
+        width:inherit;
+        min-height:100%;
+        margin-left:-8px;
+        margin-right:-8px;
+        padding:7%;
+        background-color:#339FDE;
+        color:#fff;
+        z-index: 1;
+        box-shadow: 0 -12px 0 -6px rgba(51,159,222,.6),0 -24px 0 -12px rgba(51,159,222,.4),0 -38px 0 -20px rgba(51,159,222,.2);
+    }
 }
 
+@media only screen and (min-width:991px) {
+    #projects {
+        width:inherit;
+        min-height:100%;
+        margin-left:-8px;
+        margin-right:-8px;
+        padding:4% 24%;
+        background-color:#339FDE;
+        color:#fff;
+        z-index: 1;
+        box-shadow: 0 -12px 0 -6px rgba(51,159,222,.6),0 -24px 0 -12px rgba(51,159,222,.4),0 -38px 0 -20px rgba(51,159,222,.2);
+    }
+}
 
 #contact {
     width:inherit;
@@ -281,10 +313,55 @@ p {
 }
 
 #bottom-content {
+    font-family:'Raleway', sans-serif;
     width:inherit;
     height:inherit;
     padding:0.5em;
     float:right;
     font-size:18px;
     color:#fff;
+}
+
+.adjecting {
+    display: inline-block;
+    position: relative;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin:50%;
+}
+
+.adjecting .front-face, .adjecting .back-face {
+  display: inline-block;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.adjecting .front-face {
+  position: absolute;
+}
+
+.adjecting .back-face {
+  position: relative;
+}
+
+@media only screen and (max-width:990px) {
+    .contain {
+        width:0%;
+        height:0%;
+        display:none;
+    }
+}
+
+@media only screen and (min-width:991px) {
+    .contain {
+        width:inherit;
+        border-top: 3px solid #fff200;
+        border-bottom: 3px solid #fff200;
+    }
 }
