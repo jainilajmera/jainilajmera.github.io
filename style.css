@@ -19,6 +19,7 @@ h1 {
 }
 
 h2 {
+    font-family:'Raleway', sans-serif;
     font-size:28px;
     line-height:120%;
 }
@@ -55,7 +56,7 @@ p {
 
 @media only screen and (max-width:410px) {
     .small-icon { 
-        padding-top:8%;
+        margin-top:8%;
         width:10%;
         padding-left:2.25em;
     }
@@ -63,7 +64,7 @@ p {
 
 @media only screen and (min-width:411px) and (max-width:650px) {
     .small-icon {
-        padding-top:8%;
+        margin-top:8%;
         width:8%;
         padding-left:2.25em;
     }
@@ -71,7 +72,7 @@ p {
 
 @media only screen and (min-width:651px) and (max-width:850px) {
     .small-icon {
-        padding-top:8%;
+        margin-top:8%;
         width:6%;
         padding-left:2.25em;
     }
@@ -79,7 +80,7 @@ p {
 
 @media only screen and (min-width:851px) and (max-width:990px) {
     .small-icon {
-        padding-top:8%;
+        margin-top:8%;
         width:5%;
         padding-left:2.25em;
     }
@@ -87,7 +88,7 @@ p {
     
 @media only screen and (min-width:991px) {
     .small-icon {
-        padding-top:8%;
+        margin-top:8%;
         width:4%;
         padding-left:2.25em;
         -webkit-transition: -webkit-transform .6s ease-in-out;
@@ -119,6 +120,14 @@ p {
 .projects-box {
     width:inherit;
     height:33%;
+}
+
+.projects-content {
+    margin-top:2%;
+    padding:2%;
+    border-bottom:2px solid #fff200;
+    border-left:2px solid #fff200;
+    font-family:'Raleway', sans-serif;
 }
 
 #header {
