@@ -120,14 +120,26 @@ p {
 .projects-box {
     width:inherit;
     height:33%;
+    font-family:'Raleway', sans-serif;
+    color:#fff;
+    text-align:center;
 }
 
 .projects-content {
-    margin-top:2%;
-    padding:2%;
-    border-bottom:2px solid #fff200;
+    line-height:125%;
+    width:40%;
+    display: block;
+    margin: 0 auto;
     border-left:2px solid #fff200;
-    font-family:'Raleway', sans-serif;
+    border-right:2px solid #fff200;
+}
+
+.projects-image {
+    width:100%;
+    display: block;
+    margin: 0 auto;
+    border-top:2px solid #fff200;
+    border-bottom:8px solid #fff200;
 }
 
 #header {
@@ -210,7 +222,7 @@ p {
 #separator {
     width:100%;
 }
-
+ 
 @media only screen and (max-width:354px) {
     .MIT {
         width:60%;
@@ -364,6 +376,7 @@ p {
         width:0%;
         height:0%;
         display:none;
+        margin-bottom:5%;
     }
 }
 
@@ -372,5 +385,6 @@ p {
         width:inherit;
         border-top: 3px solid #fff200;
         border-bottom: 3px solid #fff200;
+        margin-bottom:5%;
     }
 }
