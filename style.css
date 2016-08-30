@@ -30,6 +30,14 @@ h3 {
     line-height:140%;
 }
 
+h4 {
+    border-left:2px solid #242C4C;
+}
+
+h5 {
+    text-align:left;
+}
+
 p {
     text-shadow:none;
     font-size:15px;
@@ -101,7 +109,6 @@ p {
     } 
 }
 
-
 .quote {
     font-family:'Raleway', sans-serif;
     width:90%;
@@ -119,27 +126,44 @@ p {
 
 .projects-box {
     width:inherit;
-    height:33%;
+    min-height:100%;
     font-family:'Raleway', sans-serif;
     color:#fff;
-    text-align:center;
+    padding-bottom:12%;
 }
 
 .projects-content {
+    float:left;
     line-height:125%;
-    width:40%;
-    display: block;
-    margin: 0 auto;
-    border-left:2px solid #fff200;
-    border-right:2px solid #fff200;
+    width:45%;
+    padding-right:5%;
+    text-align:center;
 }
 
-.projects-image {
-    width:100%;
-    display: block;
-    margin: 0 auto;
-    border-top:2px solid #fff200;
-    border-bottom:8px solid #fff200;
+@media only screen and (max-width:560px) {
+    .projects-image {
+        border-radius:50%;
+        height:30vw;
+        display:block;
+        margin:0 auto;
+        border-top:2px solid #fff200;
+        border-bottom:8px solid #fff200;
+    }
+}
+
+@media only screen and (min-width:561px) {
+    .projects-image {
+        border-radius:50%;
+        height:24vw;
+        display:block;
+        margin:0 auto;
+        border-top:2px solid #fff200;
+        border-bottom:8px solid #fff200;
+    }
+}
+
+.projects-title {
+    border-left:4px solid #242C4C;
 }
 
 #header {
@@ -180,12 +204,15 @@ p {
     }  
 }
 
-#home {
+.container {
     width:inherit;
-    min-height:70%;
     margin-left:-8px;
     margin-right:-8px;
+}
+
+#home {
     padding:12% 4%;
+    min-height:70%;
     background-image:url(Gradient.jpg);
     color:#fff;
     text-align:center;
@@ -193,11 +220,8 @@ p {
 
 @media only screen and (max-width:990px) {
     #about {
-        width:inherit;
-        min-height:100%;
-        margin-left:-8px;
-        margin-right:-8px;
         padding:7%;
+        min-height:100%;
         background-color:#fff;
         color:#1D5E93;
         z-index: 1;
@@ -207,11 +231,8 @@ p {
 
 @media only screen and (min-width:991px) {
     #about {
-        width:inherit;
-        min-height:100%;
-        margin-left:-8px;
-        margin-right:-8px;
         padding:4% 24%;
+        min-height:100%;
         background-color:#fff;
         color:#1D5E93;
         z-index: 1;
@@ -285,13 +306,24 @@ p {
     }     
 }
 
-@media only screen and (max-width:990px) {
+@media only screen and (max-width:560px) {
     #projects {
-        width:inherit;
+        padding-left:4%;
+        padding-right:4%;
+        padding-top:4%;
+        padding-bottom:50%;
         min-height:100%;
-        margin-left:-8px;
-        margin-right:-8px;
+        background-color:#339FDE;
+        color:#fff;
+        z-index: 1;
+        box-shadow: 0 -12px 0 -6px rgba(51,159,222,.6),0 -24px 0 -12px rgba(51,159,222,.4),0 -38px 0 -20px rgba(51,159,222,.2);
+    }
+}
+
+@media only screen and (min-width:561px) and (max-width:990px) {
+    #projects {
         padding:7%;
+        min-height:100%;
         background-color:#339FDE;
         color:#fff;
         z-index: 1;
@@ -301,11 +333,8 @@ p {
 
 @media only screen and (min-width:991px) {
     #projects {
-        width:inherit;
+        padding:12%;
         min-height:100%;
-        margin-left:-8px;
-        margin-right:-8px;
-        padding:4% 24%;
         background-color:#339FDE;
         color:#fff;
         z-index: 1;
@@ -314,11 +343,8 @@ p {
 }
 
 #contact {
-    width:inherit;
-    min-height:80%;
-    margin-left:-8px;
-    margin-right:-8px;
     padding:4% 15%;
+    height:100%;
     background-color:#08A48C;
     color:#fff;
     z-index: 1;
