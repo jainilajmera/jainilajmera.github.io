@@ -333,7 +333,10 @@ p {
 
 @media only screen and (min-width:991px) {
     #projects {
-        padding:12%;
+        padding-top:4%;
+        padding-left:12%;
+        padding-right:12%;
+        padding-bottom:12%;
         min-height:100%;
         background-color:#339FDE;
         color:#fff;
