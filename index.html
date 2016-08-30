@@ -1,15 +1,14 @@
 <html>
     <head>
-        <title>Jainil Ajmera</title>
-        <meta name="google-site-verification" content="w8MBKl0eMhyW3zoj0Hav2RTa5irliDZlZgqH1YrpBr8" />
+        <title> Jainil Ajmera </title>
         <link rel="icon" type="image/png" href="code.png">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css" type="text/css">
-        <link href='http://fonts.googleapis.com/css?family=Ruluko' rel='stylesheet' type='text/css' />
-        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-        <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Ruluko' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+        <script type="text/javascript" src="jquery.js"></script>
         <script type="text/javascript" src="adjector.js"></script>
-        
         <script type="text/javascript">
             $(document).ready(function(){
                 $(".contain .adject").adjector({
@@ -22,89 +21,89 @@
         </script>
     </head>
     <body>
-        <div id="header">
-            <div class="header-content"><a href="#contact">CONTACT</a></div>
-            <div class="header-content"><a href="#projects">PROJECTS</a></div>
-            <div class="header-content"><a href="#about">ABOUT ME</a></div>
-            <div class="header-content"><a href="#home">HOME</a></div>
-        <!-- Order reversed -->
-        </div>
-        <div class="container" id="home">
-            <h1 class="title">Hi there!</h1>
-            <h2 class="emphasis">system.out.print("I'm Jainil Ajmera");</h2>
-            <a href="https://www.youtube.com/channel/UCSbW1Ts0j8f6GshW3eYZ-mQ" title="Youtube"><img src="Youtube.png" class="small-icon"></a>
-            <a href="http://www.jainilprakhar.weebly.com" title="Alternate website"><img src="Website.png" class="small-icon"></a>
-            <a href="https://github.com/jainilajmera" title="Github"><img src="Github.png" class="small-icon"></a>
-            <a href="mailto:jainov11@gmail.com" title="Mail"><img src="Email-icon.png" class="small-icon"></a>
-        </div>
-        <div class="container" id="about">
-            <h1 class="title">ABOUT ME</h1>
-            <div id="separator">
-                <div class="image-div">
-                    <img class="MIT" src="MIT.jpg">
-                </div>
-                <div class="quote">
-                    <h2><em>"Live as if you were to die tomorrow; learn as if you were to live forever."</em><br><p>-Mahatma Gandhi</p></h2>
-                </div>
-            </div>
-            <h2>A glimpse of my life...</h2>
-            <h3>Hi there! My name is Jainil Ajmera, although most of my friends call me 'Jaynius'. I am 14 years old, and I currently study at Delhi Public School, Gurgaon. I was born on November 21, 2001 in Andheri, a bustling suburb of Mumbai. I enjoy tackling challenging problems (especially the nerve-wracking ones that keep me thinking for a while), tinkering with robots and programming. In addition, I try to find time to support some of my other hobbies, which include web development, filmmaking, 3D modelling and playing the guitar.</h3>
-            <h3>I have several awards (both national and international) to my credit. Some of the more prestigious of these include being ranked 18th internationally in the National Cyber Olympiad (which is now conducted in several countries across Asia) and being a part of a First Tech Challenge (FTC) team that bagged numerous awards, such as the Inspire Award and PTC Design Award, at several regional events.</h3>
-            <h3>Being a member of the Metal Marauders, a private FTC team based in New Jersey, remains one of my most cherished experiences. By exposing me to the various aspects of robotics, FTC helped deepen my passion for the STEM field and turned me into a better problem-solver and innovator. In addition, the program helped me learn how to communicate my ideas better by providing me with the opportunity to present to businesses and become involved with the community. I owe a lot to the other, more experienced members of the team, who shared their knowledge with me and supported me throughout the season.</h3>
-            <h3>I continue to build on these experiences and am currently part of a World Robot Olympiad (WRO) team. I aspire to work at NASA and design space probes that will help enhance our understanding of the universe.</h3>
-            <div class="quote">
-                 <h2><em>"The best way to predict your future is to create it."</em><br><p>-Abraham Lincoln</p></h2>
-            </div>
-            <script>
-    </script>
-            <div class="image-div">
-                <img src="MIT-2.jpeg" class="MIT">
-            </div>
-        </div>
+        <ul class="navigation">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
         
-        <div class="container" id="projects">
-            <h1 class="title">PROJECTS</h1>
-            <div class="projects-box">
+        <div class="flex-container">
+            <a name="home"></a>
+            <div class="home"><a name="home"></a>
+                <h1> Hi there! </h1><br>
+                    <h2>system.out.print("I'm Jainil Ajmera");</h2><br>
+                <img src="MIT.jpg" class="rounded-image">
+            </div>
+            <a name="about"></a>
+            <div class="about"><div id="con-pro">
+                <h1> ABOUT ME </h1>
                 <div class="contain">
-                    <h1>
+                    <h1 class="flipper">
                          <span class="adject">I'm</span> 
                          <span class="adject">''JAYNIUS'',ROBOTICIST,INNOVATOR,THINKER,DEVELOPER,FILMMAKER,GUITARIST</span>
                     </h1>
                 </div>
-                <div class="projects-content">
-                    <img src="FTC.jpg" class="projects-image">
-                    <h2 class="projects-title">FIRST Tech Challenge</h2>
-                    <h5>FIRST Tech Challenge is a robotics competition designed for students in grades 7-12. Teams are responsible for designing, building, and programming their robots in a 10-week build period to compete in an alliance format against other teams. Teams are also required to make an 'Engineering Notebook' that documents their build season and experience.</h5>
-                    <h5>Res-Q, the 2015-16 edition of the First Tech Challenge, challenged students to design and build robots capable of climbing ramps, depositing debris in designated areas and hanging, among other tasks.</h5>
-                    <h5 class="awards">Awards:
-                        <ul>
-                            <li>PTC Design Award: New Jersey State Championships</li>
-                            <li>Finalist Alliance, 2nd pick: Vermont State Championships</li>
-                            <li>Inspire Award: Hudson Valley Qualifiers</li>
-                        </ul> 
-                    </h5>
-                </div>
-                <div></div>
-                <div class="projects-content">
-                    <img src="Awards_Edited.jpg" class="projects-image">
-                    <h2 class="projects-title">World Robot Olympiad</h2>
-                    <h5>World Robot Olympiad (WRO) is a robotics competition that brings together students from all over the globe to develop their creativity, design and problem-solving skills.</h5>
-                    <h5>This year's challenge revolves around a particularly relevant theme, waste management. Robots must select four pieces of sorted recyclable waste (our of 8 pieces) based on a specific algorithm. These pieces of waste must then be deposited in their respective waste deposition areas. Finally, the robot must return to the start area.</h5>
-                    <h5 class="awards">Awards:
-                        <ul>
-                            <li>Advanced to National Championships (ongoing season)</li>
-                        </ul> 
-                    </h5>
+                <h5>Hi there! My name is Jainil Ajmera, although most of my friends call me 'Jaynius'. I am 14 years old, and I currently study at Delhi Public School, Gurgaon. I was born on November 21, 2001 in Andheri, a bustling suburb of Mumbai. I enjoy tackling challenging problems (especially the nerve-wracking ones that keep me thinking for a while) and have a diverse array of interests, including robotics engineering, programming, web development, filmmaking and playing the guitar.</h5>
+                <h5>I have several awards (both national and international) to my credit. Some of the more prestigious of these include being ranked 18th internationally in the National Cyber Olympiad (which is now conducted in several countries across Asia) and being a part of a First Tech Challenge (FTC) team that bagged numerous awards, such as the Inspire Award and PTC Design Award, at several regional events.</h5>
+                <h5>Being a member of the Metal Marauders, a private FTC team based in New Jersey, remains one of my most cherished experiences. By exposing me to the various aspects of robotics, FTC helped deepen my passion for the STEM field and turned me into a better problem-solver and innovator. In addition, the program helped me learn how to communicate my ideas better by providing me with the opportunity to present to businesses and become involved with the community. I owe a lot to the other, more experienced members of the team, who shared their knowledge with me and supported me throughout the season.</h5>
+                <h5>I continue to build on these experiences and am currently participating in the World Robot Olympiad as a member of team High Voltage. Our team has already qualified for the national championships, which will be held in Kolkata.</h5>
+                <img src="Regionals.jpeg" class="rounded-image">
+                <h3 class="quote"><em>"Live as if you were to die tomorrow, learn as if you were to live forever."</em><br>~Mahatma Gandhi</h3>
                 </div>
             </div>
-        </div>
-        
-        <div class="container" id="contact">
-        <h1 style="text-align:center">Stay tuned for more updates!</h1>
-        </div>
-        
-        <div id="bottom-bar">
-            <div id="bottom-content">&copy; Jainil Ajmera, 2016</div>
+            <a name="projects"></a>
+            <div class="projects"><h1> PROJECTS </h1><br>
+               <div class="container">
+                   <div class="projects-box">
+                       <h2 class="projects-title">FTC 2015-16</h2>
+                       <img src="FTC.jpg" class="image">
+                        <h5>FIRST Tech Challenge is a robotics competition designed for students in grades 7-12. Teams are responsible for designing, building, and programming their robots in a 10-week build period to compete in an alliance format against other teams. Teams are also required to make an 'Engineering Notebook' that documents their build season and experience.</h5>
+                        <h5>Res-Q, the 2015-16 edition of the First Tech Challenge, challenged students to design and build robots capable of climbing ramps, depositing debris in designated areas and hanging, among other tasks.</h5>
+                       <h5>Awards:
+                           <ul>
+                               <li>Inspire Award: Hudson Valley Qualifiers</li>
+                               <li>PTC Design Award: New Jersey State Championships</li>
+                               <li>Control Award: New York State Championships</li>
+                               <li>Finalist Alliance, 2nd pick: Vermont State Championships</li>
+                           </ul>
+                       </h5>
+                       
+                   </div>
+                   <div class="projects-box">
+                       <h2 class="projects-title">WRO 2016-17</h2>
+                       <img src="Awards_Edited.jpg" class="image">
+                        <h5>World Robot Olympiad (WRO) is a robotics competition that brings together students from all over the globe to develop their creativity, design and problem-solving skills.</h5>
+                        <h5>This year's challenge revolves around a particularly relevant theme, waste management. Robots must select four pieces of sorted recyclable waste (our of 8 pieces) based on a specific algorithm. These pieces of waste must then be deposited in their respective waste deposition areas. Finally, the robot must return to the start area.</h5>
+                       <h5>Awards:
+                           <ul>
+                               <li>Regional Championships Champions
+                           </ul>
+                       </h5>
+                   </div>
+               </div>
+            </div>
+            
+            <a name="contact"></a>
+            <div class="contact">
+                <div id="con-pro"><h1> CONTACT ME : &nbsp;</h1>
+                <a href="https://bit.ly/jainilyoutube" title="Youtube" target="_blank">
+                    <img src="youtube.png" class="small-icon">
+                </a>
+                <a href="https://in.linkedin.com/in/jainil-ajmera-108375ba" title="LinkedIn" target="_blank">
+                    <img src="Linkedin.png" class="linkedin">
+                </a>
+                <a href="https://github.com/jainilajmera" title="Github" target="_blank">
+                    <img src="github.png" class="small-icon">
+                </a>
+                <a href="mailto:jainov11@gmail.com" title="Mail">
+                    <img src="mail.ico" class="small-icon">
+                </a>
+                <br><br>Feel free to drop a mail anytime. I would recommend staying away from other forms of communication, such as carrier pigeons and psychic signals, as they seem to be less reliable.
+            </div>
+            </div>
+            <div class="footer">&copy; Jainil Ajmera, 2016</div>
         </div>
     </body>
 </html>
+
