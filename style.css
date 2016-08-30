@@ -126,9 +126,9 @@ p {
 }
 
 .projects-box {
-    width:inherit;
     min-height:100%;
-    font-family:'Raleway', sans-serif;
+    width:inherit;
+    font-family: 'Raleway', sans-serif;
     color:#fff;
     padding-bottom:12%;
 }
