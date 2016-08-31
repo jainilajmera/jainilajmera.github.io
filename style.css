@@ -1,6 +1,6 @@
 :root{
     --main-color: #242C4C;
-    --second-color:#339FDE;
+    --second-color: #000;
 }
 
 @keyframes navigation {
@@ -64,7 +64,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #000;
+    background-color: #242C4C;
     background-color: var(--main-color);
     border-left: 1px solid #fff;
     -webkit-border-radius: 10px;
@@ -73,8 +73,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb:active {
-    background-color: #339FDE;
-    background-color: var(--second-color);    
+    background-color: #000;  
 }
 
 a {
@@ -143,14 +142,27 @@ a {
     height:9%; 
 }
 
-.container {
-    width:inherit;
-    display:flex;
-    flex-flow:row;
-    justify-content:space-around;
+@media screen and (max-width:650px) {
+    .container {
+        width:inherit;
+        display:flex;
+        flex-flow:row wrap;
+        justify-content:space-around;
+    } 
 }
 
+@media screen and (min-width:651px) {
+    .container {
+        width:inherit;
+        display:flex;
+        flex-flow:row;
+        justify-content:space-around;
+    }
+}
+
+
 .quote {
+    font-family:Lato;
     line-height:150%;
     border-left: 8px solid #75B982;
     border-right: 8px solid #75B982;
@@ -159,7 +171,7 @@ a {
 
 .projects-box {
     flex-grow:1;
-    margin-left:5%;
+    margin-right:2%;
 }
 
 .projects-title {
@@ -213,18 +225,24 @@ a {
     }
 }
 
-.rounded-image:hover {
-    -webkit-transform: rotate(20deg);
+@media screen and (min-width:651px) {
+    .rounded-image:hover {
+        -webkit-transform:rotate(20deg);
+    }
+    
+    .small-icon:hover {
+    -webkit-transform: scale(1.3,1.3);
+    transform: scale(1.3,1.3);
+    } 
+   
 }
 
-@media screen and (max-width:930px) {
-    
 .home {
     animation-name: navigation;
     animation-duration: 16s;
     animation-iteration-count: infinite;
     color:white;
-    padding: 2em 4em 4em 2em;
+    padding: 2em 8vw 4em 8vw;
     width: 100%;
     margin-top: 0;
     text-align: left;
@@ -234,7 +252,7 @@ a {
 .about {
     background-color:#fff;
     color:black;
-    padding: 2em 2em 4em 2em;
+    padding: 2em 8vw 4em 8vw;
     width: 100%;
     text-align: left;
     font-family: Ruluko;
@@ -246,7 +264,7 @@ a {
     animation-duration: 16s;
     animation-iteration-count: infinite;
     color:white;
-    padding: 2em 2em 4em 2em;
+    padding: 2em 8vw 4em 8vw;
     width: 100%;
     text-align: left;
     font-family: Ruluko;
@@ -254,58 +272,11 @@ a {
 
 .contact {
     background-color:#fff;
-    padding: 2em 2em 2em 2em;
+    padding: 2em 8vw 4em 8vw;
     width: 100%;
     text-align: center;
     font-family: Ruluko;
     box-shadow: 0 -10px 0 -5px rgba(255,255,255,.4),0 -20px 0 -10px rgba(255,255,255,.2);
-}
-}
-
-@media screen and (min-width:931px) {
-
-    
-.home {
-    animation-name: navigation;
-    animation-duration: 16s;
-    animation-iteration-count: infinite;
-    color:white;
-    padding: 4em 10em 6em 10em;
-    width: 100%;
-    margin-top: 0;
-    text-align: left;
-    font-family: Ruluko;
-}
-
-.about {
-    background-color:#fff;
-    color:black;
-    padding: 4em 10em 6em 10em;
-    width: 100%;
-    text-align: left;
-    font-family: Ruluko;
-    box-shadow: 0 -10px 0 -5px rgba(255,255,255,.4),0 -20px 0 -10px rgba(255,255,255,.2);
-}
-
-.projects {
-    animation-name: navigation;
-    animation-duration: 16s;
-    animation-iteration-count: infinite;
-    color:white;
-    padding: 4em 10em 6em 10em;
-    width: 100%;
-    text-align: left;
-    font-family: Ruluko;
-}
-
-.contact {
-    background-color:#fff;
-    padding: 3.5em 17em 4em 17em;
-    width: 100%;
-    text-align: center;
-    font-family: Ruluko;
-    box-shadow: 0 -10px 0 -5px rgba(255,255,255,.4),0 -20px 0 -10px rgba(255,255,255,.2);
-}
 }
 
 .footer {
@@ -313,15 +284,15 @@ a {
     text-align: right;
     font-size:18px;
     color:#eee;
-    background-color: #000;
+    background-color: #242C4C;
     background-color:var(--main-color);
     font-family: Lato;
     width:100%;
     height:37%;
 }
 
-@media screen and (min-width:1px) and (max-width:500px) {  
-    .small-icon, .linkedin {
+@media screen and (max-width:500px) {  
+    .small-icon {
         width:13%;
         padding:0 0.5em 0 0.5em;
         -webkit-transition: -webkit-transform .1s ease-in-out;
@@ -330,7 +301,7 @@ a {
 }
 
 @media screen and (min-width:501px) and (max-width:800px) {  
-    .small-icon, .linkedin {
+    .small-icon {
         width:11%;
         padding:0 0.5em 0 0.5em;
         -webkit-transition: -webkit-transform .1s ease-in-out;
@@ -339,7 +310,7 @@ a {
 }
 
 @media screen and (min-width:801px) and (max-width:1100px) {  
-    .small-icon, .linkedin {
+    .small-icon {
         width:10%;
         padding:0 0.5em 0 0.5em;
         -webkit-transition: -webkit-transform .1s ease-in-out;
@@ -348,29 +319,14 @@ a {
 }
 
 @media screen and (min-width:1101px) {
-        .small-icon, .linkedin {
+        .small-icon {
         width:9%;
         padding:0 0.5em 0 0.5em;
         -webkit-transition: -webkit-transform .1s ease-in-out;
         transition: transform .5s ease-in-out
     }  
 }
-    
-.small-icon:hover {
-    -webkit-transform: scale(1.3,1.3);
-    transform: scale(1.3,1.3);
-} 
-    
-.linkedin:hover {
-    -webkit-transform: scale(1.7,1.7);
-    transform: scale(1.7,1.7);
-}   
-
-.linkedin {
-    -webkit-transform: scale(1.3,1.3);
-    transform: scale(1.3,1.3);
-}
-
+     
 .adjecting {
     display: inline-block;
     position: relative;
@@ -417,7 +373,7 @@ a {
 }
 
 #con-pro {
-    color: #000;
+    color: #2F2C4C;
     color: var(--main-color);
 }
 
