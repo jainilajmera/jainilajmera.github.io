@@ -8,9 +8,7 @@
         <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
     </head>
     
-    <body onload="myFunction()" style="margin:0;">
-        <div id="loader"></div>
-        <div id="myDiv" style="display:none;" class="animate-bottom">
+    <body>
             <ul class="navigation">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
@@ -47,8 +45,7 @@
                    <div class="container">
                        <div class="projects-box">
                            <h2 class="projects-title">FTC 2015-16</h2>
-                           <img src="FTC.jpg" class="image" alt="polaroid">
-                           <span class="show-text">
+                           <img src="FTC.jpg" class="image">
                                <h5>FIRST Tech Challenge is a robotics competition designed for students in grades 7-12. Teams are responsible for designing, building, and programming their robots in a 10-week build period to compete in an alliance format against other teams. Teams are also required to make an 'Engineering Notebook' that documents their build season and experience.</h5>
                                 <h5>Res-Q, the 2015-16 edition of the First Tech Challenge, challenged students to design and build robots capable of climbing ramps, depositing debris in designated areas and hanging, among other tasks. As a result, robots had to be robust and compact, while also being mechanically efficient.</h5>
                                <h5><strong>Role: </strong>Building</h5>
@@ -60,13 +57,11 @@
                                        <li>Finalist Alliance, 2nd pick: Vermont State Championships</li>
                                    </ul>
                                </h5>  
-                           </span>
                        </div>
 
                        <div class="projects-box">
                            <h2 class="projects-title">WRO 2016-17</h2>
                            <img src="WRO.jpg" class="image">
-                           <span class="show-text">
                                <h5>World Robot Olympiad (WRO) is a robotics competition that brings together students from all over the globe to develop their creativity, design and problem-solving skills.</h5>
                                <h5>This year's challenge revolves around a particularly relevant theme, waste management. Robots must autonomously navigate a field, select four pieces of recyclable waste (out of 8) based on a specific algorithm, and deposit these blocks in designated areas.</h5>
                                <h5>The challenge requires students to find out the right combination of speed and accuracy for optimal perfomance.</h5>
@@ -76,7 +71,6 @@
                                        <li>Regional Championships: Champions
                                    </ul>
                                </h5>
-                            </span>   
                        </div>
                    </div>
                 </div>
@@ -101,19 +95,7 @@
                 </div>
                 <div class="footer">&copy; Jainil Ajmera, 2016</div>
             </div>
-        </div>
-        <script>
-            var myVar;
-
-            function myFunction() {
-                myVar = setTimeout(showPage, 3000);
-            }
-
-            function showPage() {
-              document.getElementById("loader").style.display = "none";
-              document.getElementById("myDiv").style.display = "block";
-            }
-        </script>
+        
         <script type="text/javascript" src="jquery.js"></script>
         <script type="text/javascript" src="adjector.js"></script>
         <script type="text/javascript">
@@ -125,10 +107,18 @@
                     arm: -150
                 });
             });
-        </script>
+        </script> 
         <script>
-            window.onresize = function(){ location.reload(); }
-        </script>       
+            $(document).scroll(function() {
+                var y = $(this).scrollTop();
+                if (y > 1200) {
+                    $('.projects-box').fadeIn(1500);
+                } 
+                else {
+                    $('.projects-box').fadeOut(1500);
+                }
+            });
+        </script>
     </body>
 </html>
 
