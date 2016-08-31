@@ -350,7 +350,7 @@ a {
 @media screen and (max-width:500px) {  
     .small-icon {
         width:13%;
-        padding:0 16px 0 16px;
+        padding:0 16px 10px 16px;
         -webkit-transition: -webkit-transform .1s ease-in-out;
         transition: transform .5s ease-in-out
     }
@@ -359,7 +359,7 @@ a {
 @media screen and (min-width:501px) and (max-width:800px) {  
     .small-icon {
         width:11%;
-        padding:0 20px 0 20px;
+        padding:0 20px 10px 20px;
         -webkit-transition: -webkit-transform .1s ease-in-out;
         transition: transform .5s ease-in-out
     }
@@ -368,7 +368,7 @@ a {
 @media screen and (min-width:801px) and (max-width:1050px) {  
     .small-icon {
         width:9%;
-        padding:0 22px 0 22px;
+        padding:0 22px 10px 22px;
         -webkit-transition: -webkit-transform .1s ease-in-out;
         transition: transform .5s ease-in-out
     }
@@ -377,7 +377,7 @@ a {
 @media screen and (min-width:1051px) {
         .small-icon {
         width:8%;
-        padding:0 22px 0 22px;
+        padding:0 22px 10px 22px;
         -webkit-transition: -webkit-transform .1s ease-in-out;
         transition: transform .5s ease-in-out
     }  
