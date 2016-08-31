@@ -131,7 +131,6 @@ a {
     }
 }
 
-
 .quote {
     font-family:Lato;
     line-height:150%;
@@ -143,6 +142,7 @@ a {
 .projects-box {
     flex-grow:1;
     margin-right:5vw;
+    display:none;
 }
 
 .projects-title {
