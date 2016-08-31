@@ -70,7 +70,7 @@ body {
 
 h1 {
     padding-bottom:1%;
-    font-family: Raleway;
+    font-family:Raleway;
     font-size:48px;
     text-align: center;
     border-left:2px solid #242C4C;
@@ -79,14 +79,14 @@ h1 {
 
 .flipper {
     padding-bottom:1%;
-    font-family: Raleway;
+    font-family:Raleway;
     font-size:48px;
     text-align: center;
     border:none;
 }
 
 h2 {
-    font-family:Lato;
+    font-family:Raleway;
     font-size:px;
     text-shadow:2px 2px 4px #000;
     text-align: center;
@@ -302,7 +302,7 @@ a {
     width: 100%;
     margin-top: 0;
     text-align: left;
-    font-family: Ruluko;
+    font-family: Lato;
 }
 
 .about {
@@ -311,7 +311,7 @@ a {
     padding: 2em 8vw 4em 8vw;
     width: 100%;
     text-align: left;
-    font-family: Ruluko;
+    font-family: Lato;
     box-shadow: 0 -10px 0 -5px rgba(255,255,255,.4),0 -20px 0 -10px rgba(255,255,255,.2);
 }
 
@@ -323,7 +323,7 @@ a {
     padding: 2em 8vw 4em 8vw;
     width: 100%;
     text-align: left;
-    font-family: Ruluko;
+    font-family: Lato;
 }
 
 .contact {
@@ -331,7 +331,7 @@ a {
     padding: 2em 8vw 4em 8vw;
     width: 100%;
     text-align: center;
-    font-family: Ruluko;
+    font-family: Lato;
     box-shadow: 0 -10px 0 -5px rgba(255,255,255,.4),0 -20px 0 -10px rgba(255,255,255,.2);
 }
 

@@ -4,24 +4,8 @@
         <link rel="icon" type="image/png" href="code.png">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css" type="text/css">
-        <link href='http://fonts.googleapis.com/css?family=Ruluko' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+        <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
-        <script type="text/javascript" src="jquery.js"></script>
-        <script type="text/javascript" src="adjector.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function(){
-                $(".contain .adject").adjector({
-                    sep: ",",
-                    stay: 1200,
-                    trans: 800,
-                    arm: -150
-                });
-            });
-        </script>
-        <script>
-            window.onresize = function(){ location.reload(); }
-        </script>
     </head>
     
     <body onload="myFunction()" style="margin:0;">
@@ -118,20 +102,33 @@
                 <div class="footer">&copy; Jainil Ajmera, 2016</div>
             </div>
         </div>
-        
-<script>
-    var myVar;
+        <script>
+            var myVar;
 
-    function myFunction() {
-        myVar = setTimeout(showPage, 3000);
-    }
+            function myFunction() {
+                myVar = setTimeout(showPage, 3000);
+            }
 
-    function showPage() {
-      document.getElementById("loader").style.display = "none";
-      document.getElementById("myDiv").style.display = "block";
-    }
-</script>
-        
+            function showPage() {
+              document.getElementById("loader").style.display = "none";
+              document.getElementById("myDiv").style.display = "block";
+            }
+        </script>
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="adjector.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".contain .adject").adjector({
+                    sep: ",",
+                    stay: 1200,
+                    trans: 800,
+                    arm: -150
+                });
+            });
+        </script>
+        <script>
+            window.onresize = function(){ location.reload(); }
+        </script>       
     </body>
 </html>
 
