@@ -44,17 +44,17 @@
   to{ bottom: 0; opacity: 1 }
 }
 
-#myDiv {
-  display: none;
-  text-align: center;
-}
-
 @keyframes navigation {
    0%   {background-color: #E74C3C;}
    25%  {background-color: #D4AC0D;}
    50%  {background-color: #2874A6;}
    75%  {background-color: #239B56;}
    100% {background-color: #E74C3C;}
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
 }
 
 body {
@@ -98,18 +98,17 @@ a {
 }
 
 .navigation {
-    background-color: #242C4C;
+    min-height: 8%;
     display:flex;
+    align-items: center;
     list-style: none;
-    text-align: center;
-    z-index: 1;
-    position: fixed; 
-    width: 100%;      
-    margin-top: -8px;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    background-color: #242C4C;
     font-family: Raleway;
-    font-size: 18px;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    margin-top: -8px;
+    margin-left: -8px;
 }
 
 .navigation a {
@@ -119,11 +118,10 @@ a {
     font-weight: bold;
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 560px) {
     .navigation {
         -webkit-flex-flow: row wrap;
         flex-flow: row wrap;
-        padding: 0;
     }
   
     .navigation a { 
@@ -199,7 +197,24 @@ a {
     border-right: 4px solid #242C4C;
 }
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 560px) {
+    .image {
+        border-radius: 10%;
+        display: block;
+        margin: auto;
+        height: 40vw;
+    }
+
+    .rounded-image {
+        display: block;
+        margin: auto;
+        width: 45vw;
+        border-radius: 50%;
+      -webkit-transition: -webkit-transform .4s ease-in-out;
+    }
+}
+
+@media screen and (min-width: 561px) and (max-width: 930px) {
     .image {
         border-radius: 10%;
         display: block;
@@ -261,7 +276,7 @@ a {
 
 .home {
     animation-name: navigation;
-    animation-duration: 16s;
+    animation-duration: 24s;
     animation-iteration-count: infinite;
     color: white;
     padding: 2em 8vw 4em 8vw;
@@ -282,9 +297,10 @@ a {
 }
 
 .projects {
-    animation-name: navigation;
-    animation-duration: 16s;
-    animation-iteration-count: infinite;
+    background: -webkit-linear-gradient(282deg, #50BBE6 0%, #2874A6 31%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(282deg, #50BBE6 0%, #2874A6 31%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(282deg, #50BBE6 0%, #2874A6 31%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(141deg, #50BBE6 0%, #2874A6 31%);
     color: #fff;
     padding: 2em 8vw 4em 8vw;
     width: 100%;
