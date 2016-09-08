@@ -232,7 +232,7 @@ a {
     width: inherit;
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 70em) {
     .display-text { 
         display: none;
     }  
@@ -242,7 +242,7 @@ a {
     }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 71em) {
     .display-text { 
         display: block;
         width: auto;
