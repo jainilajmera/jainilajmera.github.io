@@ -72,14 +72,10 @@ a {
         -webkit-flex-flow: row wrap;
         flex-flow: row wrap;
     }
-  
-    .navigation a { 
-        text-align: center;
-        padding: 10px;
-    }
-    
+
     .navigation li {
-        padding: 10px;
+        padding-top:10px;
+        padding-bottom:10px;
     }
 }
 
@@ -243,7 +239,6 @@ a {
     
     .mobile-display {
         display:block;
-        font-size:22px;
     }
 }
 
