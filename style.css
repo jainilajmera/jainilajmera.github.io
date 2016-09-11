@@ -50,12 +50,12 @@ a {
     display: flex;
     align-items: center;
     list-style: none;
-    background-color: #242C4C;
+    background: rgba(0,0,0,0.8);
     font-family: Raleway;
     text-align: center;
     z-index: 1;
     position: fixed;
-    width: inherit;
+    width: 100vw;
     min-height: 8%;
     margin-top: -8px;
     margin-left: -8px;
@@ -96,7 +96,7 @@ a {
     } 
 }
 
-@media screen and (min-width: 821px) {
+@media screen and (min-width: 1051px) {
     .container {
         width: inherit;
         display: flex;
@@ -129,7 +129,15 @@ a {
 .projects-box {
     flex-grow: 1;
     margin-right: 5vw;
-    display: none;
+    display: block;
+}
+
+@media:screen and (min-width: 1051px) {
+    .projects-box {
+        flex-grow: 1;
+        margin-right: 5vw;
+        display: none;
+    }
 }
 
 .projects-title {
@@ -151,7 +159,6 @@ a {
         margin: auto;
         width: 50vw;
         border-radius: 50%;
-      -webkit-transition: -webkit-transform .4s ease-in-out;
     }
 }
 
@@ -168,7 +175,6 @@ a {
         margin: auto;
         width: 25vw;
         border-radius: 50%;
-      -webkit-transition: -webkit-transform .4s ease-in-out;
     }
 }
 
@@ -185,7 +191,6 @@ a {
         margin: auto;
         width: 25vw;
         border-radius: 50%;
-      -webkit-transition: -webkit-transform .4s ease-in-out;
     }
 }
 
@@ -202,7 +207,6 @@ a {
         margin: auto;
         width: 20vw;
         border-radius: 50%;
-      -webkit-transition: -webkit-transform .4s ease-in-out;
     }
 }
 
@@ -211,7 +215,7 @@ a {
         border-radius: 10%;
         display: block;
         margin: auto;
-        width: 25vw;
+        width: 23vw;
     }
 
     .rounded-image {
@@ -219,7 +223,7 @@ a {
         margin: auto;
         width: 16vw;
         border-radius: 50%;
-      -webkit-transition: -webkit-transform .4s ease-in-out;
+        -webkit-transition: -webkit-transform .4s ease-in-out;
     }
 }
 
