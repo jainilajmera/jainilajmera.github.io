@@ -1,18 +1,18 @@
 @keyframes background {
     0% {
-        background-color: #E74C3C;
-    }
-    25% {
-        background-color: #D4AC0D;
-    }
-    50% {
         background-color: #2874A6;
     }
-    75% {
+    25% {
         background-color: #239B56;
     }
-    100% {
+    50% {
         background-color: #E74C3C;
+    }
+    75% {
+        background-color: #D4AC0D;
+    }
+    100% {
+        background-color: #2874A6;
     }
 }
 
@@ -141,7 +141,7 @@ a {
 
 .home {
     animation-name: background;
-    animation-duration: 24s;
+    animation-duration: 16s;
     animation-iteration-count: infinite;
     color: white;
     padding: 4em 12vw 4em 12vw;
