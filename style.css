@@ -16,6 +16,12 @@
     }
 }
 
+@keyframes blink {
+  to {
+      opacity: .0;
+    }
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -145,16 +151,6 @@ a {
     min-height: 70%;
 }
 
-#before-typed {
-    font-family: Lato;
-    font-size: 42px;
-}
-
-#typed {
-    font-family: Lato;
-    font-size: 42px;
-}
-
 @media screen and (max-width: 800px) {
     .display-text { 
         display: none;
@@ -166,6 +162,10 @@ a {
     }
     
     .typed-box {
+        display: none;
+    }
+    
+    #cursor {
         display: none;
     }
 }
@@ -192,6 +192,12 @@ a {
         border: 2px solid #242C4C;
         padding: 10px;
     }
+
+    #cursor {
+        font-family: Lato;
+        font-size: 42px;
+        animation: blink 1s infinite;
+    }
 }
 
 .about {
@@ -202,6 +208,16 @@ a {
     text-align: left;
     font-family: Lato;
     box-shadow: 0 -10px 0 -5px rgba(255, 255, 255, .4), 0 -20px 0 -10px rgba(255, 255, 255, .2);
+}
+
+#before-typed {
+    font-family: Lato;
+    font-size: 42px;
+}
+
+#typed {
+    font-family: Lato;
+    font-size: 42px;
 }
 
 .projects {
