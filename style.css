@@ -1,6 +1,25 @@
+
 @keyframes blink {
   to {
       opacity: .0;
+    }
+}
+
+@keyframes background {
+    0% {
+        background-color: #E74C3C;
+    }
+    25% {
+        background-color: #D4AC0D;
+    }
+    50% {
+        background-color: #2874A6;
+    }
+    75% {
+        background-color: #239B56;
+    }
+    100% {
+        background-color: #E74C3C;
     }
 }
 
@@ -123,12 +142,25 @@ a {
 
 .home {
     background: #2874A6;
+    animation-name: background;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;    
     color: white;
     padding: 4em 12vw 4em 12vw;
     width: 100%;
     text-align: left;
     font-family: Lato;
     min-height: 70%;
+}
+
+#before-typed {
+    font-family: Lato;
+    font-size: 42px;
+}
+
+#typed {
+    font-family: Lato;
+    font-size: 42px;
 }
 
 @media screen and (max-width: 800px) {
@@ -142,10 +174,6 @@ a {
     }
     
     .typed-box {
-        display: none;
-    }
-    
-    #cursor {
         display: none;
     }
 }
@@ -172,12 +200,6 @@ a {
         border: 2px solid #242C4C;
         padding: 10px;
     }
-
-    #cursor {
-        font-family: Lato;
-        font-size: 42px;
-        animation: blink 1s infinite;
-    }
 }
 
 .about {
@@ -188,16 +210,6 @@ a {
     text-align: left;
     font-family: Lato;
     box-shadow: 0 -10px 0 -5px rgba(255, 255, 255, .4), 0 -20px 0 -10px rgba(255, 255, 255, .2);
-}
-
-#before-typed {
-    font-family: Lato;
-    font-size: 42px;
-}
-
-#typed {
-    font-family: Lato;
-    font-size: 42px;
 }
 
 .projects {
