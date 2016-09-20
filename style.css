@@ -33,13 +33,12 @@ h1 {
     font-family: Raleway;
     font-size: 48px;
     text-align: center;
-    border-left: 2px solid #242C4C;
     border-bottom: 3px solid #242C4C;
 }
 
 h2 {
     font-family: Lato;
-    font-size: 36px;
+    font-size: 32px;
     text-align: center;
 }
 
@@ -108,18 +107,36 @@ a {
     }
 }
 
-.image {
-    border-radius: 10%;
-    display: block;
-    margin: auto;
-    height: 200px;
-} 
+@media screen and (max-width: 500px) {  
+    .image {
+        border-radius: 10%;
+        display: block;
+        margin: auto;
+        height: 150px;
+    } 
 
-.rounded-image {
-    display: block;
-    margin: auto;
-    width: 200px;
-    border-radius: 50%;
+    .rounded-image {
+        display: block;
+        margin: auto;
+        width: 180px;
+        border-radius: 50%;
+    }
+}
+
+@media screen and (min-width: 501px) {  
+    .image {
+        border-radius: 10%;
+        display: block;
+        margin: auto;
+        height: 200px;
+    } 
+
+    .rounded-image {
+        display: block;
+        margin: auto;
+        width: 200px;
+        border-radius: 50%;
+    }
 }
 
 @media screen and (min-width: 1051px) {    
@@ -150,7 +167,6 @@ a {
     width: 100%;
     text-align: left;
     font-family: Lato;
-    min-height: 70%;
 }
 
 #before-typed {
@@ -170,10 +186,13 @@ a {
     
     .mobile-display {
         display: block;
-        font-family: Lato;
     }
     
     .typed-box {
+        display: none;
+    }
+    
+    #cursor {
         display: none;
     }
 }
@@ -182,7 +201,7 @@ a {
     .display-text { 
         display: block;
         width: auto;
-        font-family:'Courier New';
+        font-family: 'Courier New';
         font-size: 28px;
         text-align: center;
         margin-top: 6vw;
@@ -199,6 +218,12 @@ a {
         width: 60%;
         border: 2px solid #242C4C;
         padding: 10px;
+    }
+    
+    #cursor {
+        font-family: Lato;
+        font-size: 42px;
+        animation: blink 1s infinite;
     }
 }
 
@@ -272,8 +297,8 @@ a {
 
 @media all and (max-width: 500px) {
     .small-icon {
-        width: 16%;
-        padding: 0 22px 10px 22px;
+        width: 18%;
+        padding: 0 14px 10px 14px;
         -webkit-transition: -webkit-transform .1s ease-in-out;
         transition: transform .5s ease-in-out
     }
