@@ -88,15 +88,8 @@ a {
         flex-flow: row wrap;
     }
     .navigation li {
-        padding-right: 7px;
         padding-top: 10px;
         padding-bottom: 10px;
-    }
-    
-    .navigation a {
-        padding: 7px;
-        color: white;
-        font-weight: bold;
     }
 }
 
