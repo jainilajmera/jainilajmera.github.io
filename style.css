@@ -71,7 +71,7 @@ a {
     z-index: 1;
     position: fixed;
     min-height: 50px;
-    margin-top: -8px;
+    margin: 0;
 }
 
 .navigation a {
