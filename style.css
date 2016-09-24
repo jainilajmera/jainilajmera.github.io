@@ -62,46 +62,27 @@ a {
 
 .navigation {
     width: 100%;
-    display: flex;
-    align-items: center;
-    list-style: none;
-    background: rgba(0, 0, 0, 0.8);
-    font-family: Raleway;
-    text-align: center;
-    z-index: 1;
+    min-height: 7%;
     position: fixed;
-    min-height: 50px;
-    margin: 0;
+    list-style: none;
+    margin: 0; 
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+    font-family: Raleway;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: flex-start;
 }
 
 .navigation a {
-    padding: 0.8em;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
     color: white;
-    font-weight: bold;
-}
-
-@media all and (max-width: 500px) {
-    .navigation {
-        -webkit-flex-flow: row wrap;
-        flex-flow: row wrap;
-    }
-    .navigation li {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-}
-
-@media screen and (min-width: 1051px) {
-    .navigation a:hover {
-        color: deepskyblue;
-    }
-    .rounded-image:hover {
-        -webkit-transform: rotate(20deg);
-    }
-    .small-icon:hover {
-        -webkit-transform: scale(1.2, 1.2);
-        transform: scale(1.2, 1, 2);
-    }
 }
 
 @media screen and (max-width: 500px) {  
@@ -136,7 +117,18 @@ a {
     }
 }
 
-@media screen and (min-width: 1051px) {    
+@media screen and (min-width: 1051px) { 
+    .navigation a:hover {
+        background: darken(deepskyblue, 2%);
+    }
+    
+    .button:hover{
+        background: #242C4C;
+        box-shadow: 0 4px 1px darken(#000,5%);
+        border-bottom: 2px solid darken(#000,8%);
+        transition: all 0.1s ease-in;
+    }
+    
     .rounded-image {
         display: block;
         margin: auto;
@@ -160,6 +152,7 @@ a {
     animation-duration: 16s;
     animation-iteration-count: infinite;    
     color: white;
+    margin-top: 30px;
     padding: 4em 12vw 4em 12vw;
     width: 100%;
     text-align: left;
@@ -252,18 +245,12 @@ a {
     box-shadow: 0 5px 0px darken(#000,0%);
     border-bottom: 2px solid darken(#000,3%);
 }
-  
-.button:hover{
-    background: #242C4C;
-    box-shadow: 0 4px 1px darken(#000,5%);
-    border-bottom: 2px solid darken(#000,8%);
-    transition: all 0.1s ease-in;
-}
 
 .about {
     background-color: #fff;
     color: #242C4C;
     padding: 2em 8vw 4em 8vw;
+    margin-top: 30px;
     width: 100%;
     text-align: left;
     font-family: Lato;
@@ -283,6 +270,7 @@ a {
     background: linear-gradient(141deg, #50BBE6 0%, #2874A6 31%);
     color: #fff;
     padding: 2em 8vw 4em 8vw;
+    margin-top: 30px;
     width: 100%;
     text-align: left;
     font-family: Lato;
@@ -322,6 +310,7 @@ a {
     background-color: #fff;
     color: #242C4C;
     padding: 2em 8vw 4em 8vw;
+    margin-top: 30px;
     width: 100%;
     text-align: center;
     font-family: Lato;
