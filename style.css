@@ -66,7 +66,7 @@ a {
     position: fixed;
     list-style: none;
     margin: 0; 
-    background: rgba(0,0,0,0.8);
+    background: #000;
     color: #fff;
     font-family: Raleway;
     display: -webkit-box;
@@ -152,8 +152,8 @@ a {
     animation-duration: 16s;
     animation-iteration-count: infinite;    
     color: white;
-    margin-top: 30px;
     padding: 4em 12vw 4em 12vw;
+    margin-top: 25px;
     width: 100%;
     text-align: left;
     font-family: Lato;
@@ -250,7 +250,6 @@ a {
     background-color: #fff;
     color: #242C4C;
     padding: 2em 8vw 4em 8vw;
-    margin-top: 30px;
     width: 100%;
     text-align: left;
     font-family: Lato;
@@ -270,7 +269,6 @@ a {
     background: linear-gradient(141deg, #50BBE6 0%, #2874A6 31%);
     color: #fff;
     padding: 2em 8vw 4em 8vw;
-    margin-top: 30px;
     width: 100%;
     text-align: left;
     font-family: Lato;
@@ -310,7 +308,6 @@ a {
     background-color: #fff;
     color: #242C4C;
     padding: 2em 8vw 4em 8vw;
-    margin-top: 30px;
     width: 100%;
     text-align: center;
     font-family: Lato;
