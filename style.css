@@ -60,31 +60,6 @@ a {
     width: 100%;
 }
 
-.navigation {
-    width: 100%;
-    min-height: 7%;
-    position: fixed;
-    list-style: none;
-    margin: 0; 
-    background: #000;
-    color: #fff;
-    font-family: Raleway;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: row wrap;
-    justify-content: flex-start;
-}
-
-.navigation a {
-    text-decoration: none;
-    display: block;
-    padding: 1em;
-    color: white;
-}
-
 @media screen and (max-width: 500px) {  
     .image {
         border-radius: 10%;
@@ -118,9 +93,6 @@ a {
 }
 
 @media screen and (min-width: 1051px) { 
-    .navigation a:hover {
-        background: darken(deepskyblue, 2%);
-    }
     
     .button:hover{
         background: #242C4C;
@@ -149,11 +121,10 @@ a {
 .home {
     background: #2874A6;
     animation-name: background;
-    animation-duration: 16s;
+    animation-duration: 32s;
     animation-iteration-count: infinite;    
     color: white;
     padding: 4em 12vw 4em 12vw;
-    margin-top: 25px;
     width: 100%;
     text-align: left;
     font-family: Lato;
