@@ -108,8 +108,9 @@ a {
 }
 
 #nav {
+    z-index: 1;
 	width: 100%;
-    min-height: 56px;
+    min-height: 46px;
     display: flex;
     align-items: center;
     position: fixed;
@@ -122,8 +123,7 @@ a {
 #nav ul {
 	list-style: none;
 	width: 800px;
-	margin: 0 auto;
-	padding: 0;
+    float: left;
 }
 
 #nav li {
@@ -369,6 +369,7 @@ a {
     flex-grow: 1;
     margin-right: 5vw;
     display: block;
+    flex-wrap: nowrap;
 }
 
 .projects-title {
@@ -412,4 +413,49 @@ a {
     background-color: #242C4C;
     font-family: Lato;
     width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+    .hovereffect {
+        width: 200px;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        cursor: default;
+        background: -webkit-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
+        background: linear-gradient(45deg, #ff89e9 0%,#05abe0 100%);
+    }
+}
+
+@media screen and (min-width: 501px) {
+    .hovereffect {
+        width: 250px;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        cursor: default;
+        background: -webkit-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
+        background: linear-gradient(45deg, #ff89e9 0%,#05abe0 100%);
+    }
+    
+    .hovereffect:hover img {
+        opacity: 0.6;
+        filter: alpha(opacity=60);
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+}
+
+.hovereffect img {
+    margin: auto;
+    display: block;
+    position: relative;
+    max-width: none;
+    width: calc(100% + 60px);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+    transition: opacity 0.35s, transform 0.45s;
+    -webkit-transform: translate3d(-40px,0,0);
+    transform: translate3d(-40px,0,0);
 }
