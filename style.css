@@ -415,37 +415,24 @@ a {
     width: 100%;
 }
 
-@media screen and (max-width: 500px) {
-    .hovereffect {
-        width: 200px;
-        margin: auto;
-        overflow: hidden;
-        position: relative;
-        text-align: center;
-        cursor: default;
-        background: -webkit-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
-        background: linear-gradient(45deg, #ff89e9 0%,#05abe0 100%);
-    }
-}
-
-@media screen and (min-width: 501px) {
-    .hovereffect {
-        width: 250px;
-        margin: auto;
-        overflow: hidden;
-        position: relative;
-        text-align: center;
-        cursor: default;
-        background: -webkit-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
-        background: linear-gradient(45deg, #ff89e9 0%,#05abe0 100%);
-    }
-    
+@media screen and (min-width: 501px) and (max-width: 1400px) {
     .hovereffect:hover img {
         opacity: 0.6;
         filter: alpha(opacity=60);
         -webkit-transform: translate3d(0,0,0);
         transform: translate3d(0,0,0);
     }
+}
+
+.hovereffect {
+    width: 250px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    background: -webkit-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
+    background: linear-gradient(45deg, #ff89e9 0%,#05abe0 100%);
 }
 
 .hovereffect img {
