@@ -31,57 +31,6 @@ html,body
     overflow-x: hidden; 
 }
 
-#loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-  width: 150px;
-  height: 150px;
-  margin: -75px 0 0 -75px;
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid #242C4C;
-  width: 100px;
-  height: 100px;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
-}
-
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-/* Add animation to "page content" */
-.animate-bottom {
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s
-}
-
-@-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 }
-  to { bottom:0px; opacity:1 }
-}
-
-@keyframes animatebottom {
-  from { bottom:-100px; opacity:0 }
-  to { bottom:0; opacity:1 }
-}
-
-#main {
-  display: none;
-  text-align: center;
-}
-
 h1 {
     padding-bottom: 1%;
     font-family: Raleway;
@@ -341,7 +290,7 @@ a {
 
 @media screen and (max-width: 820px) {
     .container {
-        width: inherit;
+        width: 100%;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
@@ -350,7 +299,7 @@ a {
 
 @media screen and (min-width: 821px) {
     .container {
-        width: inherit;
+        width: 100%;
         display: flex;
         flex-flow: row;
         justify-content: space-around;
@@ -405,51 +354,4 @@ a {
     background-color: #242C4C;
     font-family: Lato;
     width: 100%;
-}
-
-@media screen and (max-width: 500px) {
-    .hovereffect {
-        width: 200px;
-        margin: auto;
-        overflow: hidden;
-        position: relative;
-        text-align: center;
-        cursor: default;
-        background: -webkit-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
-        background: linear-gradient(45deg, #ff89e9 0%,#05abe0 100%);
-    }
-}
-
-@media screen and (min-width: 501px) {
-    .hovereffect {
-        width: 250px;
-        margin: auto;
-        overflow: hidden;
-        position: relative;
-        text-align: center;
-        cursor: default;
-        background: -webkit-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
-        background: linear-gradient(45deg, #ff89e9 0%,#05abe0 100%);
-    }
-}
-
-@media screen and (min-width: 501px) and (max-width: 1400px) {
-    .hovereffect:hover img {
-        opacity: 0.6;
-        filter: alpha(opacity=60);
-        -webkit-transform: translate3d(0,0,0);
-        transform: translate3d(0,0,0);
-    }
-}
-
-.hovereffect img {
-    margin: auto;
-    display: block;
-    position: relative;
-    max-width: none;
-    width: calc(100% + 60px);
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
-    transition: opacity 0.35s, transform 0.45s;
-    -webkit-transform: translate3d(-40px,0,0);
-    transform: translate3d(-40px,0,0);
 }
