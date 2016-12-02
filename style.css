@@ -128,12 +128,45 @@ a:link {
         box-shadow: 0 0.1vw 0.7vw 0 rgba(0, 0, 0, 0.2), 0 0.7vw 2vw 0 rgba(0, 0, 0, 0.19);
     } 
     
+    .media-image {
+        display: block;
+        margin: auto;
+        width: 300px;
+        box-shadow: 0 0.1vw 0.7vw 0 rgba(0, 0, 0, 0.2), 0 0.7vw 2vw 0 rgba(0, 0, 0, 0.19);
+        filter:grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+
+    } 
+    
+    .media-image:hover {
+        display: block;
+        margin: auto;
+        width: 300px;
+        box-shadow: 0 0.1vw 0.7vw 0 rgba(0, 0, 0, 0.2), 0 0.7vw 2vw 0 rgba(0, 0, 0, 0.19);
+        filter:grayscale(0%);
+        -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
+    }
+    
 
     .rounded-image {
         display: block;
         margin: auto;
         width: 180px;
         border-radius: 50%;
+    }
+    
+    .iframe {
+        width: 70vw;
+        height: 36vw;
+        float: none;
+        display: block;
+        margin: inherit 15vw 30vw 15vw;
     }
 }
 
@@ -151,11 +184,45 @@ a:link {
         width: 300px;
         box-shadow: 0 0.1vw 0.7vw 0 rgba(0, 0, 0, 0.2), 0 0.7vw 2vw 0 rgba(0, 0, 0, 0.19);
     } 
+    
+    .media-image {
+        display: block;
+        margin: auto;
+        width: 400px;
+        box-shadow: 0 0.1vw 0.7vw 0 rgba(0, 0, 0, 0.2), 0 0.7vw 2vw 0 rgba(0, 0, 0, 0.19);
+        filter:grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+
+    } 
+    
+    .media-image:hover {
+        display: block;
+        margin: auto;
+        width: 400px;
+        box-shadow: 0 0.1vw 0.7vw 0 rgba(0, 0, 0, 0.2), 0 0.7vw 2vw 0 rgba(0, 0, 0, 0.19);
+        filter:grayscale(0%);
+        -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
+    }
+
+    
     .rounded-image {
         display: block;
         margin: auto;
         width: 200px;
         border-radius: 50%;
+    }
+    
+    .iframe {
+        display: block;
+        margin: 0 auto;
+        width: 32vw;
+        height: 18vw;
     }
 }
 
@@ -189,6 +256,7 @@ a:link {
     text-align: center;
 }
 
+/* Home Div */
 .home {
     background: #2874A6;
     animation-name: background;
@@ -198,7 +266,7 @@ a:link {
     padding: 4em 12vw 4em 12vw;
     width: 100%;
     text-align: left;
-    font-family: Lato;
+    font-family: Quicksand, serif;
     min-height: 80%;
 }
 
@@ -280,16 +348,18 @@ a:link {
     border-bottom: 2px solid darken(#000,3%);
 }
 
+/* About Div */
 .about {
     width: 100%;
     background-color: #fff;
     color: #000;
     padding: 2em 8vw 4em 8vw;
     text-align: left;
-    font-family: Lato;
+    font-family: Quicksand, serif;
     box-shadow: 0 -10px 0 -5px rgba(255, 255, 255, .4), 0 -20px 0 -10px rgba(255, 255, 255, .2);
 }
 
+/* Projects Div */
 .projects {
     background: -webkit-linear-gradient(282deg, #50BBE6 0%, #2874A6 31%);
     /* For Safari 5.1 to 6.0 */
@@ -306,7 +376,7 @@ a:link {
     box-sizing: border-box;
     width: 100%;
     text-align: left;
-    font-family: Lato;
+    font-family: Quicksand, serif;
 }
 
 .container {
@@ -322,6 +392,7 @@ a:link {
     flex-wrap: nowrap;
     padding-right: 2vw;
     padding-left: 2vw;
+    padding-bottom: 20px;
     border-bottom: 3px solid #242C4C;
 }
 
@@ -329,9 +400,31 @@ a:link {
     text-align: center;
 }
 
-.contact {
+/* Media Div */
+.media {
+    width: 100%;
     background-color: #fff;
-    color: #242C4C;
+    color: #000;
+    padding: 2em 8vw 4em 8vw;
+    text-align: center;
+    font-family: Quicksand, serif;
+    box-shadow: 0 -10px 0 -5px rgba(255, 255, 255, .4), 0 -20px 0 -10px rgba(255, 255, 255, .2);
+}
+
+
+/* Contact Div */
+.contact {
+    background: -webkit-linear-gradient(282deg, #50BBE6 0%, #2874A6 31%);
+    /* For Safari 5.1 to 6.0 */
+    
+    background: -o-linear-gradient(282deg, #50BBE6 0%, #2874A6 31%);
+    /* For Opera 11.1 to 12.0 */
+    
+    background: -moz-linear-gradient(282deg, #50BBE6 0%, #2874A6 31%);
+    /* For Firefox 3.6 to 15 */
+    
+    background: linear-gradient(141deg, #50BBE6 0%, #2874A6 31%);
+    color: #fff;
     padding: 2em 8vw 4em 8vw;
     box-sizing: border-box;
     width: 100%;
