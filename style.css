@@ -39,6 +39,10 @@ h1 {
 }
 
 .title {
+    padding-bottom: 1%;
+    font-family: Lato;
+    font-size: 48px;
+    text-align: center;
     border-bottom: 3px solid #000;
 }
 
