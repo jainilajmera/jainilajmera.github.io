@@ -36,6 +36,9 @@ h1 {
     font-family: Lato;
     font-size: 48px;
     text-align: center;
+}
+
+.title {
     border-bottom: 3px solid #000;
 }
 
@@ -281,14 +284,6 @@ a:link {
 }
 
 @media screen and (max-width: 800px) {
-    .display-text { 
-        display: none;
-    }  
-    
-    .mobile-display {
-        display: block;
-    }
-    
     .typed-box {
         display: none;
     }
@@ -299,20 +294,6 @@ a:link {
 }
 
 @media screen and (min-width: 801px) {
-    .display-text { 
-        display: block;
-        width: auto;
-        font-family: 'Courier New';
-        font-size: 28px;
-        text-align: center;
-        margin-top: 6vw;
-        margin-bottom: 4vw;
-    }
-    
-    .mobile-display {
-        display: none;
-    }
-
     .typed-box {
         text-align: center;
         margin: auto;
