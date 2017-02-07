@@ -248,14 +248,6 @@ a:link {
     }
 }
 
-.quote {
-    font-family: Roboto, serif;
-    line-height: 150%;
-    border-left: 8px solid #75B982;
-    border-right: 8px solid #75B982;
-    text-align: center;
-}
-
 /* Home Div */
 .home {
     background: #2874A6;
