@@ -173,7 +173,7 @@ a:link {
         height: 36vw;
         float: none;
         display: block;
-        margin: inherit 15vw 30vw 15vw;
+        margin: 0 auto;
     }
 }
 
