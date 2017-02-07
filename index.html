@@ -4,112 +4,33 @@
 		<link rel="icon" type="image/png" href="code.png">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="style.css" type="text/css">
-		<link href='https://fonts.googleapis.com/css?family=Lato|Quicksand' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Lato|Roboto:300' rel='stylesheet'>
 	</head>
 	<body>
-        <div id="nav">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-            </ul>
-        </div>
+		<div id="nav">
+			<ul>
+				<li><a href = "index.html">Home</a></li>
+				<li><a href = "about.html">About</a></li>
+				<li><a href = "projects.html">Projects</a></li>
+			</ul>
+		</div>
 		<div class="flex-container">
-            
-            <a name="home"></a>
 			<div class="home">
 				<h1 class = "title">Hi there!</h1>
 				<h1>I'm Jainil Ajmera</h1>
-				<a href="#about"><input class="button" type="button" value="Learn more"></a>
-				<img src="MIT.jpg" class="rounded-image">
-			</div>
-            
-			<a name="about"></a>
-			<div class="about">
-				<h1 class = "title"> ABOUT ME </h1>
-				<div class = "typed-box">
-					<span id="before-typed">I'm </span><span id="typed"></span><span id="cursor">|</span>
-				</div>
-				<script src="jquery.js"></script>
-				<script src="typed.js"></script>
-				<script>
-					$(function(){
-					    $("#typed").typed({
-					      strings: ["a guitarist", "a filmmaker", "a roboticist", "a maker", "a developer", "'Jaynius'"],
-					      typeSpeed: 0
-					    });
-					});
-				</script>
-				<h5>Hi there! My name is Jainil Ajmera, although I am more commonly known as 'Jaynius'. I am 14 years old, and I currently study at Delhi Public School, Gurgaon. I was born on November 21, 2001 in Andheri, a bustling suburb of Mumbai. I enjoy tackling challenging problems (especially the nerve-wracking ones that keep me thinking for a while) and have a diverse array of interests, including robotics, programming, web development, filmmaking and playing the guitar.</h5>
-				<h5>I have several awards (both national and international) to my credit. Some of the more prestigious of these include being ranked 18th internationally in the National Cyber Olympiad (which is now conducted in several countries across Asia) and being a part of a First Tech Challenge (FTC) team that bagged numerous awards, such as the Inspire Award and PTC Design Award, at regional events.</h5>
-				<h5>Being a member of the Metal Marauders, a private FTC team based in New Jersey, remains one of my most cherished experiences. By exposing me to the various aspects of robotics, FTC helped deepen my passion for the STEM field and turned me into a better problem-solver. In addition, the program helped me learn how to share my ideas with others by providing me with the opportunity to become involved with the community. I am extremely thankful to the other members of the team, who shared their knowledge with me and supported me throughout the season.</h5>
-				<h5>Building on these experiences, I participated in another competition called World Robot Olympiad (WRO) this year. Our team, High Voltage, secured the second position in the Regular Junior High category of WRO 2016.</h5>
-				<img src="Regionals.jpg" class="image">
-				<h3 class="quote"><em>"Live as if you were to die tomorrow, learn as if you were to live forever."</em><br>~ Mahatma Gandhi</h3>
-			</div>
-            
-			<a name="projects"></a>
-			<div class="projects">
-				<h1 class = "title"> PROJECTS </h1>
-				<br>
-				<div class="container">
-					<div class="projects-box">
-						<h2 class="projects-title">FTC 2015-16</h2>
-						<img src = "FTC.jpg" class = "projects-image">
-						<h5>FIRST Tech Challenge is a robotics competition designed for students in grades 7-12. Teams are responsible for designing, building, and programming their robots in a 10-week build period to compete in an alliance format against other teams. Teams are also required to make an 'Engineering Notebook' that documents their build season and experience.</h5>
-						<h5>Res-Q, the 2015-16 edition of the First Tech Challenge, challenged students to design and build robots capable of climbing ramps, depositing debris in designated areas and hanging, among other tasks.</h5>
-						<h5>Our robot featured a robust drivetrain, a 3D-printed bucket for efficient collection of debris, as well as a cascading slide system (with custom, 3D-printed pulleys) capable of extending to maximum length in less than 4 seconds.</h5>
-						<h5><strong>Role: </strong>Building</h5>
-						<h5>Awards:
-							<ul>
-								<li>Inspire Award: Hudson Valley Qualifiers</li>
-								<li>PTC Design Award: New Jersey State Championships</li>
-								<li>Control Award: New York State Championships</li>
-								<li>Finalist Alliance, 2nd pick: Vermont State Championships</li>
-							</ul>
-						</h5>
-					</div>
-					<div class="projects-box">
-						<h2 class="projects-title">WRO 2016-17</h2>
-						<img src = "intl.jpg" class = "projects-image">
-                        <h5>The World Robot Olympiad is a global robotics competition for young people. The 2016 season, Rap the Scrap, was held in Delhi, India in November 2016. The competition began in October, with the Delhi-NCR Regionals being the opening tournament of the season. This year saw an immense increase in the number of teams, trying to figure out a way of solving a much more complex challenge- Waste Sorting.</h5>
-                        <h5>The 2016 Regular Junior High challenge 'Waste Sorting' requires a robot to autonomously identify and locate the different types of wastes (denoted by cubes of different sizes and colours) found inside the house, and take them to their respective bins, to sort the waste. The challenge requires locating the different bins available for sorting (also differentiated by colors, and location), identifying different wastes available, and matching the wastes to their respective bins using an algorithm. Finally, to score points, the robot needs to pick the wastes, deposit them in the bins, and return to the start area (the house).</h5>
-						<h5><strong>Role: </strong>Programming</h5>
-						<h5>Awards:
-							<ul>
-								<li>Regional Championships: 1st Position</li>
-								<li>National Championships: 2nd Position</li>
-                                <li>International Championships: 2nd Position</li>
-							</ul>
-						</h5>
-                        <iframe src="https://www.youtube.com/embed/tjj_EbqDVHQ" allowfullscreen class="iframe"></iframe>
-					</div>
-                    <h3>More to follow soon.</h3>
+                <img src="MIT.jpg" class="rounded-image">
+				<div id = "icon-container">
+					<a href="https://bit.ly/jainilyoutube" title="Youtube" target="_blank">
+					<img src="youtube.png" class="icon">
+					</a>
+					<a href="https://github.com/jainilajmera" title="Github" target="_blank">
+					<img src="github.png" class="icon">
+					</a>
+					<a href="mailto:jainov11@gmail.com" title="Mail">
+					<img src="mail.png" class="icon">
+					</a>
 				</div>
 			</div>
-            
-            <div class="media">
-                <h1 class = "title"> MEDIA GALLERY</h1><br>
-                <a href="https://goo.gl/photos/6JGQxFCW2n5Qi17e7" target="_blank">
-                    <img src="Media-WRO.jpg" class="media-image">
-                </a>
-                <h3>WRO 2016</h3>
-            </div>
-            
-			<div class="contact">
-				<h1 class = "title">CONTACT ME:</h1>
-				<a href="https://bit.ly/jainilyoutube" title="Youtube" target="_blank">
-				<img src="youtubeicon.png" class="small-icon">
-				</a>
-				<a href="https://github.com/jainilajmera" title="Github" target="_blank">
-				<img src="githubicon-compressor.png" class="small-icon">
-				</a>
-				<a href="mailto:jainov11@gmail.com" title="Mail">
-				<img src="mail.png" class="small-icon">
-				</a>
-				<br>Feel free to drop a mail anytime. I would suggest staying away from other forms of communication, such as carrier pigeons and psychic signals, as they seem to be less reliable.
-			</div>
-			<div class="footer">© Jainil Ajmera, 2016</div>
 		</div>
 	</body>
 </html>
