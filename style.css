@@ -33,33 +33,33 @@ html,body
 
 h1 {
     padding-bottom: 1%;
-    font-family: Lato;
+    font-family: Open Sans;
     font-size: 38px;
     text-align: center;
 }
 
 .title {
     padding-bottom: 1%;
-    font-family: Lato;
+    font-family: Open Sans;
     font-size: 48px;
     text-align: center;
     border-bottom: 3px solid #000;
 }
 
 h2 {
-    font-family: Lato;
+    font-family: Open Sans;
     font-size: 32px;
     text-align: center;
 }
 
 h3 {
-    font-family: Roboto;
+    font-family: Open Sans;
 }
 
 h5 {
-    font-family: Roboto;
-    line-height: 140%;
-    font-size: 16px;
+    font-family: Open Sans;
+    line-height: 150%;
+    font-size: 15px;
 }
 
 mark {
@@ -86,7 +86,7 @@ a:link {
 	float: left;
 	padding: 0;
 	background-color: #242C4C;
-    font-family: Lato;
+    font-family: Open Sans;
 }
 
 #nav ul {
@@ -249,17 +249,17 @@ a:link {
     padding: 4em 12vw 4em 12vw;
     width: 100%;
     text-align: left;
-    font-family: Roboto, serif;
+    font-family: Open Sans;
     min-height: 80%;
 }
 
 #before-typed {
-    font-family: Lato;
+    font-family: Open Sans;
     font-size: 42px;
 }
 
 #typed {
-    font-family: Lato;
+    font-family: Open Sans;
     font-size: 42px;
 }
 
@@ -283,7 +283,7 @@ a:link {
     }
     
     #cursor {
-        font-family: Lato;
+        font-family: Open Sans;
         font-size: 42px;
         animation: blink 1s infinite;
     }
@@ -305,7 +305,8 @@ a:link {
     color: #000;
     padding: 2em 8vw 4em 8vw;
     text-align: left;
-    font-family: Roboto, serif;
+    font-family: Open Sans;
+    font-weight: 300;
     box-shadow: 0 -10px 0 -5px rgba(255, 255, 255, .4), 0 -20px 0 -10px rgba(255, 255, 255, .2);
 }
 
@@ -326,7 +327,7 @@ a:link {
     box-sizing: border-box;
     width: 100%;
     text-align: left;
-    font-family: Roboto, serif;
+    font-family: Open Sans;
 }
 
 .container {
@@ -365,7 +366,7 @@ a:link {
     color: #000;
     padding: 2em 8vw 4em 8vw;
     text-align: center;
-    font-family: Roboto, serif;
+    font-family: Open Sans;
     box-shadow: 0 -10px 0 -5px rgba(255, 255, 255, .4), 0 -20px 0 -10px rgba(255, 255, 255, .2);
 }
 
@@ -387,7 +388,7 @@ a:link {
     box-sizing: border-box;
     width: 100%;
     text-align: center;
-    font-family: Lato;
+    font-family: Open Sans;
     box-shadow: 0 -10px 0 -5px rgba(255, 255, 255, .4), 0 -20px 0 -10px rgba(255, 255, 255, .2);
 }
 
@@ -421,6 +422,6 @@ a:link {
     font-size: 18px;
     color: #fff;
     background-color: #242C4C;
-    font-family: Lato;
+    font-family: Open Sans;
     width: 100%;
 }
