@@ -70,6 +70,10 @@ a:link {
     color: #fff;
 }
 
+ul {
+    text-align: left;
+}
+
 #nav {
     z-index: 1;
 	width: 100%;
@@ -121,45 +125,12 @@ a:link {
 }
 
 @media screen and (max-width: 500px) {     
-    .image {
-        display: block;
-        margin: auto;
-        height: 150px;
-        box-shadow: 0 0.1vw 0.7vw 0 rgba(0, 0, 0, 0.2), 0 0.7vw 2vw 0 rgba(0, 0, 0, 0.19);
-    } 
-
     .projects-image {
         display: block;
         margin: auto;
         width: 220px;
         box-shadow: 0 0.1vw 0.7vw 0 rgba(0, 0, 0, 0.2), 0 0.7vw 2vw 0 rgba(0, 0, 0, 0.19);
     } 
-    
-    .media-image {
-        display: block;
-        margin: auto;
-        width: 300px;
-        box-shadow: 0 0.1vw 0.7vw 0 rgba(0, 0, 0, 0.2), 0 0.7vw 2vw 0 rgba(0, 0, 0, 0.19);
-        filter:grayscale(100%);
-        -webkit-filter: grayscale(100%);
-        -moz-filter: grayscale(100%);
-        -ms-filter: grayscale(100%);
-        -o-filter: grayscale(100%);
-
-    } 
-    
-    .media-image:hover {
-        display: block;
-        margin: auto;
-        width: 300px;
-        box-shadow: 0 0.1vw 0.7vw 0 rgba(0, 0, 0, 0.2), 0 0.7vw 2vw 0 rgba(0, 0, 0, 0.19);
-        filter:grayscale(0%);
-        -webkit-filter: grayscale(0%);
-        -moz-filter: grayscale(0%);
-        -ms-filter: grayscale(0%);
-        -o-filter: grayscale(0%);
-    }
-    
 
     .rounded-image {
         display: block;
@@ -170,45 +141,12 @@ a:link {
 }
 
 @media all and (min-width: 501px) {  
-    .image {
-        display: block;
-        margin: auto;
-        height: 200px;
-        box-shadow: 0 0.1vw 0.7vw 0 rgba(0, 0, 0, 0.2), 0 0.7vw 2vw 0 rgba(0, 0, 0, 0.19);
-    } 
-
     .projects-image {
         display: block;
         margin: auto;
         width: 300px;
         box-shadow: 0 0.1vw 0.7vw 0 rgba(0, 0, 0, 0.2), 0 0.7vw 2vw 0 rgba(0, 0, 0, 0.19);
     } 
-    
-    .media-image {
-        display: block;
-        margin: auto;
-        width: 400px;
-        box-shadow: 0 0.1vw 0.7vw 0 rgba(0, 0, 0, 0.2), 0 0.7vw 2vw 0 rgba(0, 0, 0, 0.19);
-        filter:grayscale(100%);
-        -webkit-filter: grayscale(100%);
-        -moz-filter: grayscale(100%);
-        -ms-filter: grayscale(100%);
-        -o-filter: grayscale(100%);
-
-    } 
-    
-    .media-image:hover {
-        display: block;
-        margin: auto;
-        width: 400px;
-        box-shadow: 0 0.1vw 0.7vw 0 rgba(0, 0, 0, 0.2), 0 0.7vw 2vw 0 rgba(0, 0, 0, 0.19);
-        filter:grayscale(0%);
-        -webkit-filter: grayscale(0%);
-        -moz-filter: grayscale(0%);
-        -ms-filter: grayscale(0%);
-        -o-filter: grayscale(0%);
-    }
-
     
     .rounded-image {
         display: block;
@@ -240,11 +178,10 @@ a:link {
     animation-duration: 32s;
     animation-iteration-count: infinite;    
     color: white;
-    padding: 4em 12vw 4em 12vw;
+    padding: 5em 12vw 8em 12vw;
     width: 100%;
     text-align: left;
     font-family: Open Sans;
-    min-height: 75%;
 }
 
 #before-typed {
@@ -307,14 +244,8 @@ a:link {
 /* Projects Div */
 .projects {
     background: -webkit-linear-gradient(282deg, #50BBE6 0%, #2874A6 31%);
-    /* For Safari 5.1 to 6.0 */
-    
     background: -o-linear-gradient(282deg, #50BBE6 0%, #2874A6 31%);
-    /* For Opera 11.1 to 12.0 */
-    
-    background: -moz-linear-gradient(282deg, #50BBE6 0%, #2874A6 31%);
-    /* For Firefox 3.6 to 15 */
-    
+    background: -moz-linear-gradient(282deg, #50BBE6 0%, #2874A6 31%);  
     background: linear-gradient(141deg, #50BBE6 0%, #2874A6 31%);
     color: #fff;
     padding: 2em 8vw 4em 8vw;
@@ -343,9 +274,9 @@ a:link {
 
 #photo1 {
     float: left;
-    margin-right: 4vw;
-    margin-bottom: 2vw;
-    width: 22vw;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    width: 23vw;
     box-shadow: 0 0.1vw 0.7vw 0 rgba(0, 0, 0, 0.5), 0 0.7vw 2vw 0 rgba(0, 0, 0, 0.7);
 }
 
@@ -353,7 +284,7 @@ a:link {
     float: right;
     margin-left: 4vw;
     margin-bottom: 2vw;
-    width: 22vw;
+    width: 23vw;
     box-shadow: 0 0.1vw 0.7vw 0 rgba(0, 0, 0, 0.5), 0 0.7vw 2vw 0 rgba(0, 0, 0, 0.7);
 }
 
@@ -361,7 +292,7 @@ a:link {
     float: left;
     margin-right: 4vw;
     margin-bottom: 2vw;
-    width: 22vw;
+    width: 23vw;
     box-shadow: 0 0.1vw 0.7vw 0 rgba(0, 0, 0, 0.5), 0 0.7vw 2vw 0 rgba(0, 0, 0, 0.7);
 }
 
@@ -377,7 +308,7 @@ a:link {
     display: none;
 }
 
-@media all and (max-width:500px) {
+@media all and (min-width: 401px) and (max-width: 800px) {
     .projects-box {
         text-align: left;
     }
@@ -401,46 +332,37 @@ a:link {
     .empty-img {
         display: block;
         margin: 0 auto;
-        height: 45vw;
-        box-shadow: 0 0.1vw 0.7vw 0 rgba(0, 0, 0, 0.5), 0 0.7vw 2vw 0 rgba(0, 0, 0, 0.7);
-    }
-    
-    #empty-img-2 {
-        display: block;
-        margin: 0 auto;
-        width: 50vw;
+        width: 300px;
         box-shadow: 0 0.1vw 0.7vw 0 rgba(0, 0, 0, 0.5), 0 0.7vw 2vw 0 rgba(0, 0, 0, 0.7);
     }
 }
 
-
-@media all and (min-width:501px) and (max-width:800px) {
+@media all and (max-width: 400px) {
     .projects-box {
         text-align: left;
     }
     
     #photo1 {
-        width: 35vw;
+        display: none;
     }
     
     #photo2 {
-        width: 35vw;
+        display: none;
     }
     
     #photo3 {
-        width: 35vw;
+        display: none;
     }
     
     .empty {
-        display: none;
+        display: block;
     }
     
     .empty-img {
-        display: none;
-    }
-    
-    #empty-img-2 {
-        display: none;
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        box-shadow: 0 0.1vw 0.7vw 0 rgba(0, 0, 0, 0.5), 0 0.7vw 2vw 0 rgba(0, 0, 0, 0.7);
     }
 }
 
@@ -459,15 +381,111 @@ a:link {
 /* Media Div */
 .media {
     width: 100%;
-    min-height: 80%;
     background-color: #fff;
     color: #000;
-    padding: 2em 8vw 4em 8vw;
+    padding: 2em 8vw 2em 8vw;
     text-align: center;
     font-family: Open Sans;
     box-shadow: 0 -10px 0 -5px rgba(255, 255, 255, .4), 0 -20px 0 -10px rgba(255, 255, 255, .2);
 }
 
+#media-container {
+    padding: 0;
+	box-sizing: border-box;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	width: 90vw;
+}
+
+.media-child {
+    flex-grow: 1;
+    width: 50%;
+    padding: 0;
+}
+
+.media-image {
+    display: block;
+    margin: 0 auto;
+	width: 35vw;
+    box-shadow: 0 0.1vw 0.7vw 0 rgba(0, 0, 0, 0.2), 0 0.7vw 2vw 0 rgba(0, 0, 0, 0.19);
+    filter:grayscale(100%);  
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+}
+
+.media-image:hover {
+    display: block;
+    margin: 0 auto;
+	width: 35vw;
+    box-shadow: 0 0.1vw 0.7vw 0 rgba(0, 0, 0, 0.2), 0 0.7vw 2vw 0 rgba(0, 0, 0, 0.19);
+    filter:grayscale(0%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+}
+
+@media all and (min-width: 501px) and (max-width: 800px) {
+    #media-container {
+        width: 75vw;
+        margin: 0 auto;
+        -webkit-flex-flow: column wrap;
+	   flex-flow: column wrap;
+    }
+    
+    .media-child {
+        flex-grow: 1;
+        width: 100%;
+        margin-bottom: 40px;
+        padding: 0;
+    }
+    
+    .media-image {
+        width: 60vw;
+    }
+    
+    .media-image:hover {
+        width: 60vw;
+    }
+}
+
+@media all and (max-width: 500px) {
+	#media-container {
+        width: 95vw;
+        margin: 0 auto;
+        -webkit-flex-flow: column wrap;
+	   flex-flow: column wrap;
+    }
+    
+    .media-child {
+        flex-grow: 1;
+        width: 100%;
+        margin-bottom: 40px;
+        padding: 0;
+    }
+    
+    .media-image {
+        width: 80vw;
+    }
+    
+    .media-image:hover {
+        width: 80vw;
+        box-shadow: 0 0.1vw 0.7vw 0 rgba(0, 0, 0, 0.2), 0 0.7vw 2vw 0 rgba(0, 0, 0, 0.19);
+        filter:grayscale(100%);  
+        -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
+    }
+}
 
 /* Contact Div */
 .contact {

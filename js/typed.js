@@ -428,6 +428,13 @@
 		// callback for reset
 		resetCallback: function() {}
 	};
+    
+    $(function() {
+            $("#typed").typed({
+                strings: ["a guitarist", "a filmmaker", "a roboticist", "a maker", "a developer", "'Jaynius'"],
+                typeSpeed: 0
+            });
+    });
 
 
 }(window.jQuery);
