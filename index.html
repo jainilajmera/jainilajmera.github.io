@@ -1,130 +1,246 @@
 <html>
-	<head>
+    <head>
+		<meta charset = "utf-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale=1">
 		<title>Jainil Ajmera</title>
         <link rel = "icon" type = "image/png" href = "img/code.png">
-        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
-		<link rel = "stylesheet" href = "css/style.css" type = "text/css">
-        <link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet">
+		<link href = "https://fonts.googleapis.com/css?family=Roboto:300,300i,400|Quicksand:300,400" rel = "stylesheet">
+		<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+		<link rel = "stylesheet" type = "text/css" href = "css/style.css">
+		<link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
 	</head>
-	<body>
-		<div id = "nav">
-            <ul>
-				<li><a href = "#home">Home</a></li>
-				<li><a href = "#about">About</a></li>
-				<li><a href = "#projects">Projects</a></li>
-			</ul>
-		</div>
-		<div class = "flex-container">
-			<a name = "home"></a>
-			<div class = "home">
-				<h1 class = "title">Hi there!</h1>
-				<h1>I'm Jainil Ajmera</h1>
-				<img src = "img/MIT.jpg" class = "rounded-image">
-                <div id = "icon-container">
-					<a href = "https://bit.ly/jainilyoutube" title = "Youtube" target = "_blank">
-					<img src = "img/youtube.png" class = "icon">
-					</a>
-					<a href = "https://github.com/jainilajmera" title = "Github" target = "_blank">
-					<img src = "img/github.png" class = "icon">
-					</a>
-					<a href = "mailto:jainov11@gmail.com" title = "Mail">
-					<img src = "img/mailicon.png" class = "icon">
-					</a>
-				</div>
-			</div>
-            
-			<a name = "about"></a>
-			<div class = "about">
-				<h1 class = "title"> ABOUT ME </h1>
-				<div class = "typed-box">
-					<span id = "before-typed">I'm </span><span id = "typed"></span><span id = "cursor">|</span>
-				</div>
-				<h5>Hi there! My name is Jainil Ajmera, although I am more commonly known as 'Jaynius'. I am 14 years old, and I currently study at Delhi Public School, Gurgaon. I was born on November 21, 2001 in Andheri, a bustling suburb of Mumbai. I enjoy tackling challenging problems (especially the nerve-wracking ones that keep me thinking for a while) and have a diverse array of interests, including robotics, programming, web development, filmmaking and playing the guitar.</h5>
-				<h5>I have several awards (both national and international) to my credit. Some of the more prestigious of these include being ranked 18th internationally in the National Cyber Olympiad (which is now conducted in several countries across Asia) and being a part of a First Tech Challenge (FTC) team that bagged numerous awards, such as the Inspire Award and PTC Design Award, at regional events.</h5>
-				<h5>Being a member of the Metal Marauders, a private FTC team based in New Jersey, remains one of my most cherished experiences. By exposing me to the various aspects of robotics, FTC helped deepen my passion for the STEM field and turned me into a better problem-solver. In addition, the program helped me learn how to share my ideas with others by providing me with the opportunity to become involved with the community. I am extremely thankful to the other members of the team, who shared their knowledge with me and supported me throughout the season.</h5>
-				<h5>Building on these experiences, I participated in another competition called World Robot Olympiad (WRO) this year. Our team, High Voltage, secured the second position in the Regular Junior High category of WRO 2016.</h5>
-			</div>
-            
-			<a name = "projects"></a>
-			<div class = "projects">
-				<h1 class = "title"> PROJECTS </h1>
-				<div class = "container">
-					<div id = "FTC15" class = "projects-box">
-						<h2 class = "projects-title">FTC 2015-16</h2>
-						<img src = "img/FTC15.jpg" id = "photo1">
-                        <div class = "empty">
-                            <img src = "img/FTC15.jpg" class = "empty-img">
-                        </div>
-						<h5>FIRST Tech Challenge is a robotics competition designed for students in grades 7-12. Teams are responsible for designing, building, and programming their robots in a 10-week build period to compete in an alliance format against other teams. Teams are also required to make an 'Engineering Notebook' that documents their build season and experience.</h5>
-						<h5>Res-Q, the 2015-16 edition of the First Tech Challenge, challenged students to design and build robots capable of climbing ramps, depositing debris in designated areas and hanging, among other tasks. Our robot featured a robust drivetrain, a 3D-printed bucket for efficient collection of debris, as well as a cascading slide system (with custom, 3D-printed pulleys) capable of extending to maximum length in less than 4 seconds.</h5>
-                        <h3>Awards and Achievements</h3>
-                        <h5>
-							<ul>
-								<li>Inspire Award: Hudson Valley Qualifiers</li>
-								<li>PTC Design Award: New Jersey State Championship</li>
-								<li>Control Award: New York State Championship</li>
-								<li>Finalist Alliance, 2nd pick: Vermont State Championship</li>
-							</ul>
-						</h5>
-					</div>
-                    
-					<div id = "WRO16" class = "projects-box">
-						<h2 class = "projects-title">WRO 2016-17</h2>
-						<img src = "img/Internationals.jpg" id = "photo2">
-                        <div class = "empty">
-                            <img src = "img/Internationals.jpg" class = "empty-img">
-                        </div>
-						<h5>World Robot Olympiad is a global robotics competition for students. The 2016 season, Rap the Scrap, was held in Delhi, India in November 2016. The competition began in October, with the Delhi-NCR Regionals being the opening tournament of the season. This year saw an immense increase in the number of teams, trying to figure out a way of solving a much more complex challenge- Waste Sorting.</h5>
-						<h5>The 2016 Regular Junior High challenge 'Waste Sorting' requires a robot to autonomously identify and locate the different types of wastes (denoted by cubes of different sizes and colours) found inside the house, and take them to their respective bins, to sort the waste. The challenge requires locating the different bins available for sorting (also differentiated by colors, and location), identifying different wastes available, and matching the wastes to their respective bins using an algorithm. Finally, to score points, the robot needs to pick the wastes, deposit them in the bins, and return to the start area (the house).</h5>
-                        <h3>Awards and Achievements</h3>
-                        <h5>
-							<ul>
-								<li>Regional Championship: 1st Position (Full score: 100 points)</li>
-								<li>National Championship: 2nd Position (Full score: 100 points)</li>
-								<li>International Championship: 2nd Position (Full score: 120 points)</li>
-							</ul>
-						</h5>
-					</div>
-					<div id = "FTC16" class = "projects-box">
-						<h2 class = "projects-title">FTC 2016-17</h2>
-						<img src = "img/FTC16.png" id = "photo3">
-                        <div class = "empty">
-                            <img src = "img/FTC16.png" class = "empty-img">
-                        </div>
-						<h5>Velocity Vortex, the 2016-17 edition of the FIRST Tech Challenge, requires a robot to perform a variety of different tasks. The match begins with a 30 second autonomous period, where the robots can only operate by pre-programmed instructions. In this period, points are awarded if the robot presses the correct beacon buttons, successfully shoots 'particles' (balls) into designated areas and/or parks on a ramp or raised platform. The autonomous period is followed by a 2 minute driver-controlled period, where points are awarded if the robot shoots particles into the designated areas and/or lifts a 'cap ball' (gym ball).</h5>
-                        <h5>Our robot features a holonomic drivetrain for increased maneuverability, a flicker for quickly and effectively launching the particles and a mechanism for pressing the correct beacon buttons.</h5>
-                        <h3>Awards and Achievements</h3>
-                        <h5>
-							<ul>
-                                <li>Inspire Award: FTC National Championship</li>
-                                <li>Winning Alliance Captain: FTC National Championship</li>
-							</ul>
-						</h5>
-					</div>
-				</div>
-			</div>
-            
-			<div class = "media">
-				<h1 class = "title">GALLERY</h1>
-                <div id = "media-container">
-                    <div class = "media-child">
-                        <a href = "https://goo.gl/photos/6JGQxFCW2n5Qi17e7" target = "_blank">
-                        <img src = "img/Media-WRO.jpg" class = "media-image">
-                        </a>
-                        <h3>WRO 2016</h3>
-                    </div>
-                    <div class = "media-child">
-                        <a href = "https://goo.gl/photos/Z77sH36cxz4M3w3d6" target = "_blank">
-                        <img src = "img/Media-FTC.jpg" class = "media-image">
-                        </a>
-                        <h3>FTC 2016</h3>
+    
+    <body>
+        <div class = "navbar-fixed">
+            <nav class = "z-depth-0">
+               <div class = "nav-wrapper">
+                   <a href = "#" data-activates = "mobile-demo" class = "button-collapse"><i class = "material-icons">menu</i></a>
+                   <ul class = "right hide-on-med-and-down">
+                       <li><a href = "index.html">Home</a></li>
+                       <li><a href = "#about">About</a></li>
+                       <li><a href = "#projects">Projects</a></li>
+                       <li><a href = "#timeline">Timeline</a></li>
+                   </ul>
+               </div>
+            </nav>
+        </div>
+        
+        <ul class = "side-nav" id = "mobile-demo">
+            <li><a href = "index.html">Home</a></li>
+            <li><a href = "#about">About</a></li>
+            <li><a href = "#projects">Projects</a></li>
+            <li><a href = "#timeline">Timeline</a></li>
+        </ul>
+        
+        <div id = "index-banner" class = "parallax-container">
+            <div class = "section no-pad-bot">
+                <div class = "container">
+                    <br><br>
+                    <h1 style = "font-weight: 300;">Hi there!</h1>
+                    <div class = "typed-box">
+                        <span id = "before-typed">I'm </span><span id = "typed"></span><span id = "cursor">|</span>
                     </div>
                 </div>
-			</div>
-			<div class = "footer">© Jainil Ajmera, 2016</div>
-		</div>
-
-        <script src = "https://code.jquery.com/jquery-3.2.1.min.js"></script>
+            </div>
+            <div class = "parallax">
+                <img src = "img/background2.jpg">
+            </div>
+        </div>
+        
+        <div class = "container" id = "about">
+            <div class = "section"></div>
+            <div class = "row">
+                <div class = "col s12">
+                    <h1 class = "header">About Me!</h1>
+                    <p>Hi there! My name is Jainil Ajmera. I am 15 years old, and I currently study at Delhi Public School, Gurgaon. I was born on November 21, 2001 in Andheri, a bustling suburb of Mumbai. I enjoy problem-solving and have an array of diverse interests, including robotics, programming, web development, filmmaking and playing the guitar.</p>
+				    <p>I have several awards (both national and international) to my credit. Some of the more prestigious of these include being ranked 18th internationally in the National Cyber Olympiad (which is now conducted in several countries across Asia) and being a part of a First Tech Challenge (FTC) team that bagged numerous awards, such as the Inspire Award and PTC Design Award, at regional events.</p>
+				    <p>Being a member of the Metal Marauders, a private FTC team based in New Jersey, remains one of my most cherished experiences. By exposing me to the various aspects of robotics, FTC helped deepen my passion for the STEM field and turned me into a better problem-solver. In addition, the program helped me learn how to share my ideas with others by providing me with the opportunity to become involved with the community. I am extremely thankful to the other members of the team, who shared their knowledge with me and supported me throughout the season.</p>
+				    <p>Building on these experiences, I participated in another competition called World Robot Olympiad (WRO) last year. Our team, High Voltage, secured the second position in the Regular Junior High category of WRO 2016.</p>
+                </div>
+                <div class = "col s8 offset-s2 m6 offset-m3 l4 offset-l4"><img src = "img/MIT.jpg" class = "photo-rounded"></div>
+            </div>   
+            
+            <div class = "section"></div>
+            <hr style = "size: 1.5px">
+        </div>
+        
+        <div class = "container" id = "projects">
+            <div class = "section"></div>
+            <div class = "row">
+                <div class = "col s12">
+                    <h1 class = "header">Projects</h1>
+                </div>
+            </div>
+            
+            <div class = "row lcard">
+                <div class = "col l12" style = "float: none; margin: 0 auto;">
+                    <div class = "card horizontal hoverable" style = "width: 100%; ">
+                        <div class = "card-image waves-effect waves-block waves-light">
+                            <img src = "img/FTC15.jpg" class = "activator">
+                            <span class = "card-title">FTC 2015</span>
+                        </div>
+                        <div class = "card-stacked">
+                            <div class = "card-content">                     
+                                <p>FIRST Tech Challenge is a robotics competition designed for students in grades 7-12. Teams are responsible for designing, building, and programming their robots in a 10-week build period to compete in an alliance format against other teams. Teams are also required to make an 'Engineering Notebook' that documents their build season and experience. Res-Q, the 2015-16 edition of the First Tech Challenge, challenged students to design and build robots capable of climbing ramps, depositing debris in designated areas and hanging, among other tasks.</p>
+                                <a class = "btn-floating fab waves-effect waves-light black darken-2 activator" style = "margin-top: 20px; float: right;"><i class = "material-icons">add</i></a>
+                            </div>
+                        </div>
+                        <div class = "card-reveal">
+                            <span class = "card-title activator"><i class = "material-icons right">close</i></span>
+                            <h5>Achievements</h5>
+                            <p>Inspire Award: Hudson Valley Qualifiers</p>
+                            <p>PTC Design Award: New Jersey State Championship</p>
+                            <p>Control Award: New York State Championship</p>
+                            <p>Finalist Alliance, 2nd pick: Vermont State Championship</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class = "row lcard">
+                <div class = "col l12" style = "float: none; margin: 0 auto;">
+                    <div class = "card horizontal hoverable" style = "width: 100%; ">
+                        <div class = "card-stacked">
+                            <div class = "card-content">                     
+                                <p>World Robot Olympiad is a global robotics competition for students. The 2016 season, Rap the Scrap, was held in Delhi, India in November 2016. The Regular Junior High challenge required a robot to autonomously identify and locate different types of wastes (denoted by cubes of different sizes and colours) found inside the house, and take them to their respective bins (also differentiated by color and location), to sort the waste. Finally, to score points, the robot needed to pick the correct waste, deposit them in the bins, and return to the start area.</p>
+                                <a class = "btn-floating fab waves-effect waves-light black darken-2 activator" style = "margin-top: 20px;"><i class = "material-icons">add</i></a>
+                            </div>
+                        </div>
+                        <div class = "card-image">
+                            <img src = "img/Internationals.jpg" class = "activator">
+                            <span class = "card-title">WRO 2016</span>
+                        </div>
+                        <div class = "card-reveal">
+                            <span class = "card-title activator"><i class = "material-icons right">close</i></span>
+                            <h5>Achievements</h5>
+                            <p>Delhi-NCR Regionals, 1st Position</p>
+                            <p>National Championships, 2nd Position</p>
+                            <p>International Championships, 2nd Position</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class = "row lcard">
+                <div class = "col l12" style = "float: none; margin: 0 auto;">
+                    <div class = "card horizontal hoverable" style = "width: 100%; ">
+                        <div class = "card-image">
+                            <img src = "img/FTC16.png" class = "activator">
+                            <span class = "card-title">FTC 2016</span>
+                        </div>
+                        <div class = "card-stacked">
+                            <div class = "card-content">                     
+                                <p>Velocity Vortex, the 2016-17 edition of the FIRST Tech Challenge, required a robot to perform a variety of different tasks. The match began with a 30 second autonomous period, where points were awarded if the robot pressed the correct beacon buttons, successfully shot 'particles' (balls) into designated areas and/or parked on a ramp. The autonomous period was followed by a 2 minute driver-controlled period, where points were awarded if the robot shot particles into the designated areas and/or lifted a 'cap ball' (gym ball).</p>
+                                <a class = "btn-floating fab waves-effect waves-light black darken-2 activator" style = "margin-top: 20px; float: right;"><i class = "material-icons">add</i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class = "row scard">
+                <div class = "col l6 m8 offset-m2 s10 offset-s1">
+                    <div class = "card hoverable" style = "width: 100%;">
+                        <div class = "card-image">
+                            <img src = "img/FTC15.jpg">
+                            <span class = "card-title">FTC 2015</span>
+                        </div>
+                        <div class = "card-content">                     
+                            <p>FIRST Tech Challenge is a robotics competition designed for students in grades 7-12. Teams are responsible for designing, building, and programming their robots in a 10-week build period to compete in an alliance format against other teams. Teams are also required to make an 'Engineering Notebook' that documents their build season and experience. Res-Q, the 2015-16 edition of the First Tech Challenge, challenged students to design and build robots capable of climbing ramps, depositing debris in designated areas and hanging, among other tasks. Our robot featured a robust drivetrain, a 3D-printed bucket for efficient collection of debris, as well as a cascading slide system capable of extending to maximum length in less than 4 seconds.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class = "col l6 m8 offset-m2 s10 offset-s1">
+                    <div class = "card hoverable" style = "width: 100%;">
+                        <div class = "card-image">
+                            <img src = "img/Internationals.jpg">
+                            <span class = "card-title">WRO 2016</span>
+                        </div>
+                        <div class = "card-content">                     
+                            <p>World Robot Olympiad is a global robotics competition that brings together enthusiastic students from all across the world. The 2016 season, Rap the Scrap, was held in Delhi, India in November 2016. The Regular Junior High challenge required a robot to autonomously identify and locate different types of wastes (denoted by cubes of different sizes and colours) found inside the house, and take them to their respective bins, to sort the waste. The challenge required locating the waste bins (also differentiated by colors, and location), identifying different wastes available, and matching the wastes to their respective bins using an algorithm. Finally, to score points, the robot needed to pick the correct waste, deposit them in the bins, and return to the start area.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class = "col l6 offset-l3 m8 offset-m2 s10 offset-s1">
+                    <div class = "card hoverable" style = "width: 100%;">
+                        <div class = "card-image">
+                            <img src = "img/FTC16.png">
+                            <span class = "card-title">FTC 2016</span>
+                        </div>
+                        <div class = "card-content">                     
+                            <p>Velocity Vortex, the 2016-17 edition of the FIRST Tech Challenge, required a robot to perform a variety of different tasks. The match began with a 30 second autonomous period, where the robots could only operate by pre-programmed instructions. In this period, points were awarded if the robot pressed the correct beacon buttons, successfully shot 'particles' (balls) into designated areas and/or parked on a ramp or raised platform. The autonomous period was followed by a 2 minute driver-controlled period, where points were awarded if the robot shot particles into the designated areas and/or lifted a 'cap ball' (gym ball).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class = "section"></div>
+            <hr style = "size: 1.5px">
+        </div>
+        
+        <div class = "main-container" id = "timeline">
+            <div class = "section"></div>
+            <section id = "timeline" class = "timeline-outer">
+                <div class = "container" id = "content">
+                    <div class = "row">
+                        <div class = "col s12 m12 l12">
+                            <h1 class = "header">Timeline</h1>
+                            <ul class = "timeline">
+                                <li class = "event" data-date = "2015/Present">
+                                    <h3>2017</h3>
+                                    <p>FIRST Tech Challenge, World Championships, St. Louis</p>
+                                    <p>Best Delegate, European Union, Utopia MUN '17</p>
+                                    <p>Second Place, Robodex '17, DPS Dwarka</p>
+                                    <p>Second Place, French Debat Contradictoire, Amity International School</p>
+                                    <p>Co-founded Thought Processors</p>
+                                </li>
+                                
+                                <li class = "event" data-date = "2015/Present">
+                                    <h3>2016</h3>
+                                    <p>Second Place, World Robot Olympiad (Junior High), International Championships</p>
+                                    <p>Second Place, World Robot Olympiad (Junior High), National Championships</p>
+                                    <p>First Place, World Robot Olympiad (Junior High), Regional Championships</p>
+                                    <p>Member of team that competed in FIRST Tech Challenge Asia-Pacific Invitational in Sydney, Australia | Ranked 6 of 34</p>
+                                    <p>All India Rank 44, National Creative Olympiad</p>
+                                    <p>Medal of Distinction, SOF International English Olympiad | Top-25 state rank</p>
+                                    <p>100% Ranker, French Olympiad National Level Examination</p>
+                                    <p>Cleared A1, Diplôme d'Études en Langue Française (DELF)</p>
+                                </li>
+                                
+                                <li class = "event" data-date = "2015/Present">
+                                    <h3>2015</h3>
+                                    <p>Inspire Award, Hudson Valley Qualifiers, FIRST Tech Challenge</p>
+                                    <p>PTC Design Award, New Jersey State Championship, FIRST Tech Challenge</p>
+                                    <p>Control Award, New York State Championship, FIRST Tech Challenge</p>
+                                    <p>Fifth Place, Mathcounts Chapter Competition</p>
+                                    <p>Co-founded Chess Club</p>
+                                </li>
+                                
+                                <li class = "event" data-date = "2015/Present">
+                                    <h3>Pre - 2015</h3>
+                                    <p>SOF International Maths Olympiad | International Rank 13</p>
+                                    <p>SOF National Cyber Olympiad | All India Rank 18</p>
+                                    <p>Completed UCMAS Abacus</p>
+                                    <p>Co-authored 'Diary of an Unlucky Kid' and 'Rhyme Time' at the age of 10</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <footer class = "page-footer">
+            <div class = "footer-copyright">
+                <div class = "container">&copy; Jainil Ajmera, 2017</div>
+            </div>
+        </footer>
+        
+        <script src = "https://code.jquery.com/jquery-3.2.1.min.js" integrity = "sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin = "anonymous"></script>
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
         <script src = "js/typed.js"></script>
-	</body>
+		<script src = "js/main.js"></script>
+    </body>
 </html>
