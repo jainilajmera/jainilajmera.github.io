@@ -14,7 +14,7 @@ h1 {
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     color: #000;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 h2 {
@@ -60,42 +60,12 @@ nav {
 }
 
 .home {
-    background: url(background3.jpg);
+    background: url(img/background3.jpg);
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center center;
-    min-height: 100%;
-}
-
-.parallax-container {
-    height: 100% !important;
-    width: auto;
-    color: rgba(255,255,255,.9);
-}
-
-.parallax img {
-    filter: blur(6.5px);
-}
-
-.parallax-container .section {
-    width: 100%;
-}
-
-@media only screen and (max-width : 992px) {
-    .parallax-container .section {
-        position: absolute;
-        top: 40%;
-    }
-    
-    #index-banner .section {
-        top: 10%;
-    }
-}
-
-@media only screen and (max-width : 600px) {
-    #index-banner .section {
-        top: 0;
-    }
+    background-attachment: fixed;
+    height: 100%;
 }
 
 #before-typed {
@@ -128,7 +98,7 @@ nav {
     animation: blink 1s infinite;
 }
 
-@media all and (max-width: 1275px) {
+@media all and (max-width: 1400px) {
     .scard {
        display: block;
     }
@@ -138,7 +108,7 @@ nav {
     }
 }
 
-@media all and (min-width: 1276px) {
+@media all and (min-width: 1401px) {
     .scard {
        display: none;
     }
