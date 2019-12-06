@@ -67,7 +67,7 @@ nav {
 }
 
 .home {
-    background: url(img/background3.jpg);
+    background: url(img/background.png);
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center center;
@@ -77,14 +77,14 @@ nav {
 
 #before-typed {
     font-family: 'Roboto';
-    color: #000;
+    color: #fff;
     font-weight: 300;
     font-size: 42px;
 }
 
 #typed {
     font-family: 'Roboto';
-    color: #000;
+    color: #fff;
     font-weight: 300;
     font-size: 42px;
 }
@@ -93,19 +93,19 @@ nav {
     text-align: center;
     margin: 0 auto;
     width: 70%;
-    border: 2px solid #000;
+    border: 2px solid #fff;
     padding: 5px;
 }
 
 #cursor {
     font-family: 'Roboto';
     padding-left: 3px;
-    color: #000;
+    color: #fff;
     font-size: 42px;
     animation: blink 1s infinite;
 }
 
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1200px) {
     .scard {
        display: block;
     }
@@ -115,7 +115,7 @@ nav {
     }
 }
 
-@media all and (min-width: 1401px) {
+@media all and (min-width: 1201px) {
     .scard {
        display: none;
     }
@@ -241,6 +241,10 @@ h1.header {
     background-color: #000;
 }
 
+#footer {
+    padding-bottom: 20px;
+}
+
 @keyframes blink {
   to {
       opacity: .0;
@@ -260,6 +264,7 @@ h1.header {
 
 .animate1, .typed-box, .animate2 {
     opacity: 0;
+    color: #fff !important;
 }
 
 .animate1 {
