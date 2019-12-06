@@ -73,6 +73,7 @@ nav {
     background-position: center center;
     background-attachment: fixed;
     height: 100%;
+    height: 100vh;
 }
 
 #before-typed {
