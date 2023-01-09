@@ -464,13 +464,13 @@ p {
         justify-content: space-around;
         margin: 0 auto;
         width: 200px;
-        column-gap: 0;
+        column-gap: 5px;
     }
 }
 
 @media only screen and (max-width: 600px) {
     .contact-icons {
-        width: 45%;
+        width: 60%;
         column-gap: 10px;
     }
 }
@@ -517,8 +517,10 @@ p {
     transition: all 0.2s;
 }
 
-.card:hover {
-    transform: scale(1.04);
+@media only screen and (min-width: 992px) {
+    .card:hover {
+        transform: scale(1.04);
+    }
 }
 
 .card-image {
