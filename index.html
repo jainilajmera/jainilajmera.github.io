@@ -1,234 +1,203 @@
+
 <html>
     <head>
-		<meta charset = "utf-8">
-		<meta name = "viewport" content = "width=device-width, initial-scale=1">
-		<title>Jainil Ajmera</title>
-        <link rel = "icon" type = "image/png" href = "img/code.png">
-		<link href = "https://fonts.googleapis.com/css?family=Roboto:300,300i,400|Quicksand:300,400" rel = "stylesheet">
-		<link rel = "stylesheet" href = "materialize.min.css">
-		<link rel = "stylesheet" type = "text/css" href = "style.css">
-		<link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
-	</head>
-    
+        <title>Jainil Ajmera</title>
+	    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="shortcut icon" href="img/favicon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"></llink>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+
     <body>
-        <div class = "home">
-            <div class = "navbar-fixed">
-				<nav class = "z-depth-0">
-				    <div class = "nav-wrapper">
-                        <a href = "#" data-activates = "mobile-demo" class = "button-collapse">
-                            <i class = "material-icons">menu</i>
+        <div class="navbar">
+            <div class="nav-cross" onclick="navbarToggle()">
+                <span class="one"></span>
+                <span class="two"></span>
+                <span class="three"></span>
+            </div>
+            <div class="nav-title">
+                <a href="#top" onclick="navbarClose()">Jainil Ajmera</a>
+            </div>
+            <div class="nav-items">
+                <a class="nav-item" href="#about" onclick="navbarClose()">About</a>
+                <a class="nav-item" href="#work" onclick="navbarClose()">Work</a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="landing">
+                <h1 class="animate1">Hi there! I'm <span style="color: var(--primary-light);">Jainil</span>.
+                    <div class="animate2">
+                        <span id="before-typed">I </span>
+                        <span id="typed" style="color: var(--secondary)"></span>
+                        <span id="cursor">at</span>
+                        <br class="animate2 hide-on-large-only">
+                        <span style="color: var(--tertiary);">UC Berkeley</span>.
+                        <!-- I'm a <span style="color: var(--secondary);">student developer</span> <br> at
+                        <span style="color: var(--tertiary);">UC Berkeley</span>. -->
+                    </div>
+                </h1>
+            </div>
+
+            <div class="section" id="about">
+                <h3 class="section-title">Hi! :D</h3>
+                <div class="about-container">
+                    <div class="about-half">
+                        <img src="img/me.jpeg" class="about-img">
+                    </div>
+                    <div class="about-half">
+                        <p>My name is Jainil, and I'm a junior at <span style="color: var(--secondary);">UC Berkeley</span> majoring in <span style="color: var(--secondary);">computer science.</span></p>
+                        <p>Last summer, I interned at <span style="color: var(--secondary);">Salesforce</span> and developed two features for Salesforce's data integrations platform, MuleSoft Composer. One of these features is currently patent pending.</p>
+                        <p>Presently, I'm working on problems in robot grasping and manipulation at <span style="color: var(--secondary);">BAIR</span>. In my free time, I enjoy playing cricket, hitting the climbing gym with my friends, and geeking out over sports.</p>
+                        <div class="contact-icons">
+                            <a href="mailto:jainil@berkeley.edu" target="_blank"><i class="far fa-envelope"></i></a>
+                            <a href="https://www.linkedin.com/in/jainilajmera" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/jainilajmera" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="work">
+                <h3 class="section-title">Work</h3>
+                <div class="card-container">
+                    <div class="card hide-on-med-and-down">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="img/bair.png">
+                        </div>
+                        <div class="card-text">
+                            <h4><span class="activator">Research Assistant<i class="material-icons right">more_vert</i></span></h4>
+                            <div class="date">August 2022 - Present</div>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title" style="color: var(--primary-font);"><i class="material-icons right">close</i></span>
+                            <p>I'm an undergraduate research assistant at the Berkeley Artificial Intelligence Research Lab. Currently, I'm exploring autonomous cable untangling technology at Professor Ken Goldberg's AutoLAB, UC Berkeley's leading robotics and automation research center.</p>
+                        </div>
+                    </div>
+
+                    <div class="card hide-on-large-only">
+                        <a href="https://autolab.berkeley.edu/" target="_blank">
+                            <img src="img/bair.png" class="card-image">
+                            <div class="card-text">
+                                <h4>Research Assistant</h4>
+                                <div class="date">August 2022 - Present</div>
+                                <p>Working on autonomous cable untangling technology at the Berkeley Artificial Intelligence Research Lab.</p> 
+                            </div>
                         </a>
-                        <ul class = "right hide-on-med-and-down">
-                           <li><a href = "index.html">Home</a></li>
-                           <li><a href = "#about">About</a></li>
-                           <li><a href = "#projects">Projects</a></li>
-                        </ul>
                     </div>
-                </nav>
-            </div>
 
-            <ul class = "side-nav" id = "mobile-demo">
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "#about">About</a></li>
-                <li><a href = "#projects">Projects</a></li>
-            </ul>
-            
-            <div class = "flex-container">
-                <h1 class = "animate1">Hi there!</h1>
-                <div class = "typed-box hide-on-med-and-down">
-                    <span id = "before-typed">I'm </span><span id = "typed"></span><span id = "cursor">|</span>
+                    <div class="card hide-on-med-and-down">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="img/salesforce.png">
+                        </div>
+                        <div class="card-text">
+                            <h4><span class="activator">SWE Intern<i class="material-icons right">more_vert</i></span></h4>
+                            <div class="date">May 2022 - August 2022</div>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title" style="color: var(--primary-font);"><i class="material-icons right">close</i></span>
+                            <p>I led a user-facing, full-stack project that impacted over 300 businesses. I built functionality to accept, validate, and parse custom logic in Composer's conditional statements. In addition, I co-developed CompoSearch, a novel search feature (patent pending) that was awarded the 'Best Customer Value Hack' at a Salesforce hackathon.</p>
+                        </div>
+                    </div>
+
+                    <div class="card hide-on-large-only">
+                        <a href="https://www.mulesoft.com/platform/composer/no-code-integration-tool" target="_blank">
+                            <img src="img/salesforce.png" class="card-image">
+                            <div class="card-text">
+                                <h4>SWE Intern</h4>
+                                <div class="date">May 2022 - August 2022</div>
+                                <p>Led the end-to-end design, development, and deployment of two features for MuleSoft Composer.</p> 
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card hide-on-med-and-down">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="img/jacobs.png">
+                        </div>
+                        <div class="card-text">
+                            <h4><span class="activator">SWE/ML Intern<i class="material-icons right">more_vert</i></span></h4>
+                            <div class="date">June 2021 - August 2021</div>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title" style="color: var(--primary-font);"><i class="material-icons right">close</i></span>
+                            <p>I developed a sentiment classifier to analyze Jacobs' social media presence. To that end, I aggregated consumer feedback by querying data using the Facebook Graph API and LinkedIn API. I used the RoBERTa model from Hugging Face’s Transformers library for sentiment analysis and displayed key insights and results on a Power BI dashboard.</p>
+                        </div>
+                    </div>
+
+                    <div class="card hide-on-large-only">
+                        <a href="https://www.jacobs.com/" target="_blank">
+                            <img src="img/jacobs.png" class="card-image">
+                            <div class="card-text">
+                                <h4>SWE/ML Intern</h4>
+                                <div class="date">June 2021 - August 2021</div>
+                                <p>Built a system that aggregates and classifies consumer feedback to analyze Jacobs' social media presence.</p> 
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card hide-on-med-and-down">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="img/tmc.png">
+                        </div>
+                        <div class="card-text">
+                            <h4><span class="activator">Co-Founder<i class="material-icons right">more_vert</i></span></h4>
+                            <div class="date">May 2021 - December 2021</div>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title" style="color: var(--primary-font);"><i class="material-icons right">close</i></span>
+                            <p>I co-founded a startup to help social organizations quantify their impact and attract more donations and volunteers. At Track My Change, we designed customizable, interactive widgets that showcased our clients' impact. I created REST API in PHP with MySQL to track widget analytics and monitored widget interactions with JavaScript.</p>
+                        </div>
+                    </div>
+
+                    <div class="card hide-on-large-only">
+                        <a href="https://www.linkedin.com/company/74967029" target="_blank">
+                            <img src="img/tmc.png" class="card-image">
+                            <div class="card-text">
+                                <h4>Co-Founder</h4>
+                                <div class="date">May 2021 - December 2021</div>
+                                <p>Co-founded a startup to help social organizations quantify their impact and attract more donations and volunteers.</p> 
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card hide-on-med-and-down">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="img/berkeley.png">
+                        </div>
+                        <div class="card-text">
+                            <h4><span class="activator">Tutor and CSM Mentor<i class="material-icons right">more_vert</i></span></h4>
+                            <div class="date">January 2021 - May 2022</div>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title" style="color: var(--primary-font);"><i class="material-icons right">close</i></span>
+                            <p>I co-hosted 3-hour lab sections for students of EECS 16A, twice a week. These lab sections emphasized concepts in linear algebra, circuit analysis, and machine learning. In addition, I led weekly small-group tutoring sessions and organized regular check-ins and socials for junior mentors. I also helped maintain and develop course materials.</p>
+                        </div>
+                    </div>
+
+                    <div class="card hide-on-large-only">
+                        <a href="https://eecs16a.org/" target="_blank">
+                            <img src="img/berkeley.png" class="card-image">
+                            <div class="card-text">
+                                <h4>Course Tutor (ASE)</h4>
+                                <div class="date">January 2021 - May 2022</div>
+                                <p>Co-hosted weekly lab and small-group tutoring sections for EECS 16A (Electronic Devices & Systems I).</p> 
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <h2 class = "animate2 hide-on-large-only">I'm Jainil Ajmera.</h2>
             </div>
-            
         </div>
-        
-        <div class = "container" id = "about">
-            
-            <div class = "section"></div>
-            <div class = "row">
-                <div class = "col s12">
-                    <h1 class = "header">Me_irl.</h1>
-                </div>
 
-                <div class = "col s8 offset-s2 m6 offset-m3 l4 offset-l4"><img src = "img/test.jpg" class = "photo-rounded"></div>
-                <div class = "col s12">
-                    <p>Hi there! My name is Jainil Ajmera. I'm 18 years old, and I study at Delhi Public School, Gurgaon. I was born on November 21, 2001 in Andheri, a bustling suburb of Mumbai. I enjoy problem-solving and have diverse interests, including robotics, programming, web design, filmmaking and participating in MUNs.</p>
-				    <p>My journey in robotics began when I became a part of the Metal Marauders, a private FTC team based in New Jersey. By exposing me to the various aspects of robotics, FTC helped deepen my passion for the STEM field and turned me into a better problem-solver. In addition, the program helped me learn how to pitch my ideas with others and helped me get involved with the community. I am extremely thankful to the other members of the team, who shared their knowledge with me and supported me throughout the season.</p>
-				    <p>My biggest achievement, till date, has been to bounce back from a failed robot run to secure the silver medal among 450+ teams globally at the World Robot Olympiad.</p>
-                </div>
-            </div>   
-            
-            <div class = "section"></div>
-            <hr style = "size: 1.5px">
-            
-        </div>
-        
-        <div class = "container" id = "projects">
-            
-            <div class = "section"></div>
-            <div class = "row">
-                <div class = "col s12">
-                    <h1 class = "header">Projects</h1>
-                </div>
-            </div>
-            
-            <div class = "row lcard">
-                <div class = "col s12 m6">
-                    <div class = "card hoverable">
-                        <div class = "card-image waves-effect waves-block waves-light">
-                            <img src = "img/FTC15.jpg" class = "activator">
-                        </div>
-                        <div class = "card-stacked">
-                            <div class = "card-content">
-                                <span class = "card-title activator grey-text text-darken-4">FTC 2015<i class = "material-icons right">more_vert</i></span>
-                                <p>FIRST Tech Challenge is a robotics competition designed for students in grades 7-12. Teams are responsible for designing, building, and programming their robots in a 10-week build period to compete in an alliance format against other teams. Teams are also required to make an 'Engineering Notebook' that documents their build season and experience. Res-Q, the 2015-16 edition of the First Tech Challenge, challenged students to design and build robots capable of climbing ramps, depositing debris in designated areas and hanging, among other tasks.</p>
-                            </div>
-                        </div>
-                        <div class = "card-reveal">
-                            <span class = "card-title activator"><i class = "material-icons right">close</i></span>
-                            <h5>Achievements</h5>
-                            <p>Inspire Award: Hudson Valley Qualifiers</p>
-                            <p>PTC Design Award: New Jersey State Championship</p>
-                            <p>Control Award: New York State Championship</p>
-                            <p>Finalist Alliance, 2nd pick: Vermont State Championship</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class = "col s12 m6">
-                    <div class = "card hoverable">
-                        <div class = "card-image">
-                            <img src = "img/WRO16.jpg" class = "activator">
-                        </div>
-                        <div class = "card-stacked">
-                            <div class = "card-content"> 
-                                <span class = "card-title activator grey-text text-darken-4">WRO 2016<i class = "material-icons right">more_vert</i></span>
-                                <p>World Robot Olympiad is a global robotics competition for students. The 2016 season, Rap the Scrap, was held in Delhi, India in November 2016. The Regular Junior High challenge required a robot to autonomously identify and locate different types of wastes (denoted by cubes of different sizes and colours) found inside the house, and take them to their respective bins (also differentiated by color and location), to sort the waste. Finally, to score points, the robot needed to pick the correct waste, deposit them in the bins, and return to the start area.</p>
-                            </div>
-                        </div>
-                        <div class = "card-reveal">
-                            <span class = "card-title activator"><i class = "material-icons right">close</i></span>
-                            <h5>Achievements</h5>
-                            <p>Delhi-NCR Regionals, 1st Position</p>
-                            <p>National Championships, 2nd Position</p>
-                            <p>International Championships, 2nd Position</p>
-                            <p>Featured on various newspapers, including the Times of India, Huffington Post and Hindustan Times</p>
-                            <p>Felicitated with a Certificate of Appreciation from the Government of Haryana</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class = "row lcard">
-                <div class = "col s12 m6">
-                    <div class = "card hoverable">
-                        <div class = "card-image">
-                            <img src = "img/FTC16.png" class = "activator">
-                        </div>
-                        <div class = "card-stacked">
-                            <div class = "card-content">
-                                <span class = "card-title activator grey-text text-darken-4">FTC 2016<i class = "material-icons right">more_vert</i></span>
-                                <p>Velocity Vortex, the 2016-17 edition of the FIRST Tech Challenge, required a robot to perform a variety of different tasks, ranging from projectile shooting to beacon color detection. We used omnidirectional wheels in order to develop a drivetrain capable of fully holonomic movement. Furthermore, we utilized the phone's camera in order to differentiate between beacon colors (via image processing), and designed a flicker mechanism for accurate projectile shooting.</p>
-                            </div>
-                        </div>
-                        <div class = "card-reveal">
-                            <span class = "card-title activator"><i class = "material-icons right">close</i></span>
-                            <h5>Achievements</h5>
-                            <p>Inspire Award, National Championships</p>
-                            <p>Winning Alliance Captain, National Championships</p>
-                            <p>FedEx Innovation Award, World Championships, St. Louis</p>
-                        </div>
-                    </div>
-                </div>
-            
-                <div class = "col s12 m6">
-                    <div class = "card hoverable">
-                        <div class = "card-image">
-                            <img src = "img/AllRyde.jpg" class = "activator">
-                        </div>
-                        <div class = "card-stacked">
-                            <div class = "card-content">
-                                <span class = "card-title activator grey-text text-darken-4">AllRyde<i class = "material-icons right">more_vert</i></span>
-                                <p>Founded at MIT LaunchX, AllRyde aims to revolutionize road safety in India. With the aim of incentivizing safe driving, we developed a device that monitors helmet use and driving data via Android motion sensors. Data is collected on an array of different parameters, ranging from motorcycle speed to deceleration rates. Responsible motorcyclists are then entitled to lower insurance premiums, creating a positive feedback loop that motivates users to continue to drive safely.</p>
-                            </div>
-                        </div>
-                        <div class = "card-reveal">
-                            <span class = "card-title activator"><i class = "material-icons right">close</i></span>
-                            <h5>Achievements</h5>
-                            <p>Finalist, IILM Young Citizen Award</p>
-                            <p>1st Place, Enship, DPS RK Puram</p>
-                            <p>Selected as one of four students from Delhi-NCR to present the idea to Mr. Eric Schmidt, Executive Chairman, Alphabet Inc.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class = "row scard">
-                <div class = "col l6 m8 offset-m2 s10 offset-s1">
-                    <div class = "card hoverable" style = "width: 100%;">
-                        <div class = "card-image">
-                            <img src = "img/FTC15.jpg">
-                            <span class = "card-title">FTC 2015</span>
-                        </div>
-                        <div class = "card-content">                     
-                            <p>FIRST Tech Challenge is a robotics competition designed for students in grades 7-12. Teams are responsible for designing, building, and programming their robots in a 10-week build period to compete in an alliance format against other teams. Teams are also required to make an 'Engineering Notebook' that documents their build season and experience. Res-Q, the 2015-16 edition of the First Tech Challenge, challenged students to design and build robots capable of climbing ramps, depositing debris in designated areas and hanging, among other tasks. Our robot featured a robust drivetrain, a 3D-printed bucket for efficient collection of debris, as well as a cascading slide system capable of extending to maximum length in less than 4 seconds.</p>
-                        </div>
-                    </div>
-                </div>
-               
-                <div class = "col l6 m8 offset-m2 s10 offset-s1">
-                    <div class = "card hoverable" style = "width: 100%;">
-                        <div class = "card-image">
-                            <img src = "img/WRO16.jpg">
-                            <span class = "card-title">WRO 2016</span>
-                        </div>
-                        <div class = "card-content">                     
-                            <p>World Robot Olympiad is a global robotics competition that brings together enthusiastic students from all across the world. The 2016 season, Rap the Scrap, was held in Delhi, India in November 2016. The Regular Junior High challenge required a robot to autonomously identify and locate different types of wastes (denoted by cubes of different sizes and colours) found inside the house, and take them to their respective bins, to sort the waste. The challenge required locating the waste bins (also differentiated by colors, and location), identifying different wastes available, and matching the wastes to their respective bins using an algorithm. Finally, to score points, the robot needed to pick the correct waste, deposit them in the bins, and return to the start area.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class = "row scard">
-                <div class = "col l6 m8 offset-m2 s10 offset-s1">
-                    <div class = "card hoverable" style = "width: 100%;">
-                        <div class = "card-image">
-                            <img src = "img/FTC16.png">
-                            <span class = "card-title">FTC 2016</span>
-                        </div>
-                        <div class = "card-content">                     
-                            <p>Velocity Vortex, the 2016-17 edition of the FIRST Tech Challenge, required a robot to perform a variety of different tasks, ranging from projectile shooting to beacon color detection. We used omnidirectional wheels in order to develop a drivetrain capable of fully holonomic movement. Furthermore, we utilized the phone's camera in order to differentiate between beacon colors (via image processing), and designed a flicker mechanism for accurate projectile shooting.</p>
-                        </div>
-                    </div>
-                </div>
-               
-                <div class = "col l6 m8 offset-m2 s10 offset-s1">
-                    <div class = "card hoverable" style = "width: 100%;">
-                        <div class = "card-image">
-                            <img src = "img/AllRyde.jpg">
-                            <span class = "card-title">AllRyde</span>
-                        </div>
-                        <div class = "card-content">                     
-                            <p>Founded at MIT LaunchX, AllRyde aims to revolutionize road safety in India. With the aim of incentivizing safe driving, we developed a device that monitors helmet use and driving data via Android motion sensors. Data is collected on an array of different parameters, ranging from motorcycle speed to deceleration rates. Responsible motorcyclists are then entitled to lower insurance premiums, creating a positive feedback loop for drivers.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        
-        <footer class = "page-footer">
-            <div class = "container center-align" id = "footer">
-                <div class = "col s12">
-                    <p class = "center-align">Made with &hearts; by Jainil Ajmera</p>
-                </div>
-            </div>
-        </footer>
-        
-        <script src = "https://code.jquery.com/jquery-3.2.1.min.js" integrity = "sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin = "anonymous"></script>
-		<script src = "js/materialize.min.js"></script>
-        <script src = "js/typed.min.js"></script>
-		<script src = "js/main.js"></script>
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://kit.fontawesome.com/60d411b6dd.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="js/typed.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
