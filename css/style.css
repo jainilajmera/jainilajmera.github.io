@@ -339,6 +339,7 @@ li {
     min-height: calc(100vh - 80px);
     max-width: 1600px;
     margin: 0 auto;
+    padding-bottom: 20px;
 }
 
 @media only screen and (max-width: 992px) {
@@ -359,7 +360,7 @@ li {
     }
 }
 
-#about p a {
+.about-link {
     color: var(--secondary);
     text-decoration: underline; 
     text-underline-offset: 0.3rem;
@@ -511,6 +512,7 @@ li {
     min-height: calc(100vh - 80px);
     max-width: 1600px;
     margin: 0 auto;
+    padding-bottom: 20px;
 }
 
 @media only screen and (max-width: 992px) {
@@ -707,13 +709,13 @@ li {
 
 /* Icons */
 
-.title-icon {
+i.title-icon {
     font-size: 1.7rem;
-    color: var(--secondary);
+    color: var(--secondary) !important;
 }
 
 @media only screen and (max-width: 750px) {
-    .title-icon {
+    i.title-icon {
         font-size: 1.45rem;
     }
 }
