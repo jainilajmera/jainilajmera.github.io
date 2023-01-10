@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700|Quicksand:300,400,500,600,700" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="shortcut icon" href="img/favicon.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"></llink>
@@ -26,6 +26,7 @@
             <div class="nav-items">
                 <a class="nav-item" href="#about" onclick="navbarClose()">About</a>
                 <a class="nav-item" href="#work" onclick="navbarClose()">Work</a>
+                <a class="nav-item" href="#projects" onclick="navbarClose()">Projects</a>
             </div>
         </div>
 
@@ -38,14 +39,12 @@
                         <span id="cursor">at</span>
                         <br class="animate2 hide-on-large-only">
                         <span style="color: var(--tertiary);">UC Berkeley</span>.
-                        <!-- I'm a <span style="color: var(--secondary);">student developer</span> <br> at
-                        <span style="color: var(--tertiary);">UC Berkeley</span>. -->
                     </div>
                 </h1>
             </div>
 
             <div class="section" id="about">
-                <h3 class="section-title">Hi! :D</h3>
+                <h3 class="section-title">Hi! <i class="material-icons title-icon" style="color: var(--secondary);">waving_hand</i></h3>
                 <div class="about-container">
                     <div class="about-half">
                         <img src="img/me.jpeg" class="about-img">
@@ -64,133 +63,286 @@
             </div>
 
             <div class="section" id="work">
-                <h3 class="section-title">Work</h3>
+                <h3 class="section-title">Work <i class="material-icons title-icon" style="color: var(--secondary);">handyman</i></h3>
+                <div class="row">
+                    <div class="col s12 large-work">  
+                        <ul class="collection">
+                            <li class="collection-item avatar">
+                                <img src="img/bair-mini.png" alt="" class="circle">
+                                <h4>Undergraduate Research Assistant <span style="color: var(--primary-light);">// Berkeley Artificial Intelligence Research</span></h4>
+                                <p style="color: var(--secondary); margin-top: 7px;">Aug 2022 - Present</p>
+                            </li>
+                            <li>Working on autonomous cable untangling technology at at AutoLAB, UC Berkeley's leading robotics and automation research center.</li>
+                        </ul>
+                        <div class="spacer"></div>
+
+                        <ul class="collection">
+                            <li class="collection-item avatar">
+                                <img src="img/salesforce-mini.png" alt="" class="circle">
+                                <h4>Software Engineer Intern <span style="color: var(--primary-light);">// Salesforce</span></h4>
+                                <p style="color: var(--secondary); margin-top: 7px;">May 2022 - Aug 2022</p>
+                            </li>
+                            <li>Led a user-facing, full-stack project as part of a MuleSoft Composer scrum team, impacting 300+ businesses.</li>
+                            <li>Built a novel, award-winning search feature. Filed for a patent and demoed the feature live to customers.</li>
+                            <li>Designed and developed functionality to accept, valilanguages, and parse custom logic. Deployed to production.</li>
+                            <li>Used React, Redux, and TypeScript on the frontend. Worked with Java (Spring) microservices on the backend.</li>
+                            <li>Wrote tests (in JUnit, Jest, and Mockito), fixed bugs, and handled feature planning alongside the team's PM.</li>
+                        </ul>
+                        <div class="spacer"></div>
+                
+                        <ul class="collection">
+                            <li class="collection-item avatar">
+                                <img src="img/jacobs-mini.jpeg" alt="" class="circle">
+                                <h4>Software Engineer Intern <span style="color: var(--primary-light);">// Jacobs</span></h4>
+                                <p style="color: var(--secondary); margin-top: 7px;">Jun 2021 - Aug 2021</p>
+                            </li>
+                            <li>Developed a sentiment classifier in Python to analyze Jacobs' social media presence.</li>
+                            <li>Queried post data using the Facebook Graph API & LinkedIn API. Displayed insights on a Power BI dashboard.</li>
+                            <li>Leveraged the RoBERTa model from Hugging Face's Transformers library for sentiment analysis.</li>
+                        </ul>
+                        <div class="spacer"></div>
+
+                        <ul class="collection">
+                            <li class="collection-item avatar">
+                                <img src="img/tmc-mini.png" alt="" class="circle">
+                                <h4>Co-Founder <span style="color: var(--primary-light);">// Track My Change</span></h4>
+                                <p style="color: var(--secondary); margin-top: 7px;">May 2021 - Dec 2021</p>
+                            </li>
+                            <li>Launched a startup to quantify the impact of social organizations. Served customers from the US and Nepal.</li>
+                            <li>Designed customizable, interactive web widgets to convey social impact to potential volunteers and donors.</li>
+                            <li>Created REST API in PHP with MySQL to track analytics. Monitored widget interactions with JavaScript.</li>
+                        </ul>
+                        <div class="spacer"></div>
+
+                        <ul class="collection">
+                            <li class="collection-item avatar">
+                                <img src="img/berkeley-mini.png" alt="" class="circle">
+                                <h4>Tutor &amp; CSM Mentor <span style="color: var(--primary-light);">// University of California, Berkeley</span></h4>
+                                <p style="color: var(--secondary); margin-top: 7px;">Jan 2021 - May 2022</p>
+                            </li>
+                            <li>Organized 3-hour-long lab sections (concepts: linear algebra, circuits, and machine learning) twice a week.</li>
+                            <li>Led weekly small-group tutoring sessions. Developed course materials and hosted check-ins for junior mentors.</li>
+                        </ul>
+                    </div>
+
+                    <div class="col s12 med-work">
+                        <h4>Undergraduate Research Assistant <span style="color: var(--primary-light);">// Berkeley Artificial Intelligence Research</span></h4>
+                        <p style="color: var(--secondary); margin-top: 7px;">Aug 2022 - Present</p>
+                        <ul>
+                            <li>Working on autonomous cable untangling technology at at AutoLAB, UC Berkeley's leading robotics and automation research center.</li>
+                        </ul>
+                        <div class="spacer"></div>
+
+                        <h4>Software Engineer Intern <span style="color: var(--primary-light);">// Salesforce</span></h4>
+                        <p style="color: var(--secondary); margin-top: 7px;">May 2022 - Aug 2022</p>
+                        <ul>
+                            <li>Led a user-facing, full-stack project as part of a MuleSoft Composer scrum team, impacting 300+ businesses.</li>
+                            <li>Built a novel, award-winning search feature. Filed for a patent and demoed the feature live to customers.</li>
+                            <li>Designed and developed functionality to accept, valilanguages, and parse custom logic. Deployed to production.</li>
+                            <li>Used React, Redux, and TypeScript on the frontend. Worked with Java (Spring) microservices on the backend.</li>
+                            <li>Wrote tests (in JUnit, Jest, and Mockito), fixed bugs, and handled feature planning alongside the team's PM.</li>                        
+                        </ul>
+                        <div class="spacer"></div>
+
+                        <h4>Software Engineer Intern <span style="color: var(--primary-light);">// Salesforce</span></h4>
+                        <p style="color: var(--secondary); margin-top: 7px;">Jun 2021 - Aug 2021</p>
+                        <ul>
+                            <li>Developed a sentiment classifier in Python to analyze Jacobs' social media presence.</li>
+                            <li>Queried post data using the Facebook Graph API & LinkedIn API. Displayed insights on a Power BI dashboard.</li>
+                            <li>Leveraged the RoBERTa model from Hugging Face's Transformers library for sentiment analysis.</li>                        
+                        </ul>
+                        <div class="spacer"></div>
+
+                        <h4>Co-Founder <span style="color: var(--primary-light);">// Track My Change</span></h4>
+                        <p style="color: var(--secondary); margin-top: 7px;">May 2021 - Dec 2021</p>
+                        <ul>
+                            <li>Launched a startup to quantify the impact of social organizations. Served customers from the US and Nepal.</li>
+                            <li>Designed customizable, interactive web widgets to convey social impact to potential volunteers and donors.</li>
+                            <li>Created REST API in PHP with MySQL to track analytics. Monitored widget interactions with JavaScript.</li>                     
+                        </ul>
+                        <div class="spacer"></div>
+
+                        <h4>Tutor &amp; CSM Mentor <span style="color: var(--primary-light);">// University of California, Berkeley</span></h4>
+                        <p style="color: var(--secondary); margin-top: 7px;">Jan 2021 - May 2022</p>
+                        <ul>
+                            <li>Organized 3-hour-long lab sections (concepts: linear algebra, circuits, and machine learning) twice a week.</li>
+                            <li>Led weekly small-group tutoring sessions. Developed course materials and hosted check-ins for junior mentors.</li>                   
+                        </ul>
+                    </div>
+
+                    <div class="col s12 small-work">
+                        <h4>Undergraduate Research Assistant</h4>
+                        <p style="color: var(--secondary); margin-top: 7px;">Berkeley Artificial Intelligence Research</p>
+                        <ul>
+                            <li>Working on autonomous cable untangling technology at at AutoLAB, UC Berkeley's leading robotics and automation research center.</li>
+                        </ul>
+                        <div class="spacer"></div>
+
+                        <h4>Software Engineer Intern</h4>
+                        <p style="color: var(--secondary); margin-top: 7px;">Salesforce</p>
+                        <ul>
+                            <li>Led a user-facing, full-stack project as part of a MuleSoft Composer scrum team, impacting 300+ businesses.</li>
+                            <li>Built a novel, award-winning search feature. Filed for a patent and demoed the feature live to customers.</li>
+                            <li>Designed and developed functionality to accept, valilanguages, and parse custom logic. Deployed to production.</li>
+                            <li>Used React, Redux, and TypeScript on the frontend. Worked with Java (Spring) microservices on the backend.</li>
+                            <li>Wrote tests (in JUnit, Jest, and Mockito), fixed bugs, and handled feature planning alongside the team's PM.</li>                         
+                        </ul>
+                        <div class="spacer"></div>
+
+                        <h4>Software Engineer Intern</h4>
+                        <p style="color: var(--secondary); margin-top: 7px;">Jacobs</p>
+                        <ul>
+                            <li>Developed a sentiment classifier in Python to analyze Jacobs' social media presence.</li>
+                            <li>Queried post data using the Facebook Graph API & LinkedIn API. Displayed insights on a Power BI dashboard.</li>
+                            <li>Leveraged the RoBERTa model from Hugging Face's Transformers library for sentiment analysis.</li>                       
+                        </ul>
+                        <div class="spacer"></div>
+
+                        <h4>Co-Founder</h4>
+                        <p style="color: var(--secondary); margin-top: 7px;">Track My Change</p>
+                        <ul>
+                            <li>Launched a startup to quantify the impact of social organizations. Served customers from the US and Nepal.</li>
+                            <li>Designed customizable, interactive web widgets to convey social impact to potential volunteers and donors.</li>
+                            <li>Created REST API in PHP with MySQL to track analytics. Monitored widget interactions with JavaScript.</li>                      
+                        </ul>
+                        <div class="spacer"></div>
+
+                        <h4>Tutor &amp; CSM Mentor</h4>
+                        <p style="color: var(--secondary); margin-top: 7px;">University of California, Berkeley</p>
+                        <ul>
+                            <li>Organized 3-hour-long lab sections (concepts: linear algebra, circuits, and machine learning) twice a week.</li>
+                            <li>Led weekly small-group tutoring sessions. Developed course materials and hosted check-ins for junior mentors.</li>                  
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="projects">
+                <h3 class="section-title">Projects <i class="material-icons title-icon" style="color: var(--secondary);">tips_and_updates</i></h3>
                 <div class="card-container">
                     <div class="card hide-on-med-and-down">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/bair.png">
+                            <img class="activator" src="img/tp.png">
                         </div>
-                        <div class="card-text">
-                            <h4><span class="activator">Research Assistant<i class="material-icons right">more_vert</i></span></h4>
-                            <div class="date">August 2022 - Present</div>
+                        <div class="card-text activator">
+                            <h4 class="activator">Thought Processors</h4>
+                            <div class="languages activator">Django, PostgreSQL, JS</div>
                         </div>
                         <div class="card-reveal">
                             <span class="card-title" style="color: var(--primary-font);"><i class="material-icons right">close</i></span>
-                            <p>I'm an undergraduate research assistant at the Berkeley Artificial Intelligence Research Lab. Currently, I'm exploring autonomous cable untangling technology at Professor Ken Goldberg's AutoLAB, UC Berkeley's leading robotics and automation research center.</p>
+                            <p>I co-founded an online platform for hosting cryptic hunts. Over the course of 3 years, we organized 4 events and accumulated a user base of 250+ students (with 20,000+ submissions) from all over India. The platform was written in Python and built using Django and PostgreSQL. Cloudflare was used for asset caching and Heroku for PaaS.</p>
                         </div>
                     </div>
 
                     <div class="card hoverable hide-on-large-only">
-                        <a href="https://autolab.berkeley.edu/" target="_blank">
-                            <img src="img/bair.png" class="card-image">
-                            <div class="card-text">
-                                <h4>Research Assistant</h4>
-                                <div class="date">August 2022 - Present</div>
-                                <p>Working on autonomous cable untangling technology at the Berkeley Artificial Intelligence Research Lab.</p> 
-                            </div>
-                        </a>
+                        <img src="img/tp.png" class="card-image">
+                        <div class="card-text">
+                            <h4>Thought Processors</h4>
+                            <div class="languages">Django, PostgreSQL, JS</div>
+                            <p>Co-founded a platform to host India's first quest-based cryptic hunt (250+ users with 20,000+ submissions).</p> 
+                        </div>
                     </div>
 
                     <div class="card hide-on-med-and-down">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/salesforce.png">
+                            <img class="activator" src="img/gitlet.png">
                         </div>
-                        <div class="card-text">
-                            <h4><span class="activator">SWE Intern<i class="material-icons right">more_vert</i></span></h4>
-                            <div class="date">May 2022 - August 2022</div>
+                        <div class="card-text activator">
+                            <h4 class="activator">Version Control System</h4>
+                            <div class="languages activator">Java, Git</div>
                         </div>
                         <div class="card-reveal">
                             <span class="card-title" style="color: var(--primary-font);"><i class="material-icons right">close</i></span>
-                            <p>I led a user-facing, full-stack project that impacted over 300 businesses. I built functionality to accept, validate, and parse custom logic in Composer's conditional statements. In addition, I co-developed CompoSearch, a novel search feature (patent pending) that was awarded the 'Best Customer Value Hack' at a Salesforce hackathon.</p>
+                            <p>I built a miniaturized version control system in Java. The system leveraged file persistence and cryptographic hashing. I implemented remote functionality (mimicking the distributed nature of git) alongside core version control features (e.g. commit, checkout, merge).</p>
                         </div>
                     </div>
 
                     <div class="card hoverable hide-on-large-only">
-                        <a href="https://www.mulesoft.com/platform/composer/no-code-integration-tool" target="_blank">
-                            <img src="img/salesforce.png" class="card-image">
-                            <div class="card-text">
-                                <h4>SWE Intern</h4>
-                                <div class="date">May 2022 - August 2022</div>
-                                <p>Led the end-to-end design, development, and deployment of two features for MuleSoft Composer.</p> 
-                            </div>
-                        </a>
+                        <img src="img/gitlet.png" class="card-image">
+                        <div class="card-text">
+                            <h4>Version Control System</h4>
+                            <div class="languages">Java, Git</div>
+                            <p>Built a miniaturized version control system. Implemented remote functionality alongside core VCS features.</p> 
+                        </div>
                     </div>
 
                     <div class="card hide-on-med-and-down">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/jacobs.png">
+                            <img class="activator" src="img/fdwa.png">
                         </div>
-                        <div class="card-text">
-                            <h4><span class="activator">SWE/ML Intern<i class="material-icons right">more_vert</i></span></h4>
-                            <div class="date">June 2021 - August 2021</div>
+                        <div class="card-text activator">
+                            <h4 class="activator">Food Delivery Web App</h4>
+                            <div class="languages activator">Flask, PostgreSQL</div>
                         </div>
                         <div class="card-reveal">
                             <span class="card-title" style="color: var(--primary-font);"><i class="material-icons right">close</i></span>
-                            <p>I developed a sentiment classifier to analyze Jacobs' social media presence. To that end, I aggregated consumer feedback by querying data using the Facebook Graph API and LinkedIn API. I used the RoBERTa model from Hugging Face’s Transformers library for sentiment analysis and displayed key insights and results on a Power BI dashboard.</p>
+                            <p>I launched a full-stack web app to display trending food items. Food orders were evaluated in real time against custom-built heuristics. The web app was built with Flask and PostgreSQL and deployed with Heroku. Materialize CSS was used for styling.</p>
                         </div>
                     </div>
 
                     <div class="card hoverable hide-on-large-only">
-                        <a href="https://www.jacobs.com/" target="_blank">
-                            <img src="img/jacobs.png" class="card-image">
-                            <div class="card-text">
-                                <h4>SWE/ML Intern</h4>
-                                <div class="date">June 2021 - August 2021</div>
-                                <p>Built a system that aggregates and classifies consumer feedback to analyze Jacobs' social media presence.</p> 
-                            </div>
-                        </a>
+                        <img src="img/fdwa.png" class="card-image">
+                        <div class="card-text">
+                            <h4>Food Delivery Web App</h4>
+                            <div class="languages">Flask, PostgreSQL</div>
+                            <p>Launched a full-stack web app to evaluate food orders against custom heuristics and display trending orders.</p> 
+                        </div>
                     </div>
 
                     <div class="card hide-on-med-and-down">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/tmc.png">
+                            <img class="activator" src="img/numc.png">
                         </div>
-                        <div class="card-text">
-                            <h4><span class="activator">Co-Founder<i class="material-icons right">more_vert</i></span></h4>
-                            <div class="date">May 2021 - December 2021</div>
+                        <div class="card-text activator">
+                            <h4 class="activator">NumC</h4>
+                            <div class="languages activator">C</div>
                         </div>
                         <div class="card-reveal">
                             <span class="card-title" style="color: var(--primary-font);"><i class="material-icons right">close</i></span>
-                            <p>I co-founded a startup to help social organizations quantify their impact and attract more donations and volunteers. At Track My Change, we designed customizable, interactive widgets that showcased our clients' impact. I created REST API in PHP with MySQL to track widget analytics and monitored widget interactions with JavaScript.</p>
+                            <p>I created an implementation of NumPy in C to improve the performance of matrix and vector multiplication. I was able to achieve 51.5x speedup by combining data and thread-level parallelism with algorithmic optimizations.</p>
                         </div>
                     </div>
 
                     <div class="card hoverable hide-on-large-only">
                         <a href="https://www.linkedin.com/company/74967029" target="_blank">
-                            <img src="img/tmc.png" class="card-image">
+                            <img src="img/tp.png" class="card-image">
                             <div class="card-text">
-                                <h4>Co-Founder</h4>
-                                <div class="date">May 2021 - December 2021</div>
-                                <p>Co-founded a startup to help social organizations quantify their impact and attract more donations and volunteers.</p> 
+                                <h4>NumC</h4>
+                                <div class="languages">C</div>
+                                <p>Created an implementation of NumPy in C. Improved the performance of matrix and vector multiplication by 51x.</p> 
                             </div>
                         </a>
                     </div>
 
                     <div class="card hide-on-med-and-down">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/berkeley.png">
+                            <img class="activator" src="img/cdc.png">
                         </div>
                         <div class="card-text">
-                            <h4><span class="activator">Tutor and CSM Mentor<i class="material-icons right">more_vert</i></span></h4>
-                            <div class="date">January 2021 - May 2022</div>
+                            <h4><span class="activator">Heart Disease Classifier</h4>
+                            <div class="languages">Python</div>
                         </div>
                         <div class="card-reveal">
                             <span class="card-title" style="color: var(--primary-font);"><i class="material-icons right">close</i></span>
-                            <p>I co-hosted 3-hour lab sections for students of EECS 16A, twice a week. These lab sections emphasized concepts in linear algebra, circuit analysis, and machine learning. In addition, I led weekly small-group tutoring sessions and organized regular check-ins and socials for junior mentors. I also helped maintain and develop course materials.</p>
+                            <p>I developed a classifier using PCA and SVM, achieving an accuracy of over 95%. I analyzed multiple heart disease datasets and visualized trends with Seaborn and Plotly.</p>
                         </div>
                     </div>
 
                     <div class="card hoverable hide-on-large-only">
                         <a href="https://eecs16a.org/" target="_blank">
-                            <img src="img/berkeley.png" class="card-image">
+                            <img src="img/cdc.png" class="card-image">
                             <div class="card-text">
-                                <h4>Course Tutor (ASE)</h4>
-                                <div class="date">January 2021 - May 2022</div>
-                                <p>Co-hosted weekly lab and small-group tutoring sections for EECS 16A (Electronic Devices & Systems I).</p> 
+                                <h4>Heart Disease Classifier</h4>
+                                <div class="languages">Python</div>
+                                <p>Developed a classifier with an accuracy of over 95%. Used PCA and SVM. Visualized trends with Seaborn and Plotly.</p> 
                             </div>
                         </a>
                     </div>
                 </div>
+            </div>
+
+            <div class="footer">
+                &copy; 2023. Made with <span style="color: var(--primary-light)">&hearts;</span> by Jainil Ajmera.
             </div>
         </div>
 

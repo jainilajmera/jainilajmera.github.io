@@ -8,6 +8,7 @@
     --font-color: #ffffff;
     --light-grey: #bdbfcce5;
     --primary-font: 'Quicksand', sans-serif;
+    --secondary-font: 'Rubik', sans-serif;
 }
 
 html, body {
@@ -49,42 +50,47 @@ a {
     color: inherit
 }
 
-h1, h2, h3, h4, p {
+h1, h3, h4, p, li {
     margin: 0;
 }
 
+.col {
+    padding: 0 !important;
+}
+
 h1 {
-    font-weight: 600;
+    font-family: var(--secondary-font);
+    font-weight: 400;
     font-size: 3rem;
     line-height: 4rem;
 }
 
-h2 {
-    font-weight: 600;
-    font-size: 2.7rem;
-}
-
 h3 {
+    font-family: var(--secondary-font);
+    font-weight: 400;
     color: var(--primary-light);
-    font-weight: 600;
     font-size: 2.3rem;
 }
 
+.title-icon {
+    font-size: 1.7rem;
+}
+
 h4 {
-    font-weight: 500;
+    font-family: var(--secondary-font);
+    font-weight: 400;
     font-size: 1.1rem;
 }
 
 p {
-    font-weight: 500;
-    font-size: 1.1rem;
+    font-weight: 400;
     line-height: 1.2rem;
 }
 
-@media only screen and (min-width: 1440px) {
-    p {
-        font-size: 1rem;
-    }
+li {
+    font-weight: 400;
+    font-size: 0.9rem;
+    padding-bottom: 10px;
 }
 
 @media only screen and (max-width: 750px) {
@@ -100,6 +106,11 @@ p {
     h3 {
         font-size: 2.0rem;
     }
+
+    .title-icon {
+        font-size: 1.45rem;
+    }
+    
 }
 
 @media only screen and (max-width: 600px) {
@@ -305,7 +316,6 @@ p {
 
 .section {
     scroll-margin-top: 80px;
-    min-height: calc(100vh - 80px);
     justify-content: center;
 }
 
@@ -316,7 +326,7 @@ p {
 
 @media only screen and (max-width: 750px) {
     .section-title {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 }
 
@@ -335,25 +345,26 @@ p {
 /* About Page */
 
 #about {
+    min-height: calc(100vh - 80px);
     max-width: 1600px;
     margin: 0 auto;
 }
 
 @media only screen and (max-width: 992px) {
     #about {
-        width: 80%;
+        width: 88%;
     }
 }
 
 @media only screen and (max-width: 680px) {
     #about {
-        width: 350px;
+        width: 420px;
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
     #about {
-        width: 80%;
+        width: 90%;
     }
 }
 
@@ -497,6 +508,61 @@ p {
     color: var(--primary-light);
 }
 
+/* Work Page */
+
+#work {
+    min-height: calc(100vh - 80px);
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 992px) {
+    #work {
+        width: 88%;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    #work {
+        width: 420px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #work {
+        width: 90%;
+    }
+}
+
+.collection {
+    border: 0 !important;
+    box-shadow: none !important;
+    padding: 0px !important;
+}
+
+.collection-item {
+    background-color: var(--primary-dark) !important;
+    border-color: var(--primary-dark) !important;
+}
+
+.spacer {
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 750px) {
+    .spacer {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .spacer {
+        margin-bottom: 40px;
+    }
+}
+
+/* Projects Page */
+
 /* Cards */
 
 .card-container {
@@ -547,7 +613,7 @@ p {
 
 @media only screen and (max-width: 680px) {
     .card {
-        width: 350px;
+        width: 320px;
     }
 }
 
@@ -598,25 +664,47 @@ p {
     }
 }
 
-.card-text h4, .card-text .date {
+.card-text h4, .card-text .languages {
     margin-bottom: 10px;
 }
 
 @media only screen and (min-width: 1440px) {
-    .card-text h4, .card-text .date {
+    .card-text h4, .card-text .languages {
         margin-bottom: 12.5px;
     }
 }
 
 @media only screen and (min-width: 2560px) {
-    .card-text h4, .card-text .date {
+    .card-text h4, .card-text .languages {
         margin-bottom: 25px;
     }
 }
 
 @media only screen and (min-width: 2560px) {
-    .card-text h4, .card-text .date {
+    .card-text h4, .card-text .languages {
         margin-bottom: 25px;
+    }
+}
+
+/* Footer */
+
+.footer {
+    height: 60px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--light-grey);
+}
+
+@media only screen and (min-width: 1440px) {
+    .footer {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .footer {
+        height: 100px;
     }
 }
 
@@ -646,4 +734,38 @@ p {
 .animate2 {
     animation: reveal 0.6s 0.6s 1;
     animation-fill-mode: forwards;
+}
+
+/* Display */
+
+.small-work {
+    display: block;
+}
+
+.med-work {
+    display: none;
+}
+
+.large-work {
+    display: none;
+}
+
+@media only screen and (min-width: 750px) {
+    .small-work {
+        display: none;
+    }
+
+    .med-work {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .med-work {
+        display: none;
+    }
+
+    .large-work {
+        display: block;
+    }
 }
