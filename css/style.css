@@ -560,6 +560,12 @@ li {
     }
 }
 
+.date {
+    font-family: var(--secondary-font);
+    color: var(--secondary); 
+    margin-top: 7px !important;
+}
+
 /* Projects Page */
 
 /* Cards */
@@ -661,6 +667,11 @@ li {
     .card-text {
         padding: 35px;
     }
+}
+
+.languages {
+    font-family: var(--secondary-font);
+    font-size: 0.9rem;
 }
 
 .card-text h4, .card-text .languages {
