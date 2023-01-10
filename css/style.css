@@ -72,10 +72,6 @@ h3 {
     font-size: 2.3rem;
 }
 
-.title-icon {
-    font-size: 1.7rem;
-}
-
 h4 {
     font-family: var(--secondary-font);
     font-weight: 400;
@@ -84,7 +80,7 @@ h4 {
 
 p {
     font-weight: 400;
-    line-height: 1.2rem;
+    line-height: 1.4rem;
 }
 
 li {
@@ -105,12 +101,7 @@ li {
 
     h3 {
         font-size: 2.0rem;
-    }
-
-    .title-icon {
-        font-size: 1.45rem;
-    }
-    
+    }    
 }
 
 @media only screen and (max-width: 600px) {
@@ -366,6 +357,12 @@ li {
     #about {
         width: 90%;
     }
+}
+
+#about p a {
+    color: var(--secondary);
+    text-decoration: underline; 
+    text-underline-offset: 0.3rem;
 }
 
 .about-container {
@@ -705,6 +702,19 @@ li {
 @media only screen and (min-width: 2560px) {
     .footer {
         height: 100px;
+    }
+}
+
+/* Icons */
+
+.title-icon {
+    font-size: 1.7rem;
+    color: var(--secondary);
+}
+
+@media only screen and (max-width: 750px) {
+    .title-icon {
+        font-size: 1.45rem;
     }
 }
 
