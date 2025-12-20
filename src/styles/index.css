@@ -413,12 +413,11 @@ p:last-child {
   font: inherit;
   color: var(--highlight-text);
   transition: all 0.15s ease;
-  min-width: 77px;
+  min-width: 85px;
 }
 
 .slot-toggle:hover {
   opacity: 0.85;
-  transform: scale(1.02);
 }
 
 .slot-window {
