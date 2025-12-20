@@ -7,9 +7,7 @@ interface FireNationCardProps {
 
 export function FireNationCard({ onClose }: FireNationCardProps) {
   const handleClose = () => {
-    // Apply Fire Nation theme
     document.documentElement.setAttribute("data-theme", "fire-nation");
-    localStorage.setItem("theme", "fire-nation");
     onClose();
   };
 

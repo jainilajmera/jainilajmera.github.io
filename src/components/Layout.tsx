@@ -8,8 +8,7 @@ function Layout() {
   const [theme, setTheme] = useState<Theme>(() => {
     if (typeof window !== "undefined") {
       const saved = localStorage.getItem("theme");
-      if (saved === "dark" || saved === "light" || saved === "fire-nation")
-        return saved;
+      if (saved === "dark" || saved === "light") return saved;
       return window.matchMedia("(prefers-color-scheme: dark)").matches
         ? "dark"
         : "light";
@@ -28,7 +27,9 @@ function Layout() {
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
-    localStorage.setItem("theme", theme);
+    if (theme !== "fire-nation") {
+      localStorage.setItem("theme", theme);
+    }
   }, [theme]);
 
   useEffect(() => {
@@ -58,18 +59,8 @@ function Layout() {
   }, [theme]);
 
   const toggleTheme = () => {
-    const fireNationUnlocked =
-      localStorage.getItem("theme") === "fire-nation" ||
-      document.documentElement.getAttribute("data-theme") === "fire-nation";
-
     if (theme === "light") {
       setTheme("dark");
-    } else if (theme === "dark") {
-      if (fireNationUnlocked) {
-        setTheme("fire-nation");
-      } else {
-        setTheme("light");
-      }
     } else {
       setTheme("light");
     }
