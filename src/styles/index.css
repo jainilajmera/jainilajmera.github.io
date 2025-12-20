@@ -22,6 +22,8 @@
   /* Spacing */
   --content-max-width: 700px;
   --content-padding: 24px;
+  --nav-height: 53px;
+  --nav-spacing: 48px;
 }
 
 [data-theme="dark"] {
@@ -79,7 +81,7 @@ a:hover {
   margin: 0 auto;
   padding: var(--content-padding);
   min-height: 100vh;
-  padding-top: 100px;
+  padding-top: calc(var(--nav-height) + var(--nav-spacing));
   padding-bottom: 60px;
 }
 
@@ -206,7 +208,7 @@ p:last-child {
 
 .intro-tagline {
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -214,15 +216,10 @@ p:last-child {
   font-weight: 500;
 }
 
-.intro-tagline .highlight {
-  text-transform: none;
-  font-size: 0.75rem;
-}
-
 .intro-text p {
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   color: var(--text-secondary);
-  line-height: 1.55;
+  line-height: 1.75;
 }
 
 /* Social links */
@@ -379,13 +376,10 @@ p:last-child {
 
 /* Responsive */
 @media (max-width: 600px) {
-  html {
-    font-size: 16px;
-  }
-
-  .main-container {
-    padding: 16px;
-    padding-top: 70px;
+  :root {
+    --nav-height: 45px;
+    --nav-spacing: 42px;
+    --content-padding: 16px;
   }
 
   .nav-inner {
