@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 interface ToggleProps {
   activeTab: "work" | "life";
@@ -7,47 +6,33 @@ interface ToggleProps {
 }
 
 function Toggle({ activeTab, onToggle }: ToggleProps) {
-  const [isAnimating, setIsAnimating] = useState(false);
-
-  const handleClick = () => {
-    if (isAnimating) return;
-    setIsAnimating(true);
-    const nextTab = activeTab === "work" ? "life" : "work";
-
-    setTimeout(() => {
-      onToggle(nextTab);
-      setIsAnimating(false);
-    }, 200);
-  };
-
-  const labels = {
-    work: "While at",
-    life: "Outside",
-  };
-
   return (
-    <button
-      className="slot-toggle"
-      onClick={handleClick}
-      aria-label={`Switch to ${
-        activeTab === "work" ? "outside" : "while at"
-      } work`}
-    >
-      <span className="slot-window">
-        <AnimatePresence mode="wait">
-          <motion.span
-            key={activeTab}
-            className="slot-text"
-            initial={{ y: -20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ y: 20, opacity: 0 }}
-            transition={{ duration: 0.2, ease: "easeInOut" }}
-          >
-            {labels[activeTab]}
-          </motion.span>
-        </AnimatePresence>
-      </span>
-    </button>
+    <div className="slide-toggle">
+      <motion.div
+        className="slide-toggle-indicator"
+        layout
+        transition={{ type: "spring", stiffness: 500, damping: 35 }}
+        style={{ left: activeTab === "work" ? "0" : "50%" }}
+      />
+      <button
+        className={`slide-toggle-option ${
+          activeTab === "work" ? "active" : ""
+        }`}
+        onClick={() => onToggle("work")}
+        aria-pressed={activeTab === "work"}
+      >
+        At
+      </button>
+      <button
+        className={`slide-toggle-option ${
+          activeTab === "life" ? "active" : ""
+        }`}
+        onClick={() => onToggle("life")}
+        aria-pressed={activeTab === "life"}
+      >
+        Outside
+      </button>
+    </div>
   );
 }
 
