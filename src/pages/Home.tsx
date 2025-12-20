@@ -261,8 +261,7 @@ function LifeContent() {
     <>
       <CollapsibleSection title="Climbing" defaultOpen={false}>
         <div className="experience-details">
-          Current maximum grade is V7 indoors. Working towards V10 indoors in
-          2026.
+          Climbing V7 indoors. Working towards V10 indoors in 2026.
         </div>
       </CollapsibleSection>
 
@@ -313,6 +312,18 @@ function LifeContent() {
               (CTF) event.
             </div>
           </li>
+          <li className="experience-item">
+            <div className="experience-header">
+              <a
+                href="https://smashkarts.io"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Smash Karts
+              </a>
+            </div>
+            <div className="experience-details">Level 46.</div>
+          </li>
         </ul>
       </CollapsibleSection>
 
@@ -349,7 +360,7 @@ function LifeContent() {
           />
           <div className="media-info">
             <span className="media-title">Ashita no Joe (S2)</span>
-            <span className="media-subtitle">1981 · Anime</span>
+            <span className="media-subtitle">1981 · Sports, Drama</span>
           </div>
         </a>
       </CollapsibleSection>
