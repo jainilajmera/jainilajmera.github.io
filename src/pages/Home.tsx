@@ -93,9 +93,7 @@ function WorkContent() {
             <div className="experience-header">
               Working at <span className="highlight">Plaid</span> · 2024–Present
             </div>
-            <div className="experience-subtitle">
-              Software Engineer, Security
-            </div>
+            <div className="experience-subtitle">Software Engineer II</div>
             <div className="experience-details">
               JIT access control for Kubernetes. Signing service for
               cryptographic segregation of Plaid's traffic. Security for Plaid's
@@ -135,7 +133,7 @@ function WorkContent() {
             <div className="experience-header">
               Worked at <span className="highlight">Plaid</span> · 2023
             </div>
-            <div className="experience-subtitle">SWE Intern, Security</div>
+            <div className="experience-subtitle">Software Engineer Intern</div>
             <div className="experience-details">
               PlaidIAM: self-service tool for AWS access. Request temporary
               access to AWS resources without needing to write a single line of
@@ -163,7 +161,7 @@ function WorkContent() {
             <div className="experience-header">
               Worked at <span className="highlight">Salesforce</span> · 2022
             </div>
-            <div className="experience-subtitle">SWE Intern</div>
+            <div className="experience-subtitle">Software Engineer Intern</div>
             <div className="experience-details">
               Custom logic in MuleSoft Composer's condition cards
               (user-requested feature).
