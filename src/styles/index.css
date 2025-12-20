@@ -80,7 +80,6 @@ a:hover {
   max-width: var(--content-max-width);
   margin: 0 auto;
   padding: var(--content-padding);
-  min-height: 100vh;
   padding-top: calc(var(--nav-height) + var(--nav-spacing));
   padding-bottom: 60px;
 }
