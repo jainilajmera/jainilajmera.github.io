@@ -1,394 +1,57 @@
-
-<html>
-    <head>
-        <title>Jainil Ajmera</title>
-	    <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700|Quicksand:300,400,500,600,700" rel="stylesheet">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="shortcut icon" href="img/favicon.png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"></llink>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
-
-    <body>
-        <div class="navbar">
-            <div class="nav-cross" onclick="navbarToggle()">
-                <span class="one"></span>
-                <span class="two"></span>
-                <span class="three"></span>
-            </div>
-            <div class="nav-title">
-                <a href="#top" onclick="navbarClose()">Jainil Ajmera</a>
-            </div>
-            <div class="nav-items">
-                <a class="nav-item" href="#about" onclick="navbarClose()">About</a>
-                <a class="nav-item" href="#work" onclick="navbarClose()">Work</a>
-                <a class="nav-item" href="#projects" onclick="navbarClose()">Projects</a>
-            </div>
-        </div>
-
-        <div class="content">
-            <div class="landing">
-                <h1 class="animate1">
-                    Hey! I'm <span style="color: var(--primary-light);">Jainil.</span>
-                    <div class="animate2">
-                        <span id="before-typed">I </span>
-                        <span id="typed" style="color: var(--secondary)"></span>
-                        <br class="animate2 extra-small">
-                        <span id="cursor">for</span>
-                        <span style="color: var(--tertiary);">fun.</span>
-                    </div>
-                </h1>
-            </div>
-
-            <div class="section" id="about">
-                <h3 class="section-title">Hey! <i class="material-icons title-icon">waving_hand</i></h3>
-                <div class="about-container">
-                    <div class="about-half">
-                        <img src="img/me.jpeg" class="about-img">
-                    </div>
-                    <div class="about-half">
-                        <p>My name is Jainil, and I recently graduated from <span style="color: var(--secondary);">UC Berkeley</span> with a degree in <span style="color: var(--secondary);">computer science.</span></p>
-                        <p class="hide-on-large-only">As a child, I would often find myself solving riddles and fiddling with the classic Windows 7 sliding puzzle. Although I parted ways with my antiquated PC in 2013, my love for puzzles remained intact. Programming was a natural extension of this passion; I relish the challenge of solving "algorithmic" puzzles (except with real impact now!). On this website, I've attempted to catalogue some of the <a class="about-link" href="#projects">puzzles</a> I've tinkered with and <a class="about-link" href="#work">experience</a> I've accrued.</p>
-                        <p>This past year, I taught <span style="color: var(--secondary);">database concepts</span> and helped build a novel database for managing <span style="color: var(--secondary);">multimodal log data.</span> Presently, I'm headed to <span style="color: var(--secondary);">Plaid</span> to explore problems at the intersection of software, systems, and security.</p>
-                        <p>In my free time, I enjoy playing cricket, climbing (rocks, trees, walls, you name it), dancing, and geeking out over sports.</p>
-                        <div class="contact-icons">
-                            <a href="mailto:jainil@berkeley.edu" target="_blank"><i class="far fa-envelope"></i></a>
-                            <a href="https://www.linkedin.com/in/jainilajmera" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://github.com/jainilajmera" target="_blank"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section" id="work">
-                <h3 class="section-title">Work <i class="material-icons title-icon">handyman</i></h3>
-                <div class="row">
-                    
-                    <!-- Work (Large) -->
-                    <div class="col s12 large-work"> 
-                        <ul class="collection">
-                            <li class="collection-item avatar">
-                                <img src="img/plaid-mini.jpeg" alt="" class="circle">
-                                <h4>Software Engineer Intern, Security <span style="color: var(--primary-light);">// Plaid</span></h4>
-                                <p class="date">May 2023 - Aug 2023</p>
-                            </li>
-                            <li>Led an organization-wide effort to revamp AWS Identity and Access Management (IAM) at Plaid.</li>
-                            <li>Built a new permissions management system in Go to support fine-grained, time-bound permissions for AWS resources.</li>
-                            <li>Implemented Terraform auto-generation, slashing latency in requesting new AWS IAM roles from 2 weeks to 3 days.</li>
-                            <li>Pioneered a template to dynamically generate IAM policies at runtime and reduce policy bloat by ~90%.</li>
-                            <li>Exposed audit logs for employee permissions, highlighting permissions for removal to ensure least-privileged access.</li>
-                        </ul>
-                        <div class="spacer"></div>
-
-                        <ul class="collection">
-                            <li class="collection-item avatar">
-                                <img src="img/bair-mini.png" alt="" class="circle">
-                                <h4>Undergraduate Research Assistant <span style="color: var(--primary-light);">// Berkeley Artificial Intelligence Research</span></h4>
-                                <p class="date">Aug 2022 - Aug 2023</p>
-                            </li>
-                            <li>Worked on the state of the art in learning-based cable tracing and untangling. Advised by Prof. Ken Goldberg.</li>
-                            <li>Devised and implemented a novel crossing correction and knot detection algorithm for a robotic cable untangling system.</li>
-                            <li>Published with an oral presentation (6.6% of all submissions) at the Conference on Robot Learning (CoRL) 2023.</li>
-                        </ul>
-                        <div class="spacer"></div>
-
-                        <ul class="collection">
-                            <li class="collection-item avatar">
-                                <img src="img/salesforce-mini.png" alt="" class="circle">
-                                <h4>Software Engineer Intern <span style="color: var(--primary-light);">// Salesforce</span></h4>
-                                <p class="date">May 2022 - Aug 2022</p>
-                            </li>
-                            <li>Built a first-of-its-kind search feature for Composer, enabling users to discover their previously inaccessible data lineage.</li>
-                            <li>Won the Best Customer Value Hack at an organization-wide hackathon and led a live customer demo.</li> 
-                            <li>Developed and shipped a user-requested feature to support custom logic in MuleSoft Composer's condition cards.</li>
-                            <li>Used React, Redux, and TypeScript on the frontend. Worked with Java (Spring) microservices on the backend.</li>
-                            <li>Wrote tests (in JUnit, Jest, and Mockito), fixed bugs, and handled feature planning alongside the team's PM.</li>
-                        </ul>
-                        <div class="spacer"></div>
-
-                        <ul class="collection">
-                            <li class="collection-item avatar">
-                                <img src="img/tmc-mini.png" alt="" class="circle">
-                                <h4>Co-Founder <span style="color: var(--primary-light);">// Track My Change</span></h4>
-                                <p class="date">May 2021 - Dec 2021</p>
-                            </li>
-                            <li>Founded a 6-person startup to quantify the impact of social organizations. Launched a pilot for customers in the US and Nepal.</li>
-                            <li>Created customizable web widgets to convey social impact to convey social impact to potential volunteers and donors.</li>
-                            <li>Created REST API in PHP with MySQL to track analytics. Monitored widget interactions with JavaScript.</li>
-                        </ul>
-                        <div class="spacer"></div>
-
-                        <ul class="collection">
-                            <li class="collection-item avatar">
-                                <img src="img/jacobs-mini.jpeg" alt="" class="circle">
-                                <h4>Software Engineer Intern <span style="color: var(--primary-light);">// Jacobs</span></h4>
-                                <p class="date">Jun 2021 - Aug 2021</p>
-                            </li>
-                            <li>Developed a sentiment classifier in Python using a RoBERTa-based model to assess customer perception of Jacobs.</li>
-                            <li>Queried post data using the Facebook Graph API & LinkedIn API. Displayed insights on a Power BI dashboard.</li>
-                        </ul>
-                        <div class="spacer"></div>
-                    </div>
-
-                    <!-- Work (Medium) -->
-                    <div class="col s12 med-work">
-                        <h4>Software Engineer Intern, Security <span style="color: var(--primary-light);">// Plaid</span></h4>
-                        <p class="date">Aug 2022 - Present</p>
-                        <ul>
-                            <li>Led an organization-wide effort to revamp AWS Identity and Access Management (IAM) at Plaid.</li>
-                            <li>Built a new permissions management system in Go to support fine-grained, time-bound permissions for AWS resources.</li>
-                            <li>Implemented Terraform auto-generation, slashing latency in requesting new AWS IAM roles from 2 weeks to 3 days.</li>
-                            <li>Pioneered a template to dynamically generate IAM policies at runtime and reduce policy bloat by ~90%.</li>
-                            <li>Exposed audit logs for employee permissions, highlighting permissions for removal to ensure least-privileged access.</li>
-                        </ul>
-                        <div class="spacer"></div>
-
-                        <h4>Undergraduate Research Assistant <span style="color: var(--primary-light);">// Berkeley Artificial Intelligence Research</span></h4>
-                        <p class="date">Aug 2022 - Present</p>
-                        <ul>
-                            <li>Worked on the state of the art in learning-based cable tracing and untangling. Advised by Prof. Ken Goldberg.</li>
-                            <li>Devised and implemented a novel crossing correction and knot detection algorithm for a robotic cable untangling system.</li>
-                            <li>Published with an oral presentation (6.6% of all submissions) at the Conference on Robot Learning (CoRL) 2023.</li>
-                        </ul>
-                        <div class="spacer"></div>
-
-                        <h4>Software Engineer Intern <span style="color: var(--primary-light);">// Salesforce</span></h4>
-                        <p class="date">May 2022 - Aug 2022</p>
-                        <ul>
-                            <li>Built a first-of-its-kind search feature for Composer, enabling users to discover their previously inaccessible data lineage.</li>
-                            <li>Won the Best Customer Value Hack at an organization-wide hackathon and led a live customer demo.</li>
-                            <li>Developed and shipped a user-requested feature to support custom logic in MuleSoft Composer's condition cards.</li>
-                            <li>Used React, Redux, and TypeScript on the frontend. Worked with Java (Spring) microservices on the backend.</li>
-                            <li>Wrote tests (in JUnit, Jest, and Mockito), fixed bugs, and handled feature planning alongside the team's PM.</li>                        
-                        </ul>
-                        <div class="spacer"></div>
-
-                        <h4>Co-Founder <span style="color: var(--primary-light);">// Track My Change</span></h4>
-                        <p class="date">May 2021 - Dec 2021</p>
-                        <ul>
-                            <li>Founded a 6-person startup to quantify the impact of social organizations. Launched a pilot for customers in the US and Nepal.</li>
-                            <li>Created customizable web widgets to convey social impact to convey social impact to potential volunteers and donors.</li>
-                            <li>Created REST API in PHP with MySQL to track analytics. Monitored widget interactions with JavaScript.</li>              
-                        </ul>
-                        <div class="spacer"></div>
-
-                        <h4>Software Engineer Intern <span style="color: var(--primary-light);">// Jacobs</span></h4>
-                        <p class="date">Jun 2021 - Aug 2021</p>
-                        <ul>
-                            <li>Developed a sentiment classifier in Python using a RoBERTa-based model to assess customer perception of Jacobs.</li>
-                            <li>Queried post data using the Facebook Graph API & LinkedIn API. Displayed insights on a Power BI dashboard.</li>                 
-                        </ul>
-                    </div>
-
-                    <!-- Work (Small) -->
-                    <div class="col s12 small-work">
-                        <h4>Software Engineer Intern</h4>
-                        <p class="date">Plaid</p>
-                        <ul>
-                            <li>Led an organization-wide effort to revamp AWS Identity and Access Management (IAM) at Plaid.</li>
-                            <li>Built a new permissions management system in Go to support fine-grained, time-bound permissions for AWS resources.</li>
-                            <li>Implemented Terraform auto-generation, slashing latency in requesting new AWS IAM roles from 2 weeks to 3 days.</li>
-                            <li>Pioneered a template to dynamically generate IAM policies at runtime and reduce policy bloat by ~90%.</li>
-                            <li>Exposed audit logs for employee permissions, highlighting permissions for removal to ensure least-privileged access.</li>                        
-                        </ul>
-                        <div class="spacer"></div>
-
-                        <h4>Undergraduate Research Assistant</h4>
-                        <p class="date">Berkeley Artificial Intelligence Research</p>
-                        <ul>
-                            <li>Worked on the state of the art in learning-based cable tracing and untangling. Advised by Prof. Ken Goldberg.</li>
-                            <li>Devised and implemented a novel crossing correction and knot detection algorithm for a robotic cable untangling system.</li>
-                            <li>Published with an oral presentation (6.6% of all submissions) at the Conference on Robot Learning (CoRL) 2023.</li>                        
-                        </ul>
-                        <div class="spacer"></div>
-
-                        <h4>Software Engineer Intern</h4>
-                        <p class="date">Salesforce</p>
-                        <ul>
-                            <li>Built a first-of-its-kind search feature for Composer, enabling users to discover their previously inaccessible data lineage.</li>
-                            <li>Won the Best Customer Value Hack at an organization-wide hackathon and led a live customer demo.</li> 
-                            <li>Developed and shipped a user-requested feature to support custom logic in MuleSoft Composer's condition cards.</li>
-                            <li>Used React, Redux, and TypeScript on the frontend. Worked with Java (Spring) microservices on the backend.</li>
-                            <li>Wrote tests (in JUnit, Jest, and Mockito), fixed bugs, and handled feature planning alongside the team's PM.</li>                         
-                        </ul>
-                        <div class="spacer"></div>
-
-                        <h4>Co-Founder</h4>
-                        <p class="date">Track My Change</p>
-                        <ul>
-                            <li>Founded a 6-person startup to quantify the impact of social organizations. Launched a pilot for customers in the US and Nepal.</li>
-                            <li>Created customizable web widgets to convey social impact to convey social impact to potential volunteers and donors.</li>
-                            <li>Created REST API in PHP with MySQL to track analytics. Monitored widget interactions with JavaScript.</li>                
-                        </ul>
-                        <div class="spacer"></div>
-
-                        <h4>Software Engineer Intern</h4>
-                        <p class="date">Jacobs</p>
-                        <ul>
-                            <li>Developed a sentiment classifier in Python using a RoBERTa-based model to assess customer perception of Jacobs.</li>
-                            <li>Queried post data using the Facebook Graph API & LinkedIn API. Displayed insights on a Power BI dashboard.</li>                       
-                        </ul>
-                        <div class="spacer"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section" id="projects">
-                <h3 class="section-title">Projects <i class="material-icons title-icon">tips_and_updates</i></h3>
-                <div class="card-container">
-                    <div class="card hide-on-med-and-down">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/dp3.png">
-                        </div>
-                        <div class="card-text activator">
-                            <h4 class="activator">dp3</h4>
-                            <div class="languages activator">Go</div>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title" style="color: var(--primary-font);"><i class="material-icons right">close</i></span>
-                            <p>I co-developed dp3, a database with a novel approach to managing multimodal log data, such as logs produced from robotic sensors. I added support for range deletion of messages, logical data truncation, and reverse time-ordered traversal of messages.</p>
-                        </div>
-                    </div>
-
-                    <div class="card hide-on-large-only">
-                        <img src="img/dp3.png" class="card-image">
-                        <div class="card-text">
-                            <h4>dp3</h4>
-                            <div class="languages">Go</div>
-                            <p>Co-developed dp3, a database with a novel approach to the management of multimodal log data.</p> 
-                        </div>
-                    </div>
-
-                    <div class="card hide-on-med-and-down">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/sfss.png">
-                        </div>
-                        <div class="card-text activator">
-                            <h4 class="activator">Secure File Sharing System</h4>
-                            <div class="languages activator">Go</div>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title" style="color: var(--primary-font);"><i class="material-icons right">close</i></span>
-                            <p>I developed an end-to-end encrypted file management system in Go. The app featured secure support for user authentication, file storage and retrieval, and file sharing and revocation. My implementation ranked 1st in a class of 650 students.</p>
-                        </div>
-                    </div>
-
-                    <div class="card hide-on-large-only">
-                        <img src="img/sfss.png" class="card-image">
-                        <div class="card-text">
-                            <h4>Secure FIle Sharing System</h4>
-                            <div class="languages">Java, Git</div>
-                            <p>Built an end-to-end secure application that allows users to store and share files (ranked 1st out of 650 students).</p> 
-                        </div>
-                    </div>
-
-                    <div class="card hide-on-med-and-down">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/gitlet.png">
-                        </div>
-                        <div class="card-text activator">
-                            <h4 class="activator">Version Control System</h4>
-                            <div class="languages activator">Java, Git</div>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title" style="color: var(--primary-font);"><i class="material-icons right">close</i></span>
-                            <p>I built a miniaturized version control system in Java. The system leveraged file persistence and cryptographic hashing. I added support for remote functionality alongside core version control features (e.g. commit, checkout, merge).</p>
-                        </div>
-                    </div>
-
-                    <div class="card hide-on-large-only">
-                        <img src="img/gitlet.png" class="card-image">
-                        <div class="card-text">
-                            <h4>Version Control System</h4>
-                            <div class="languages">Java, Git</div>
-                            <p>Built a miniaturized version control system. Implemented remote functionality alongside core VCS features.</p> 
-                        </div>
-                    </div>
-
-                    <div class="card hide-on-med-and-down">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/tp.png">
-                        </div>
-                        <div class="card-text activator">
-                            <h4 class="activator">Thought Processors</h4>
-                            <div class="languages activator">Django, PostgreSQL, JS</div>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title" style="color: var(--primary-font);"><i class="material-icons right">close</i></span>
-                            <p>I co-founded an online platform for hosting cryptic hunts. Over the course of 3 years, we organized 4 events and accumulated a user base of 250 students (with 10,000 answer submissions). The platform was written in Python and built using Django and PostgreSQL.</p>
-                        </div>
-                    </div>
-
-                    <div class="card hide-on-large-only">
-                        <img src="img/tp.png" class="card-image">
-                        <div class="card-text">
-                            <h4>Thought Processors</h4>
-                            <div class="languages">Django, PostgreSQL, JS</div>
-                            <p>Co-founded a platform to host India's first quest-based cryptic hunt (250 users with 10,000 submissions).</p> 
-                        </div>
-                    </div>
-
-                    <div class="card hide-on-med-and-down">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/fdwa.png">
-                        </div>
-                        <div class="card-text activator">
-                            <h4 class="activator">Food Delivery Web App</h4>
-                            <div class="languages activator">Flask, PostgreSQL</div>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title" style="color: var(--primary-font);"><i class="material-icons right">close</i></span>
-                            <p>I launched a mobile-responsive, full-stack web app to display trending food items. Food orders were evaluated in real time against custom-built heuristics. The web app was built with Flask and PostgreSQL and deployed with Heroku. Materialize CSS was used for styling.</p>
-                        </div>
-                    </div>
-
-                    <div class="card hide-on-large-only">
-                        <img src="img/fdwa.png" class="card-image">
-                        <div class="card-text">
-                            <h4>Food Delivery Web App</h4>
-                            <div class="languages">Flask, PostgreSQL</div>
-                            <p>Launched a full-stack web app to evaluate food orders against custom heuristics and display trending orders.</p> 
-                        </div>
-                    </div>
-
-                    <div class="card hide-on-med-and-down">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/cdc.png">
-                        </div>
-                        <div class="card-text">
-                            <h4><span class="activator">Heart Disease Classifier</h4>
-                            <div class="languages">Python</div>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title" style="color: var(--primary-font);"><i class="material-icons right">close</i></span>
-                            <p>I developed a classifier using Principal Component Analysis (PCA) and Support Vector Machines (SVM), achieving an accuracy of over 95%. I analyzed multiple cardiovascular disease datasets and visualized trends with Seaborn and Plotly.</p>
-                        </div>
-                    </div>
-
-                    <div class="card hide-on-large-only">
-                        <img src="img/cdc.png" class="card-image">
-                        <div class="card-text">
-                            <h4>Heart Disease Classifier</h4>
-                            <div class="languages">Python</div>
-                            <p>Developed a PCA and SVM classifier with an accuracy of over 95%. Visualized trends with Seaborn and Plotly.</p> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer">
-                &copy; 2023. Made with <span style="color: var(--primary-light) !important;">&hearts;</span> by Jainil Ajmera.
-            </div>
-        </div>
-
-        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://kit.fontawesome.com/60d411b6dd.js" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <script src="js/typed.min.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/img/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Jainil Ajmera - Software Engineer at Plaid, UC Berkeley CS '24"
+    />
+    <meta name="author" content="Jainil Ajmera" />
+    <meta property="og:title" content="Jainil Ajmera" />
+    <meta
+      property="og:description"
+      content="Software Engineer at Plaid, working on security infrastructure. UC Berkeley CS '24."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jainilajmera.com" />
+    <link rel="canonical" href="https://jainilajmera.com" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Jainil Ajmera" />
+    <meta
+      name="twitter:description"
+      content="Software Engineer at Plaid, working on security infrastructure. UC Berkeley CS '24."
+    />
+    <title>Jainil Ajmera</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Single Page Apps for GitHub Pages -->
+    <script type="text/javascript">
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      })(window.location);
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
