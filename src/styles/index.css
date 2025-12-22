@@ -700,7 +700,7 @@ p:last-child {
 }
 
 .wrapped-trigger .gift-emoji {
-  font-size: 1.05rem;
+  font-size: 1rem;
   filter: grayscale(1);
   animation: gift-settle 2s ease-out 0.5s;
 }
