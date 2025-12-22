@@ -1,10 +1,14 @@
 import { Outlet, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Wrapped2025 } from "./Wrapped2025";
 
 type Theme = "light" | "dark" | "fire-nation";
 type Element = "water" | "earth" | "air";
 
 function Layout() {
+  const [showWrapped, setShowWrapped] = useState(false);
+  const [wrappedReady, setWrappedReady] = useState(false);
   const [theme, setTheme] = useState<Theme>(() => {
     if (typeof window !== "undefined") {
       const saved = localStorage.getItem("theme");
@@ -57,6 +61,11 @@ function Layout() {
     observer.observe(document.documentElement, { attributes: true });
     return () => observer.disconnect();
   }, [theme]);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setWrappedReady(true), 1500);
+    return () => clearTimeout(timer);
+  }, []);
 
   const toggleTheme = () => {
     if (theme === "light") {
@@ -141,6 +150,54 @@ function Layout() {
           </Link>
           <div className="nav-toggles">
             <button
+              className="wrapped-trigger"
+              onClick={() => setShowWrapped(true)}
+              aria-label="2025 Wrapped"
+            >
+              <AnimatePresence mode="wait">
+                {wrappedReady ? (
+                  <motion.span
+                    key="gift"
+                    className="gift-emoji"
+                    initial={{ opacity: 0, scale: 0, rotate: -180 }}
+                    animate={{
+                      opacity: 1,
+                      scale: [0, 1.3, 1],
+                      rotate: 0,
+                    }}
+                    transition={{
+                      duration: 0.5,
+                      scale: { times: [0, 0.6, 1], ease: "easeOut" },
+                      rotate: { duration: 0.4, ease: "easeOut" },
+                    }}
+                  >
+                    🎁
+                  </motion.span>
+                ) : (
+                  <motion.span
+                    key="year"
+                    initial={{ opacity: 1, scale: 1, rotate: 0 }}
+                    animate={{
+                      rotate: [0, -3, 3, -3, 3, 0],
+                      transition: {
+                        duration: 0.5,
+                        repeat: Infinity,
+                        repeatDelay: 2,
+                      },
+                    }}
+                    exit={{
+                      opacity: 0,
+                      scale: 0,
+                      rotate: 180,
+                      transition: { duration: 0.3 },
+                    }}
+                  >
+                    '25
+                  </motion.span>
+                )}
+              </AnimatePresence>
+            </button>
+            <button
               className="theme-toggle"
               onClick={toggleTheme}
               aria-label="Toggle theme"
@@ -163,6 +220,9 @@ function Layout() {
       <main className="main-container">
         <Outlet />
       </main>
+      <AnimatePresence>
+        {showWrapped && <Wrapped2025 onClose={() => setShowWrapped(false)} />}
+      </AnimatePresence>
     </>
   );
 }

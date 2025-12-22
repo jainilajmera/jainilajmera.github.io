@@ -21,11 +21,11 @@ function App() {
   return (
     <>
       <Fireballs />
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-        </Route>
-      </Routes>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+      </Route>
+    </Routes>
       <AnimatePresence>
         {showFireNation && (
           <FireNationCard onClose={() => setShowFireNation(false)} />

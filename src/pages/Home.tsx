@@ -95,9 +95,9 @@ function WorkContent() {
             </div>
             <div className="experience-subtitle">Software Engineer II</div>
             <div className="experience-details">
-              JIT access control for Kubernetes. Signing service for
-              cryptographic segregation of Plaid's traffic. Security for Plaid's
-              internal MCP server.
+              Security for Plaid's internal MCP server. JIT access control for
+              Kubernetes. Platform for actionable vulnerability remediation.
+              Signing service for cryptographic segregation of Plaid's traffic.
             </div>
           </li>
           <li className="experience-item">

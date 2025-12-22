@@ -669,3 +669,339 @@ p:last-child {
     transform: scale(1.05);
   }
 }
+
+/* Wrapped 2025 */
+.wrapped-trigger {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.wrapped-trigger:hover {
+  background: var(--border);
+}
+
+.wrapped-trigger span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapped-trigger .gift-emoji {
+  font-size: 1.05rem;
+  filter: grayscale(1);
+  animation: gift-settle 2s ease-out 0.5s;
+}
+
+[data-theme="fire-nation"] .wrapped-trigger {
+  display: none;
+}
+
+@keyframes gift-settle {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(1.1);
+  }
+  20% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.05);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+
+.w-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background: #000;
+}
+
+.w-close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  z-index: 10;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.w-close:hover {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #fff;
+}
+
+.w-progress {
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.w-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.w-dot:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.w-dot.active {
+  background: #fff;
+}
+
+.w-container {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.w-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 24px;
+  max-width: 600px;
+}
+
+.w-nav {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  z-index: 10;
+}
+
+.w-nav-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.w-nav-btn:hover:not(:disabled) {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #fff;
+}
+
+.w-nav-btn:disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+
+.w-count {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.75rem;
+  font-family: "DM Mono", monospace;
+}
+
+.w-year {
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(5rem, 20vw, 12rem);
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.w-label {
+  font-family: "DM Mono", monospace;
+  font-size: clamp(0.9rem, 3vw, 1.2rem);
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.4em;
+  margin-top: 8px;
+}
+
+.w-overline-sub {
+  font-family: "DM Mono", monospace;
+  font-size: 0.6rem;
+  color: rgba(255, 255, 255, 0.3);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-top: -8px;
+  margin-bottom: 16px;
+}
+
+.w-overline {
+  font-family: "DM Mono", monospace;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.w-overline.w-gold {
+  color: #fbbf24;
+}
+
+.w-overline.w-emerald {
+  color: #34d399;
+}
+
+.w-title {
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.w-desc {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 16px;
+  line-height: 1.5;
+  max-width: 400px;
+}
+
+.w-big-number {
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(6rem, 25vw, 14rem);
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.w-link {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 10px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  color: #fff;
+  text-decoration: none;
+  font-family: "DM Mono", monospace;
+  font-size: 0.8rem;
+  transition: all 0.15s;
+}
+
+.w-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.w-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.w-list span {
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(1.5rem, 5vw, 2.2rem);
+  font-weight: 600;
+  color: #fff;
+}
+
+.w-food-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 16px;
+}
+
+.w-food-item {
+  text-align: center;
+}
+
+.w-food-name {
+  display: block;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.w-food-place {
+  display: block;
+  font-family: "DM Mono", monospace;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.4);
+  margin-top: 4px;
+}
+
+.w-finale {
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(2rem, 8vw, 4rem);
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: -0.01em;
+}
+
+@media (max-width: 600px) {
+  .w-close {
+    top: 12px;
+    right: 12px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .w-progress {
+    top: 16px;
+    gap: 6px;
+  }
+
+  .w-dot {
+    width: 6px;
+    height: 6px;
+  }
+
+  .w-nav {
+    bottom: 16px;
+  }
+
+  .w-slide {
+    padding: 60px 20px;
+  }
+}
