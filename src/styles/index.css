@@ -700,9 +700,13 @@ p:last-child {
 }
 
 .wrapped-trigger .gift-emoji {
-  font-size: 1rem;
+  font-size: 0.96rem;
   filter: grayscale(1);
   animation: gift-settle 2s ease-out 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
 }
 
 [data-theme="fire-nation"] .wrapped-trigger {

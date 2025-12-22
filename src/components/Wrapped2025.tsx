@@ -7,16 +7,16 @@ interface WrappedProps {
 
 const slides = [
   { id: "intro", bg: "#0a0a0a" },
-  { id: "mcp", bg: "#18181b" },
-  { id: "kubernetes", bg: "#0f172a" },
-  { id: "vulns", bg: "#1c1917" },
-  { id: "hackathons", bg: "#1e1b4b" },
-  { id: "golden-platypus", bg: "#292524" },
-  { id: "fools-gold", bg: "#022c22" },
-  { id: "midnight-oil", bg: "#0c0a09" },
-  { id: "climbing", bg: "#450a0a" },
-  { id: "travel", bg: "#082f49" },
-  { id: "food", bg: "#431407" },
+  { id: "mcp", bg: "#0a1628" },
+  { id: "kubernetes", bg: "#3d2814" },
+  { id: "vulns", bg: "#1a0d33" },
+  { id: "hackathons", bg: "#0d2e1f" },
+  { id: "golden-platypus", bg: "#2d1b0a" },
+  { id: "fools-gold", bg: "#0a1f2e" },
+  { id: "midnight-oil", bg: "#4a0f0f" },
+  { id: "climbing", bg: "#1a0f2e" },
+  { id: "travel", bg: "#4a1f0a" },
+  { id: "food", bg: "#0d1b2a" },
   { id: "finale", bg: "#0a0a0a" },
 ];
 
@@ -91,7 +91,7 @@ export function Wrapped2025({ onClose }: WrappedProps) {
             <motion.h2
               className="w-title"
               {...fadeUp}
-              transition={{ duration: 0.4, delay: 0.1 }}
+              transition={{ duration: 0.4, delay: 0.3 }}
             >
               JIT Access Control
               <br />
@@ -100,7 +100,7 @@ export function Wrapped2025({ onClose }: WrappedProps) {
             <motion.p
               className="w-desc"
               {...fadeUp}
-              transition={{ duration: 0.4, delay: 0.2 }}
+              transition={{ duration: 0.4, delay: 0.35 }}
             >
               Built just-in-time access control to secure Plaid's Kubernetes
               clusters
@@ -121,7 +121,7 @@ export function Wrapped2025({ onClose }: WrappedProps) {
             <motion.h2
               className="w-title"
               {...fadeUp}
-              transition={{ duration: 0.4, delay: 0.1 }}
+              transition={{ duration: 0.4, delay: 0.3 }}
             >
               Securing Plaid's
               <br />
@@ -130,7 +130,7 @@ export function Wrapped2025({ onClose }: WrappedProps) {
             <motion.p
               className="w-desc"
               {...fadeUp}
-              transition={{ duration: 0.4, delay: 0.2 }}
+              transition={{ duration: 0.4, delay: 0.35 }}
             >
               Built security for the internal Model Context Protocol server
             </motion.p>
@@ -140,7 +140,7 @@ export function Wrapped2025({ onClose }: WrappedProps) {
               rel="noopener noreferrer"
               className="w-link"
               {...fadeUp}
-              transition={{ duration: 0.4, delay: 0.3 }}
+              transition={{ duration: 0.4, delay: 0.4 }}
               onClick={(e) => e.stopPropagation()}
             >
               Read the article →
@@ -161,7 +161,7 @@ export function Wrapped2025({ onClose }: WrappedProps) {
             <motion.h2
               className="w-title"
               {...fadeUp}
-              transition={{ duration: 0.4, delay: 0.1 }}
+              transition={{ duration: 0.4, delay: 0.3 }}
             >
               Actionable Vulnerability
               <br />
@@ -170,7 +170,7 @@ export function Wrapped2025({ onClose }: WrappedProps) {
             <motion.p
               className="w-desc"
               {...fadeUp}
-              transition={{ duration: 0.4, delay: 0.2 }}
+              transition={{ duration: 0.4, delay: 0.35 }}
             >
               Platform to surface security vulnerabilities and identify
               remediation actions
@@ -191,14 +191,14 @@ export function Wrapped2025({ onClose }: WrappedProps) {
             <motion.h1
               className="w-big-number"
               {...fadeUp}
-              transition={{ duration: 0.5, delay: 0.1 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
             >
               3
             </motion.h1>
             <motion.p
               className="w-desc"
               {...fadeUp}
-              transition={{ duration: 0.4, delay: 0.2 }}
+              transition={{ duration: 0.4, delay: 0.35 }}
             >
               One for impact. One for fun. One for time invested.
             </motion.p>
@@ -225,16 +225,16 @@ export function Wrapped2025({ onClose }: WrappedProps) {
             <motion.h2
               className="w-title"
               {...fadeUp}
-              transition={{ duration: 0.4, delay: 0.1 }}
+              transition={{ duration: 0.4, delay: 0.3 }}
             >
               Most Impactful
             </motion.h2>
             <motion.p
               className="w-desc"
               {...fadeUp}
-              transition={{ duration: 0.4, delay: 0.2 }}
+              transition={{ duration: 0.4, delay: 0.35 }}
             >
-              A Slack bot that auto-updates runbooks and answers open channel
+              Slack bot that auto-updates runbooks and answers open channel
               questions
             </motion.p>
           </div>
@@ -260,16 +260,16 @@ export function Wrapped2025({ onClose }: WrappedProps) {
             <motion.h2
               className="w-title"
               {...fadeUp}
-              transition={{ duration: 0.4, delay: 0.1 }}
+              transition={{ duration: 0.4, delay: 0.3 }}
             >
               Most Fun
             </motion.h2>
             <motion.p
               className="w-desc"
               {...fadeUp}
-              transition={{ duration: 0.4, delay: 0.2 }}
+              transition={{ duration: 0.4, delay: 0.35 }}
             >
-              An internal forecasting platform
+              Internal forecasting platform
             </motion.p>
           </div>
         );
@@ -294,14 +294,14 @@ export function Wrapped2025({ onClose }: WrappedProps) {
             <motion.h2
               className="w-title"
               {...fadeUp}
-              transition={{ duration: 0.4, delay: 0.1 }}
+              transition={{ duration: 0.4, delay: 0.3 }}
             >
               Most Time Invested
             </motion.h2>
             <motion.p
               className="w-desc"
               {...fadeUp}
-              transition={{ duration: 0.4, delay: 0.2 }}
+              transition={{ duration: 0.4, delay: 0.35 }}
             >
               AI agents playground
             </motion.p>
@@ -321,14 +321,14 @@ export function Wrapped2025({ onClose }: WrappedProps) {
             <motion.h1
               className="w-big-number"
               {...fadeUp}
-              transition={{ duration: 0.5, delay: 0.1 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
             >
               5
             </motion.h1>
             <motion.p
               className="w-desc"
               {...fadeUp}
-              transition={{ duration: 0.4, delay: 0.2 }}
+              transition={{ duration: 0.4, delay: 0.35 }}
             >
               Indoors only, hah
             </motion.p>
@@ -348,7 +348,7 @@ export function Wrapped2025({ onClose }: WrappedProps) {
             <motion.div
               className="w-list"
               {...fadeUp}
-              transition={{ duration: 0.4, delay: 0.1 }}
+              transition={{ duration: 0.4, delay: 0.3 }}
             >
               <span>🇳🇴 Norway</span>
               <span>🇪🇸 Spain</span>
@@ -370,7 +370,7 @@ export function Wrapped2025({ onClose }: WrappedProps) {
             <motion.div
               className="w-food-list"
               {...fadeUp}
-              transition={{ duration: 0.4, delay: 0.1 }}
+              transition={{ duration: 0.4, delay: 0.3 }}
             >
               <div className="w-food-item">
                 <span className="w-food-name">🍛 Paneer Butter Masala</span>
@@ -432,7 +432,15 @@ export function Wrapped2025({ onClose }: WrappedProps) {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.3 }}
-          onClick={goNext}
+          onClick={(e) => {
+            const x = e.clientX;
+            const width = window.innerWidth;
+            if (x < width * 0.3) {
+              goPrev();
+            } else {
+              goNext();
+            }
+          }}
         >
           {renderSlide(slides[currentSlide].id)}
         </motion.div>
