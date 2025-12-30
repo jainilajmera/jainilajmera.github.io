@@ -261,7 +261,7 @@ function LifeContent() {
     <>
       <CollapsibleSection title="Climbing" defaultOpen={false}>
         <div className="experience-details">
-          Climbing V7 indoors. Working towards V10 indoors in 2026.
+          Climbing V6 / V7 indoors. Working towards V10 indoors in 2026.
         </div>
       </CollapsibleSection>
 

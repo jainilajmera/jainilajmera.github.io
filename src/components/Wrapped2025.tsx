@@ -316,14 +316,14 @@ export function Wrapped2025({ onClose }: WrappedProps) {
               {...fadeUp}
               transition={{ duration: 0.4 }}
             >
-              V7 SENDS
+              V6/V7 SENDS
             </motion.p>
             <motion.h1
               className="w-big-number"
               {...fadeUp}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              5
+              9
             </motion.h1>
             <motion.p
               className="w-desc"
