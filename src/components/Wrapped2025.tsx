@@ -323,7 +323,7 @@ export function Wrapped2025({ onClose }: WrappedProps) {
               {...fadeUp}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              9
+              10
             </motion.h1>
             <motion.p
               className="w-desc"
