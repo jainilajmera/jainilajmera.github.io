@@ -3,22 +3,13 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Wrapped2025 } from "./Wrapped2025";
 
-type Theme = "light" | "dark" | "fire-nation";
+type Theme = "light" | "fire-nation";
 type Element = "water" | "earth" | "air";
 
 function Layout() {
   const [showWrapped, setShowWrapped] = useState(false);
   const [wrappedReady, setWrappedReady] = useState(false);
-  const [theme, setTheme] = useState<Theme>(() => {
-    if (typeof window !== "undefined") {
-      const saved = localStorage.getItem("theme");
-      if (saved === "dark" || saved === "light") return saved;
-      return window.matchMedia("(prefers-color-scheme: dark)").matches
-        ? "dark"
-        : "light";
-    }
-    return "light";
-  });
+  const [theme, setTheme] = useState<Theme>("light");
 
   const [element, setElement] = useState<Element>(() => {
     if (typeof window !== "undefined") {
@@ -31,9 +22,6 @@ function Layout() {
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
-    if (theme !== "fire-nation") {
-      localStorage.setItem("theme", theme);
-    }
   }, [theme]);
 
   useEffect(() => {
@@ -67,63 +55,11 @@ function Layout() {
     return () => clearTimeout(timer);
   }, []);
 
-  const toggleTheme = () => {
-    if (theme === "light") {
-      setTheme("dark");
-    } else {
-      setTheme("light");
-    }
-  };
-
   const toggleElement = () => {
     const elements: Element[] = ["water", "earth", "air"];
     const currentIndex = elements.indexOf(element);
     const nextIndex = (currentIndex + 1) % elements.length;
     setElement(elements[nextIndex]);
-  };
-
-  const getThemeIcon = () => {
-    if (theme === "fire-nation") {
-      return (
-        <img
-          src="/img/fire.png"
-          alt="Fire Nation"
-          className="element-icon fire-icon"
-        />
-      );
-    } else if (theme === "light") {
-      return (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-          />
-        </svg>
-      );
-    } else {
-      return (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-          />
-        </svg>
-      );
-    }
   };
 
   const getElementIcon = () => {
@@ -156,9 +92,11 @@ function Layout() {
             >
               <AnimatePresence mode="wait">
                 {wrappedReady ? (
-                  <motion.span
+                  <motion.img
                     key="gift"
-                    className="gift-emoji"
+                    src="/img/gift.png"
+                    alt="2025 Wrapped"
+                    className="gift-icon"
                     initial={{ opacity: 0, scale: 0, rotate: -180 }}
                     animate={{
                       opacity: 1,
@@ -170,9 +108,7 @@ function Layout() {
                       scale: { times: [0, 0.6, 1], ease: "easeOut" },
                       rotate: { duration: 0.4, ease: "easeOut" },
                     }}
-                  >
-                    🎁
-                  </motion.span>
+                  />
                 ) : (
                   <motion.span
                     key="year"
@@ -197,14 +133,19 @@ function Layout() {
                 )}
               </AnimatePresence>
             </button>
-            <button
-              className="theme-toggle"
-              onClick={toggleTheme}
-              aria-label="Toggle theme"
-            >
-              {getThemeIcon()}
-            </button>
-            {theme !== "fire-nation" && (
+            {theme === "fire-nation" ? (
+              <button
+                className="theme-toggle"
+                onClick={() => setTheme("light")}
+                aria-label="Exit Fire Nation theme"
+              >
+                <img
+                  src="/img/fire.png"
+                  alt="Fire Nation"
+                  className="element-icon fire-icon"
+                />
+              </button>
+            ) : (
               <button
                 className="theme-toggle element-toggle"
                 onClick={toggleElement}

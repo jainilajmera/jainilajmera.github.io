@@ -15,8 +15,8 @@
   --highlight-text: #1a365d;
 
   /* Typography */
-  --font-sans: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    sans-serif;
+  --font-sans:
+    "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-mono: "DM Mono", "SF Mono", "Fira Code", monospace;
 
   /* Spacing */
@@ -26,30 +26,10 @@
   --nav-spacing: 48px;
 }
 
-[data-theme="dark"] {
-  --bg-primary: #0a0a0a;
-  --bg-secondary: #171717;
-  --text-primary: #ededed;
-  --text-secondary: #a3a3a3;
-  --text-muted: #737373;
-  --accent: #ededed;
-  --accent-hover: #d4d4d4;
-  --link: #ededed;
-  --link-hover: #a3a3a3;
-  --border: #262626;
-  --shadow: rgba(0, 0, 0, 0.4);
-  --highlight-bg: rgba(181, 199, 235, 0.2);
-  --highlight-text: #b5c7eb;
-}
-
 /* Element Colors - Water (default) */
 [data-element="water"] {
   --highlight-bg: #b5c7eb;
   --highlight-text: #1a365d;
-}
-[data-theme="dark"][data-element="water"] {
-  --highlight-bg: rgba(130, 180, 230, 0.2);
-  --highlight-text: #82b4e6;
 }
 
 /* Element Colors - Earth */
@@ -57,19 +37,11 @@
   --highlight-bg: #c8d4a9;
   --highlight-text: #3d4a2d;
 }
-[data-theme="dark"][data-element="earth"] {
-  --highlight-bg: rgba(140, 180, 100, 0.2);
-  --highlight-text: #a8c878;
-}
 
 /* Element Colors - Air */
 [data-element="air"] {
   --highlight-bg: #f5e6c8;
   --highlight-text: #8b6914;
-}
-[data-theme="dark"][data-element="air"] {
-  --highlight-bg: rgba(245, 200, 120, 0.2);
-  --highlight-text: #f5c878;
 }
 
 /* Fire Nation Theme - Flameo, hotman! */
@@ -107,7 +79,9 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 a {
@@ -194,22 +168,16 @@ a:hover {
   filter: grayscale(1) brightness(0);
 }
 
-[data-theme="dark"] .element-icon {
-  filter: grayscale(1) brightness(0) invert(1);
+.gift-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  filter: grayscale(1);
 }
 
 .fire-icon {
-  filter: hue-rotate(40deg) saturate(1.5);
-}
-
-[data-theme="dark"] .fire-icon {
-  filter: hue-rotate(40deg) saturate(1.5);
-}
-
-.theme-toggle svg {
-  width: 18px;
-  height: 18px;
-  color: var(--text-primary);
+  filter: brightness(0) saturate(100%) invert(1) sepia(1) hue-rotate(-32deg)
+    saturate(490%) brightness(100.5%);
 }
 
 /* Typography */
@@ -349,7 +317,7 @@ p:last-child {
 }
 
 .experience-details {
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   color: var(--text-secondary);
   line-height: 1.55;
 }
@@ -403,7 +371,9 @@ p:last-child {
   font-size: 0.85rem;
   color: var(--text-muted);
   cursor: pointer;
-  transition: color 0.2s ease, opacity 0.2s ease;
+  transition:
+    color 0.2s ease,
+    opacity 0.2s ease;
   white-space: nowrap;
   text-align: center;
   opacity: 0.7;
@@ -498,8 +468,10 @@ p:last-child {
   max-width: 360px;
   text-align: center;
   overflow: hidden;
-  box-shadow: 0 0 60px rgba(255, 107, 53, 0.3),
-    0 0 100px rgba(255, 60, 20, 0.15), inset 0 1px 0 rgba(255, 150, 100, 0.1);
+  box-shadow:
+    0 0 60px rgba(255, 107, 53, 0.3),
+    0 0 100px rgba(255, 60, 20, 0.15),
+    inset 0 1px 0 rgba(255, 150, 100, 0.1);
 }
 
 .fire-nation-glow {
@@ -636,7 +608,9 @@ p:last-child {
     transparent 100%
   );
   border-radius: 50%;
-  box-shadow: 0 0 20px #ff6b35, 0 0 40px #ff6b35,
+  box-shadow:
+    0 0 20px #ff6b35,
+    0 0 40px #ff6b35,
     0 0 60px rgba(255, 107, 53, 0.5);
   animation: fireball-flicker 0.1s infinite alternate;
 }
@@ -699,37 +673,8 @@ p:last-child {
   justify-content: center;
 }
 
-.wrapped-trigger .gift-emoji {
-  font-size: 0.96rem;
-  filter: grayscale(1);
-  animation: gift-settle 2s ease-out 0.5s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
-}
-
 [data-theme="fire-nation"] .wrapped-trigger {
   display: none;
-}
-
-@keyframes gift-settle {
-  0%,
-  100% {
-    transform: scale(1);
-  }
-  10% {
-    transform: scale(1.1);
-  }
-  20% {
-    transform: scale(1);
-  }
-  30% {
-    transform: scale(1.05);
-  }
-  40% {
-    transform: scale(1);
-  }
 }
 
 .w-overlay {

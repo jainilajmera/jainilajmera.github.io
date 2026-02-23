@@ -125,8 +125,7 @@ function WorkContent() {
               · 2024
             </div>
             <div className="experience-details">
-              Multimodal log database for robotics. Implemented range deletion,
-              logical data truncation, and reverse time-ordered traversal.
+              Multimodal log database for robotics.
             </div>
           </li>
           <li className="experience-item">
@@ -261,7 +260,7 @@ function LifeContent() {
     <>
       <CollapsibleSection title="Climbing" defaultOpen={false}>
         <div className="experience-details">
-          Climbing V6 / V7 indoors. Working towards V10 indoors in 2026.
+          Climbing V6 / V7 indoors. Working towards V8 / V9 indoors in 2026.
         </div>
       </CollapsibleSection>
 
@@ -293,8 +292,8 @@ function LifeContent() {
               </a>
             </div>
             <div className="experience-details">
-              24th person ever to finish level 8 (the then-final level) of the
-              popular global prompt injection game.
+              24th person ever to finish the then-final level of the popular
+              global prompt injection game.
             </div>
           </li>
           <li className="experience-item">
@@ -322,7 +321,7 @@ function LifeContent() {
                 Smash Karts
               </a>
             </div>
-            <div className="experience-details">Level 46.</div>
+            <div className="experience-details">Level 48.</div>
           </li>
         </ul>
       </CollapsibleSection>
