@@ -34,8 +34,9 @@ function Home() {
                   >
                     internal MCP server
                   </a>{" "}
-                  at Plaid. Now, I'm building at Cursor. I stay curious, chase
-                  hard problems, and care about designing clean abstractions.
+                  at Plaid. Now, I'm working on securing the future of coding
+                  at Cursor. I stay curious, chase hard problems, and care about
+                  designing clean abstractions.
                 </motion.span>
               ) : (
                 <motion.span
@@ -94,8 +95,7 @@ function WorkContent() {
               Working at <span className="highlight">Cursor</span> · 2026–Present
             </div>
             <div className="experience-details">
-              Building AI-powered developer tooling and secure, scalable
-              systems.
+              Building secure AI coding.
             </div>
           </li>
           <li className="experience-item">
