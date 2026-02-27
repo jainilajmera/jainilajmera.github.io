@@ -95,7 +95,7 @@ function WorkContent() {
               Working at <span className="highlight">Cursor</span> · 2026–Present
             </div>
             <div className="experience-details">
-              Building secure AI coding.
+              Secure AI coding workflows.
             </div>
           </li>
           <li className="experience-item">
