@@ -94,6 +94,7 @@ function WorkContent() {
             <div className="experience-header">
               Working at <span className="highlight">Cursor</span> · 2026–Present
             </div>
+            <div className="experience-subtitle">Software Engineer</div>
             <div className="experience-details">
               Secure AI coding workflows.
             </div>
