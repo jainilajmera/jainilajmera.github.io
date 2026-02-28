@@ -13,7 +13,7 @@ function Home() {
       transition={{ duration: 0.4 }}
     >
       <div className="intro">
-        <p className="intro-tagline">SWE @Plaid · CS @Berkeley</p>
+        <p className="intro-tagline">SWE @Cursor · CS @Berkeley</p>
         <div className="intro-text">
           <p>
             <Toggle activeTab={activeTab} onToggle={setActiveTab} /> work,{" "}
@@ -34,8 +34,9 @@ function Home() {
                   >
                     internal MCP server
                   </a>{" "}
-                  at Plaid. I stay curious, chase hard problems, and care about
-                  designing clean abstractions.
+                  at Plaid. Now, I'm making AI coding secure at Cursor. I stay
+                  curious, chase hard problems, and care about designing clean
+                  abstractions.
                 </motion.span>
               ) : (
                 <motion.span
@@ -91,7 +92,15 @@ function WorkContent() {
         <ul className="experience-list">
           <li className="experience-item">
             <div className="experience-header">
-              Working at <span className="highlight">Plaid</span> · 2024–Present
+              Working at <span className="highlight">Cursor</span> · 2026–Present
+            </div>
+            <div className="experience-details">
+              Secure AI coding workflows.
+            </div>
+          </li>
+          <li className="experience-item">
+            <div className="experience-header">
+              Worked at <span className="highlight">Plaid</span> · 2024–2026
             </div>
             <div className="experience-subtitle">Software Engineer II</div>
             <div className="experience-details">
