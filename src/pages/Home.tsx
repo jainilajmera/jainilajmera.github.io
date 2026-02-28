@@ -34,9 +34,9 @@ function Home() {
                   >
                     internal MCP server
                   </a>{" "}
-                  at Plaid. Now, I'm working on securing the future of coding
-                  at Cursor. I stay curious, chase hard problems, and care about
-                  designing clean abstractions.
+                  at Plaid. Now, I'm making AI coding secure at Cursor. I stay
+                  curious, chase hard problems, and care about designing clean
+                  abstractions.
                 </motion.span>
               ) : (
                 <motion.span
