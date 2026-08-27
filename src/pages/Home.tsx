@@ -13,7 +13,7 @@ function Home() {
       transition={{ duration: 0.4 }}
     >
       <div className="intro">
-        <p className="intro-tagline">SWE @Cursor · CS @Berkeley</p>
+        <p className="intro-tagline">SWE @SpaceXAI · CS @Berkeley</p>
         <div className="intro-text">
           <p>
             <Toggle activeTab={activeTab} onToggle={setActiveTab} /> work,{" "}
@@ -26,17 +26,10 @@ function Home() {
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.2 }}
                 >
-                  I build secure, scalable systems. Recently, I helped ship an{" "}
-                  <a
-                    href="https://plaid.com/blog/plaid-internal-mcp-server-productivity/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    internal MCP server
-                  </a>{" "}
-                  at Plaid. Now, I'm making AI coding secure at Cursor. I stay
-                  curious, chase hard problems, and care about designing clean
-                  abstractions.
+                  I focus on security problems in software. These days, I’m
+                  helping secure model training at SpaceXAI. Before that, I
+                  worked on similar infrastructure and access problems at
+                  Cursor.
                 </motion.span>
               ) : (
                 <motion.span
@@ -92,11 +85,23 @@ function WorkContent() {
         <ul className="experience-list">
           <li className="experience-item">
             <div className="experience-header">
-              Working at <span className="highlight">Cursor</span> · 2026–Present
+              Working at <span className="highlight">SpaceXAI</span> · Aug
+              2026–Present
             </div>
             <div className="experience-subtitle">Software Engineer</div>
             <div className="experience-details">
-              Secure AI coding workflows.
+              Securing supercomputing clusters.
+            </div>
+          </li>
+          <li className="experience-item">
+            <div className="experience-header">
+              Worked at <span className="highlight">Cursor</span> · 2026
+            </div>
+            <div className="experience-subtitle">Software Engineer</div>
+            <div className="experience-details">
+              Built secure-by-default infrastructure spanning ML identity,
+              software supply chains, and production access. Acquired by
+              SpaceXAI.
             </div>
           </li>
           <li className="experience-item">
@@ -105,9 +110,17 @@ function WorkContent() {
             </div>
             <div className="experience-subtitle">Software Engineer II</div>
             <div className="experience-details">
-              Security for Plaid's internal MCP server. JIT access control for
-              Kubernetes. Platform for actionable vulnerability remediation.
-              Signing service for cryptographic segregation of Plaid's traffic.
+              Security for Plaid's{" "}
+              <a
+                href="https://plaid.com/blog/plaid-internal-mcp-server-productivity/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                internal MCP server
+              </a>
+              . JIT access control for Kubernetes. Platform for actionable
+              vulnerability remediation. Signing service for cryptographic
+              segregation of Plaid's traffic.
             </div>
           </li>
           <li className="experience-item">
@@ -376,21 +389,19 @@ function LifeContent() {
 
       <CollapsibleSection title="Listening">
         <a
-          href="https://open.spotify.com/track/1ifI8ipBJreNmLDYigFc6d"
+          href="https://open.spotify.com/track/2A59Ilz9Q27aWf4f11Ls4r"
           target="_blank"
           rel="noopener noreferrer"
           className="media-card"
         >
           <img
-            src="https://i.scdn.co/image/ab67616d00001e02a501eb791db6baaa2c4deab8"
-            alt="Dhurandhar"
-            className="media-cover"
+            src="/img/sapne-vs-everyone.png"
+            alt="Sapne Vs Everyone"
+            className="media-cover media-cover--poster"
           />
           <div className="media-info">
-            <span className="media-title">Dhurandhar - Title Track</span>
-            <span className="media-subtitle">
-              Shashwat Sachdev, Hanumankind
-            </span>
+            <span className="media-title">A Dreamer's Rap</span>
+            <span className="media-subtitle">Aniket Raturi, Escape Sequence</span>
           </div>
         </a>
       </CollapsibleSection>
