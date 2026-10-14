@@ -27,7 +27,8 @@ function Home() {
                   transition={{ duration: 0.2 }}
                 >
                   I focus on security problems in software. These days, I’m
-                  helping secure model training at SpaceXAI. Before that, I
+                  helping secure model training at SpaceX Super Intelligence.
+                  Before that, I
                   worked on similar infrastructure and access problems at
                   Cursor.
                 </motion.span>
@@ -85,7 +86,7 @@ function WorkContent() {
         <ul className="experience-list">
           <li className="experience-item">
             <div className="experience-header">
-              Working at <span className="highlight">SpaceXAI</span> · Aug
+              Working at <span className="highlight">SpaceXSI</span> · Aug
               2026–Present
             </div>
             <div className="experience-subtitle">Software Engineer</div>
@@ -101,7 +102,7 @@ function WorkContent() {
             <div className="experience-details">
               Built secure-by-default infrastructure spanning ML identity,
               software supply chains, and production access. Acquired by
-              SpaceXAI.
+              SpaceXSI.
             </div>
           </li>
           <li className="experience-item">
