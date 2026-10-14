@@ -13,7 +13,7 @@ function Home() {
       transition={{ duration: 0.4 }}
     >
       <div className="intro">
-        <p className="intro-tagline">SWE @SpaceXAI · CS @Berkeley</p>
+        <p className="intro-tagline">SWE @SpaceXSI · CS @Berkeley</p>
         <div className="intro-text">
           <p>
             <Toggle activeTab={activeTab} onToggle={setActiveTab} /> work,{" "}
